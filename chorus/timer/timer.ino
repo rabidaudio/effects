@@ -1,26 +1,38 @@
+#define CLOCK_OUTPUT_PIN 1
+#define LFO_OUTPUT_PIN 0
+#define RATE_IN A2
+#define DEPTH_IN A3
 
 uint8_t lfo_depth = 188;
-uint8_t lfo_rate = 190;
+uint8_t lfo_rate = 128;
 
 uint64_t start = 0;
 bool up = true;
-uint8_t timer_compare = 0;
 
 void setup() {
-  Serial.begin(9600);
+  // Serial.begin(9600);
+  pinMode(CLOCK_OUTPUT_PIN, OUTPUT);
+  pinMode(LFO_OUTPUT_PIN, OUTPUT);
+
+  // Timer0 configuration:
+  // Timer mode=5, prescale 8, phase-correct PWM which switches direction at OCR0A
+  // OCR0B set to half of OCR0A to get duty cycle 50%
+  // OUTPUT_PIN changes when OCR0B is passed
+  TCCR0A = 0x00;
+  TCCR0A |= (1<<WGM00) | (0<<WGM01) | (0<<COM0A1) | (1<<COM0B1) | (0<<COM0A0) | (1<<COM0B0);
+  TCCR0B = 0x00;
+  TCCR0B |= (1<<WGM02) | (1<<CS01);
+  TCNT0 = 0; // Reset clock
+
+  setClock(0);
+  
   start = millis();
-  // put your setup code here, to run once:
-
-  // TIMER1_COMPA
-  //  TCNT0
-  // OCR0A and OCR0B compare registers
-
-  // OC0A and OC0B output compare pins (pg 69)
-
-  //  TCCR0B set clock source and prescaler
 }
 
 void loop() {
+//  lfo_rate = (uint8_t) (analogRead(RATE_IN) / 4);
+//  setClock(lfo_rate);
+  
   uint64_t t = micros();
   uint64_t target = start + getLFOPeriod(lfo_rate);
   if (start > t) {
@@ -31,17 +43,33 @@ void loop() {
   if (t >= target) {
     start = micros();
     up = !up; // switch direction
-    digitalWrite(9, up ? LOW : HIGH); // use this to measure frequency
+    digitalWrite(LFO_OUTPUT_PIN, up ? LOW : HIGH); // use this to measure frequency
     return;
   }
-  lfo_rate = (uint8_t) (analogRead(A0) / 4);
-  lfo_depth = (uint8_t) (analogRead(A1) / 4);
+  lfo_rate = (uint8_t) (analogRead(RATE_IN) / 4);
+  lfo_depth = (uint8_t) (analogRead(DEPTH_IN) / 4);
 
-  // lfo_depth / 2 to map 256 to 128 resolution (directly settable as timer compare values)
-  // gate timer to accepted values (200KHz to 10KHz)
   uint64_t v = up ? t : (target - t + start);
-  timer_compare = (uint8_t) map(v, start, target, 0, map(lfo_depth, 0, 255, 4, 99));
-  Serial.println(timer_compare);
+  uint8_t rate = (uint8_t) map(v, start, target, 0, lfo_depth);
+  setClock(rate);
+}
+
+void setClock(uint8_t v) {
+  // output frequency range: 10KHz to 200KHz (limits of BBD)
+  // because we need 50% duty cycle, OCR0B controls resolution.
+  // at 16MHz clock with 8 prescaler, ouput frequency is
+  // (16_000_000)/8/OCR0B
+  // OCR0B in a range of [3, 50] gives proper output.
+  // NOTE: mode 5 is somewhat resilient to
+  // timer reconfiguration, as these values
+  // are buffered and changed when the timer reaches 0.
+  // we're changing two values which should take at least
+  // 2 clock cycles, but with a prescaler of 8 we should have
+  // 8 clock cycles so maybe there's no problem here.
+
+  uint8_t value = map(v, 0, 255, 3, 50);
+  OCR0A = value * 2;
+  OCR0B = value;
 }
 
 const PROGMEM uint16_t LFO_PERIODS[] = {
