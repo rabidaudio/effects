@@ -31,15 +31,16 @@ void loop() {
   if (t >= target) {
     start = micros();
     up = !up; // switch direction
+    digitalWrite(9, up ? LOW : HIGH); // use this to measure frequency
     return;
   }
-  // read lfo_rate
-  // read lfo_depth
+  lfo_rate = (uint8_t) (analogRead(A0) / 4);
+  lfo_depth = (uint8_t) (analogRead(A1) / 4);
 
   // lfo_depth / 2 to map 256 to 128 resolution (directly settable as timer compare values)
   // gate timer to accepted values (200KHz to 10KHz)
   uint64_t v = up ? t : (target - t + start);
-  timer_compare = (uint8_t) constrain(map(v, start, target, 0, (lfo_depth / 2)-4), 0, 99-4);
+  timer_compare = (uint8_t) map(v, start, target, 0, map(lfo_depth, 0, 255, 4, 99));
   Serial.println(timer_compare);
 }
 
