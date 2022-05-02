@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 639.0, 250.0, 1372.0, 779.0 ],
+		"rect" : [ 34.0, 87.0, 1372.0, 779.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -69,7 +69,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 271.0, 293.0, 150.0, 20.0 ],
-					"text" : "depth"
+					"text" : "rate"
 				}
 
 			}
@@ -606,7 +606,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 462.0, 265.0, 150.0, 20.0 ],
-					"text" : "LFO freq 0.05-.25 Hz"
+					"text" : "depth"
 				}
 
 			}
