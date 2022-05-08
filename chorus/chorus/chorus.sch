@@ -680,13 +680,6 @@ Wire Wire Line
 Connection ~ 7900 4250
 Wire Wire Line
 	8400 4250 7900 4250
-Connection ~ 8200 4050
-Wire Wire Line
-	8400 4050 8200 4050
-Wire Wire Line
-	8200 4050 8200 4500
-Wire Wire Line
-	7750 4050 8200 4050
 Wire Wire Line
 	7900 4250 7750 4250
 Wire Wire Line
@@ -695,17 +688,6 @@ Wire Wire Line
 	7900 4900 7900 4800
 Wire Wire Line
 	8200 4900 8200 4800
-$Comp
-L Device:R R9
-U 1 1 62451936
-P 8200 4650
-F 0 "R9" V 8400 4650 50  0000 C CNN
-F 1 "100K" V 8300 4650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 8130 4650 50  0001 C CNN
-F 3 "~" H 8200 4650 50  0001 C CNN
-	1    8200 4650
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:R R8
 U 1 1 624512D0
@@ -1376,4 +1358,26 @@ F 3 "~" H 7850 1050 50  0001 C CNN
 	2    7850 1050
 	1    0    0    -1  
 $EndComp
+Text Notes 2150 900  0    50   ~ 0
+TODO: descrete clock steps are too audible\ncould potentially filter, else use analog clock source
+Text Notes 7400 6150 0    50   ~ 0
+TODO: input filter is solid, output filter needs lower cutoff
+$Comp
+L Device:R R9
+U 1 1 62451936
+P 8200 4650
+F 0 "R9" V 8400 4650 50  0000 C CNN
+F 1 "100K" V 8300 4650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 8130 4650 50  0001 C CNN
+F 3 "~" H 8200 4650 50  0001 C CNN
+	1    8200 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7750 4050 8200 4050
+Wire Wire Line
+	8400 4050 8200 4050
+Connection ~ 8200 4050
+Wire Wire Line
+	8200 4050 8200 4500
 $EndSCHEMATC
