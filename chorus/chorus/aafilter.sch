@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -158,13 +158,37 @@ Wire Wire Line
 Wire Wire Line
 	3750 4150 3750 4250
 Wire Wire Line
-	3750 4250 4850 4250
-Wire Wire Line
 	4850 4250 4850 4150
 Text HLabel 3050 3700 0    50   Input ~ 0
 IN
-Text HLabel 4250 4250 3    50   Input ~ 0
-AGND
 Text HLabel 5950 3800 2    50   Input ~ 0
 OUT
+$Comp
+L power:GNDA #PWR?
+U 1 1 630391FD
+P 3750 4250
+AR Path="/630391FD" Ref="#PWR?"  Part="1" 
+AR Path="/628336F3/630391FD" Ref="#PWR0103"  Part="1" 
+AR Path="/629A6A5C/630391FD" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0103" H 3750 4000 50  0001 C CNN
+F 1 "GNDA" H 3755 4077 50  0000 C CNN
+F 2 "" H 3750 4250 50  0001 C CNN
+F 3 "" H 3750 4250 50  0001 C CNN
+	1    3750 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 630399DB
+P 4850 4250
+AR Path="/630399DB" Ref="#PWR?"  Part="1" 
+AR Path="/628336F3/630399DB" Ref="#PWR0106"  Part="1" 
+AR Path="/629A6A5C/630399DB" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0106" H 4850 4000 50  0001 C CNN
+F 1 "GNDA" H 4855 4077 50  0000 C CNN
+F 2 "" H 4850 4250 50  0001 C CNN
+F 3 "" H 4850 4250 50  0001 C CNN
+	1    4850 4250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
