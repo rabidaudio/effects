@@ -301,7 +301,7 @@ Wire Wire Line
 Wire Wire Line
 	2150 3800 2150 4150
 Text Notes 3950 6400 0    50   ~ 0
-TODO: do we need to scale down and back up the signal?
+TODO: do we need to scale up and back down the signal\nto increase the dynamic range?
 Text Notes 3350 6150 0    50   ~ 0
 TODO: pots oriented correctly?
 $Comp
@@ -618,7 +618,7 @@ L Device:R R?
 U 1 1 6282D0A4
 P 9000 4650
 F 0 "R?" V 8793 4650 50  0000 C CNN
-F 1 "100k" V 8884 4650 50  0000 C CNN
+F 1 "1M" V 8884 4650 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 8930 4650 50  0001 C CNN
 F 3 "~" H 9000 4650 50  0001 C CNN
 	1    9000 4650
@@ -642,7 +642,7 @@ L Device:R R?
 U 1 1 6282D0B5
 P 8250 5100
 F 0 "R?" V 8043 5100 50  0000 C CNN
-F 1 "100k" V 8134 5100 50  0000 C CNN
+F 1 "1M" V 8134 5100 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 8180 5100 50  0001 C CNN
 F 3 "~" H 8250 5100 50  0001 C CNN
 	1    8250 5100
@@ -664,7 +664,7 @@ L Device:R R?
 U 1 1 62843612
 P 8250 4650
 F 0 "R?" V 8043 4650 50  0000 C CNN
-F 1 "100k" V 8134 4650 50  0000 C CNN
+F 1 "1M" V 8134 4650 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 8180 4650 50  0001 C CNN
 F 3 "~" H 8250 4650 50  0001 C CNN
 	1    8250 4650

@@ -264,14 +264,6 @@ F1 "aafilter.sch" 50
 F2 "IN" I L 4900 4700 50 
 F3 "OUT" I R 5600 4700 50 
 $EndSheet
-$Sheet
-S 7150 4500 700  600 
-U 629A6A5C
-F0 "Anti-Aliasing Filter 2" 50
-F1 "aafilter.sch" 50
-F2 "IN" I L 7150 4650 50 
-F3 "OUT" I R 7850 4650 50 
-$EndSheet
 $Comp
 L Amplifier_Operational:TL072 U6
 U 3 1 629D1A33
@@ -699,4 +691,12 @@ Wire Wire Line
 	8100 5100 8000 5100
 Wire Wire Line
 	8000 5100 8000 5350
+$Sheet
+S 7150 4500 700  600 
+U 629A6A5C
+F0 "Reconstruction Filter" 50
+F1 "rfilter.sch" 50
+F2 "IN" I L 7150 4650 50 
+F3 "OUT" I R 7850 4650 50 
+$EndSheet
 $EndSCHEMATC
