@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -184,7 +184,131 @@ Connection ~ 6100 3700
 Text HLabel 4000 3600 0    50   Input ~ 0
 IN
 Wire Wire Line
-	4000 3600 4150 3600
+	4000 3600 4100 3600
 Text HLabel 6300 3700 2    50   Input ~ 0
-OUT
+HI_OUT
+Text HLabel 7550 4350 2    50   Input ~ 0
+LO_OUT
+$Comp
+L Amplifier_Operational:TL074 U?
+U 2 1 62A49A72
+P 7100 4350
+AR Path="/62A49A72" Ref="U?"  Part="2" 
+AR Path="/6325A0B8/62A49A72" Ref="U?"  Part="2" 
+F 0 "U?" H 7100 4717 50  0000 C CNN
+F 1 "TL074" H 7100 4626 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 7050 4450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 7150 4550 50  0001 C CNN
+	2    7100 4350
+	1    0    0    1   
+$EndComp
+Text Notes 6900 4950 0    50   ~ 0
+Diff amp, subtracting HP signal\nfrom original signal to get LP signal
+$Comp
+L Device:R R?
+U 1 1 62A50D45
+P 6450 4450
+AR Path="/62A50D45" Ref="R?"  Part="1" 
+AR Path="/6325A0B8/62A50D45" Ref="R?"  Part="1" 
+F 0 "R?" V 6650 4450 50  0000 C CNN
+F 1 "100K" V 6550 4450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6380 4450 50  0001 C CNN
+F 3 "~" H 6450 4450 50  0001 C CNN
+	1    6450 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62A52C2B
+P 6450 4250
+AR Path="/62A52C2B" Ref="R?"  Part="1" 
+AR Path="/6325A0B8/62A52C2B" Ref="R?"  Part="1" 
+F 0 "R?" V 6243 4250 50  0000 C CNN
+F 1 "100K" V 6334 4250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6380 4250 50  0001 C CNN
+F 3 "~" H 6450 4250 50  0001 C CNN
+	1    6450 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62A53369
+P 7150 4000
+AR Path="/62A53369" Ref="R?"  Part="1" 
+AR Path="/6325A0B8/62A53369" Ref="R?"  Part="1" 
+F 0 "R?" V 6943 4000 50  0000 C CNN
+F 1 "100K" V 7034 4000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 7080 4000 50  0001 C CNN
+F 3 "~" H 7150 4000 50  0001 C CNN
+	1    7150 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62A538EE
+P 6700 4650
+AR Path="/62A538EE" Ref="R?"  Part="1" 
+AR Path="/6325A0B8/62A538EE" Ref="R?"  Part="1" 
+F 0 "R?" V 6493 4650 50  0000 C CNN
+F 1 "100K" V 6584 4650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6630 4650 50  0001 C CNN
+F 3 "~" H 6700 4650 50  0001 C CNN
+	1    6700 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6600 4450 6700 4450
+Wire Wire Line
+	6700 4500 6700 4450
+Connection ~ 6700 4450
+Wire Wire Line
+	6700 4450 6800 4450
+Wire Wire Line
+	6600 4250 6700 4250
+Wire Wire Line
+	7000 4000 6700 4000
+Wire Wire Line
+	6700 4000 6700 4250
+Connection ~ 6700 4250
+Wire Wire Line
+	6700 4250 6800 4250
+Wire Wire Line
+	7400 4350 7450 4350
+Wire Wire Line
+	7450 4350 7450 4000
+Wire Wire Line
+	7450 4000 7300 4000
+Wire Wire Line
+	7550 4350 7450 4350
+Connection ~ 7450 4350
+$Comp
+L power:GNDA #PWR?
+U 1 1 62A57D82
+P 6700 4900
+AR Path="/62A57D82" Ref="#PWR?"  Part="1" 
+AR Path="/6325A0B8/62A57D82" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6700 4650 50  0001 C CNN
+F 1 "GNDA" H 6705 4727 50  0000 C CNN
+F 2 "" H 6700 4900 50  0001 C CNN
+F 3 "" H 6700 4900 50  0001 C CNN
+	1    6700 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4900 6700 4800
+Wire Wire Line
+	6300 4450 6200 4450
+Wire Wire Line
+	6200 4450 6200 4900
+Wire Wire Line
+	6200 4900 4100 4900
+Wire Wire Line
+	4100 4900 4100 3600
+Connection ~ 4100 3600
+Wire Wire Line
+	4100 3600 4150 3600
+Wire Wire Line
+	6300 4250 6100 4250
+Wire Wire Line
+	6100 4250 6100 3700
 $EndSCHEMATC

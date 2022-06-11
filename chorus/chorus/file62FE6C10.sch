@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -19,19 +19,6 @@ Wire Wire Line
 	4000 3000 4100 3000
 NoConn ~ 4100 3400
 NoConn ~ 4100 3200
-$Comp
-L power:+9V #PWR?
-U 1 1 62FF72F4
-P 4500 2650
-AR Path="/62FF72F4" Ref="#PWR?"  Part="1" 
-AR Path="/62FE6C11/62FF72F4" Ref="#PWR0139"  Part="1" 
-F 0 "#PWR0139" H 4500 2500 50  0001 C CNN
-F 1 "+9V" H 4515 2823 50  0000 C CNN
-F 2 "" H 4500 2650 50  0001 C CNN
-F 3 "" H 4500 2650 50  0001 C CNN
-	1    4500 2650
-	1    0    0    -1  
-$EndComp
 Text Notes 4800 2650 0    50   ~ 0
 simply 14/15 VDD\n3.3K 4.7K
 Connection ~ 6300 3600
@@ -106,19 +93,6 @@ Wire Wire Line
 	5750 3000 5750 2750
 Wire Wire Line
 	4500 2800 4500 2650
-$Comp
-L power:+9V #PWR?
-U 1 1 62FF731F
-P 5750 2750
-AR Path="/62FF731F" Ref="#PWR?"  Part="1" 
-AR Path="/62FE6C11/62FF731F" Ref="#PWR0141"  Part="1" 
-F 0 "#PWR0141" H 5750 2600 50  0001 C CNN
-F 1 "+9V" H 5765 2923 50  0000 C CNN
-F 2 "" H 5750 2750 50  0001 C CNN
-F 3 "" H 5750 2750 50  0001 C CNN
-	1    5750 2750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4500 3700 4500 3600
 Wire Wire Line
@@ -258,4 +232,30 @@ Wire Wire Line
 	7200 3600 7100 3600
 Text HLabel 7200 3500 2    50   Input ~ 0
 OUT
+$Comp
+L power:+5V #PWR?
+U 1 1 62C8354C
+P 4500 2650
+AR Path="/62C8354C" Ref="#PWR?"  Part="1" 
+AR Path="/62FE6C11/62C8354C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4500 2500 50  0001 C CNN
+F 1 "+5V" H 4515 2823 50  0000 C CNN
+F 2 "" H 4500 2650 50  0001 C CNN
+F 3 "" H 4500 2650 50  0001 C CNN
+	1    4500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 62C8403F
+P 5750 2750
+AR Path="/62C8403F" Ref="#PWR?"  Part="1" 
+AR Path="/62FE6C11/62C8403F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5750 2600 50  0001 C CNN
+F 1 "+5V" H 5765 2923 50  0000 C CNN
+F 2 "" H 5750 2750 50  0001 C CNN
+F 3 "" H 5750 2750 50  0001 C CNN
+	1    5750 2750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

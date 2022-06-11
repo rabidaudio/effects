@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -16,63 +16,63 @@ $EndDescr
 $Comp
 L MCU_Microchip_ATtiny:ATtiny85-20PU U?
 U 1 1 62F9D27C
-P 1750 3600
+P 1400 3600
 AR Path="/62F9D27C" Ref="U?"  Part="1" 
 AR Path="/62F7B2B4/62F9D27C" Ref="U3"  Part="1" 
-F 0 "U3" H 1221 3646 50  0000 R CNN
-F 1 "ATTINY85" H 1221 3555 50  0000 R CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 1750 3600 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 1750 3600 50  0001 C CNN
-	1    1750 3600
+F 0 "U3" H 871 3646 50  0000 R CNN
+F 1 "ATTINY85" H 871 3555 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 1400 3600 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 1400 3600 50  0001 C CNN
+	1    1400 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 62F9D282
-P 1750 4300
+P 1400 4300
 AR Path="/62F9D282" Ref="#PWR?"  Part="1" 
 AR Path="/62F7B2B4/62F9D282" Ref="#PWR0113"  Part="1" 
-F 0 "#PWR0113" H 1750 4050 50  0001 C CNN
-F 1 "GND" H 1755 4127 50  0000 C CNN
-F 2 "" H 1750 4300 50  0001 C CNN
-F 3 "" H 1750 4300 50  0001 C CNN
-	1    1750 4300
+F 0 "#PWR0113" H 1400 4050 50  0001 C CNN
+F 1 "GND" H 1405 4127 50  0000 C CNN
+F 2 "" H 1400 4300 50  0001 C CNN
+F 3 "" H 1400 4300 50  0001 C CNN
+	1    1400 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 4300 1750 4200
+	1400 4300 1400 4200
 $Comp
 L Device:R_POT R_DEPTH?
 U 1 1 62F9D296
-P 3100 4200
+P 2750 4200
 AR Path="/62F9D296" Ref="R_DEPTH?"  Part="1" 
 AR Path="/62F7B2B4/62F9D296" Ref="R_DEPTH1"  Part="1" 
-F 0 "R_DEPTH1" V 2893 4200 50  0000 C CNN
-F 1 "100K" V 2984 4200 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 3100 4200 50  0001 C CNN
-F 3 "~" H 3100 4200 50  0001 C CNN
-	1    3100 4200
+F 0 "R_DEPTH1" V 2543 4200 50  0000 C CNN
+F 1 "100K" V 2634 4200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 2750 4200 50  0001 C CNN
+F 3 "~" H 2750 4200 50  0001 C CNN
+	1    2750 4200
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 62F9D29C
-P 3100 4450
+P 2750 4450
 AR Path="/62F9D29C" Ref="#PWR?"  Part="1" 
 AR Path="/62F7B2B4/62F9D29C" Ref="#PWR0122"  Part="1" 
-F 0 "#PWR0122" H 3100 4200 50  0001 C CNN
-F 1 "GND" H 3105 4277 50  0000 C CNN
-F 2 "" H 3100 4450 50  0001 C CNN
-F 3 "" H 3100 4450 50  0001 C CNN
-	1    3100 4450
+F 0 "#PWR0122" H 2750 4200 50  0001 C CNN
+F 1 "GND" H 2755 4277 50  0000 C CNN
+F 2 "" H 2750 4450 50  0001 C CNN
+F 3 "" H 2750 4450 50  0001 C CNN
+	1    2750 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3100 4450 3100 4350
+	2750 4450 2750 4350
 Wire Wire Line
-	1750 2850 1750 3000
+	1400 2850 1400 3000
 Wire Wire Line
-	3100 3950 3100 4050
+	2750 3950 2750 4050
 $Comp
 L Connector:AVR-ISP-6 J?
 U 1 1 62F9D2A6
@@ -103,11 +103,11 @@ F 3 "" H 1550 6650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1550 6650 1550 6500
-Text GLabel 2600 3300 2    50   Input ~ 0
+Text GLabel 2250 3300 2    50   Input ~ 0
 MOSI
-Text GLabel 2600 3400 2    50   Input ~ 0
+Text GLabel 2250 3400 2    50   Input ~ 0
 MISO
-Text GLabel 2600 3500 2    50   Input ~ 0
+Text GLabel 2250 3500 2    50   Input ~ 0
 SCK
 Text GLabel 2200 6100 2    50   Input ~ 0
 SCK
@@ -125,14 +125,14 @@ Text GLabel 2200 6200 2    50   Input ~ 0
 ~RST
 Wire Wire Line
 	2200 6200 2050 6200
-Text GLabel 2600 3800 2    50   Input ~ 0
+Text GLabel 2250 3800 2    50   Input ~ 0
 ~RST
 Wire Wire Line
-	2950 4200 2900 4200
+	2600 4200 2550 4200
 Wire Wire Line
-	2900 4200 2900 3700
+	2550 4200 2550 3700
 Text Notes 800  4800 0    50   ~ 0
-uC generates a triangle LFO in much less space than analog
+uC generates a triangle LFO in much less space than analog\nand allows for non-linear controls
 $Comp
 L power:+5V #PWR?
 U 1 1 62F9D2C5
@@ -149,14 +149,14 @@ $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 62F9D2CB
-P 1750 2850
+P 1400 2850
 AR Path="/62F9D2CB" Ref="#PWR?"  Part="1" 
 AR Path="/62F7B2B4/62F9D2CB" Ref="#PWR0125"  Part="1" 
-F 0 "#PWR0125" H 1750 2700 50  0001 C CNN
-F 1 "+5V" H 1765 3023 50  0000 C CNN
-F 2 "" H 1750 2850 50  0001 C CNN
-F 3 "" H 1750 2850 50  0001 C CNN
-	1    1750 2850
+F 0 "#PWR0125" H 1400 2700 50  0001 C CNN
+F 1 "+5V" H 1415 3023 50  0000 C CNN
+F 2 "" H 1400 2850 50  0001 C CNN
+F 3 "" H 1400 2850 50  0001 C CNN
+	1    1400 2850
 	1    0    0    -1  
 $EndComp
 Text Notes 1100 6600 0    50   ~ 0
@@ -164,18 +164,18 @@ ISP pins in case of firmware update
 $Comp
 L power:+5V #PWR?
 U 1 1 62F9D2D2
-P 3100 3950
+P 2750 3950
 AR Path="/62F9D2D2" Ref="#PWR?"  Part="1" 
 AR Path="/62F7B2B4/62F9D2D2" Ref="#PWR0126"  Part="1" 
-F 0 "#PWR0126" H 3100 3800 50  0001 C CNN
-F 1 "+5V" H 3115 4123 50  0000 C CNN
-F 2 "" H 3100 3950 50  0001 C CNN
-F 3 "" H 3100 3950 50  0001 C CNN
-	1    3100 3950
+F 0 "#PWR0126" H 2750 3800 50  0001 C CNN
+F 1 "+5V" H 2765 4123 50  0000 C CNN
+F 2 "" H 2750 3950 50  0001 C CNN
+F 3 "" H 2750 3950 50  0001 C CNN
+	1    2750 3950
 	1    0    0    -1  
 $EndComp
-Text Notes 7850 3700 0    50   ~ 0
-Clock input must be at least VDD-1V\nTODO: how to adjust levels?
+Text Notes 8050 4300 0    50   ~ 0
+buffered output clocks between 0.5V and -4V (relative to AGND)\nClock input must be at least 1V to VDD-1V (relative to 5V GND)\nAt VDD=5V this is sufficent and comparator isn’t required
 $Comp
 L Amplifier_Operational:LM13700 U?
 U 1 1 62F9D2DF
@@ -222,7 +222,7 @@ P 5850 3900
 AR Path="/62F9D2F1" Ref="C?"  Part="1" 
 AR Path="/62F7B2B4/62F9D2F1" Ref="C3"  Part="1" 
 F 0 "C3" H 5965 3946 50  0000 L CNN
-F 1 "470p" H 5965 3855 50  0000 L CNN
+F 1 "220p" H 5965 3855 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 5888 3750 50  0001 C CNN
 F 3 "~" H 5850 3900 50  0001 C CNN
 	1    5850 3900
@@ -308,7 +308,7 @@ P 7750 4150
 AR Path="/62F9D31A" Ref="R?"  Part="1" 
 AR Path="/62F7B2B4/62F9D31A" Ref="R12"  Part="1" 
 F 0 "R12" H 7820 4196 50  0000 L CNN
-F 1 "10k" H 7820 4105 50  0000 L CNN
+F 1 "1K" H 7820 4105 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 7680 4150 50  0001 C CNN
 F 3 "~" H 7750 4150 50  0001 C CNN
 	1    7750 4150
@@ -374,7 +374,7 @@ P 5600 3300
 AR Path="/62F9D356" Ref="R?"  Part="1" 
 AR Path="/62F7B2B4/62F9D356" Ref="R9"  Part="1" 
 F 0 "R9" H 5670 3346 50  0000 L CNN
-F 1 "2.5k" H 5670 3255 50  0000 L CNN
+F 1 "4.8k" H 5670 3255 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 5530 3300 50  0001 C CNN
 F 3 "~" H 5600 3300 50  0001 C CNN
 	1    5600 3300
@@ -385,13 +385,13 @@ Wire Wire Line
 Wire Wire Line
 	5600 3750 5500 3750
 Text Notes 5950 3100 0    50   ~ 0
-square wave VCO\n0V-5V CV\n200KHz-10KHz output
+square wave VCO\n1.8V-5V CV\n~250KHz-20KHz output
 Wire Wire Line
-	2350 3500 2600 3500
+	2000 3500 2250 3500
 Wire Wire Line
-	2600 3800 2350 3800
+	2250 3800 2000 3800
 Wire Wire Line
-	2900 3700 2350 3700
+	2550 3700 2000 3700
 Text HLabel 8250 3850 2    50   Input ~ 0
 CLOCK
 Wire Wire Line
@@ -427,8 +427,6 @@ F 3 "~" H 3950 3800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3950 3650 3950 3500
-Text Notes 3300 6350 0    50   ~ 0
-LFO indicator (optional)
 $Comp
 L power:+5V #PWR?
 U 1 1 628463C1
@@ -494,59 +492,59 @@ $EndComp
 $Comp
 L Device:R_POT R_RATE?
 U 1 1 62F9D289
-P 3650 4200
+P 3300 4200
 AR Path="/62F9D289" Ref="R_RATE?"  Part="1" 
 AR Path="/62F7B2B4/62F9D289" Ref="R_RATE1"  Part="1" 
-F 0 "R_RATE1" V 3443 4200 50  0000 C CNN
-F 1 "100K" V 3534 4200 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 3650 4200 50  0001 C CNN
-F 3 "~" H 3650 4200 50  0001 C CNN
-	1    3650 4200
+F 0 "R_RATE1" V 3093 4200 50  0000 C CNN
+F 1 "100K" V 3184 4200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 3300 4200 50  0001 C CNN
+F 3 "~" H 3300 4200 50  0001 C CNN
+	1    3300 4200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3650 3950 3650 4050
+	3300 3950 3300 4050
 Wire Wire Line
-	3650 4450 3650 4350
+	3300 4450 3300 4350
 $Comp
 L power:GND #PWR?
 U 1 1 62F9D28F
-P 3650 4450
+P 3300 4450
 AR Path="/62F9D28F" Ref="#PWR?"  Part="1" 
 AR Path="/62F7B2B4/62F9D28F" Ref="#PWR0121"  Part="1" 
-F 0 "#PWR0121" H 3650 4200 50  0001 C CNN
-F 1 "GND" H 3655 4277 50  0000 C CNN
-F 2 "" H 3650 4450 50  0001 C CNN
-F 3 "" H 3650 4450 50  0001 C CNN
-	1    3650 4450
+F 0 "#PWR0121" H 3300 4200 50  0001 C CNN
+F 1 "GND" H 3305 4277 50  0000 C CNN
+F 2 "" H 3300 4450 50  0001 C CNN
+F 3 "" H 3300 4450 50  0001 C CNN
+	1    3300 4450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 62F9D2D8
-P 3650 3950
+P 3300 3950
 AR Path="/62F9D2D8" Ref="#PWR?"  Part="1" 
 AR Path="/62F7B2B4/62F9D2D8" Ref="#PWR0127"  Part="1" 
-F 0 "#PWR0127" H 3650 3800 50  0001 C CNN
-F 1 "+5V" H 3665 4123 50  0000 C CNN
-F 2 "" H 3650 3950 50  0001 C CNN
-F 3 "" H 3650 3950 50  0001 C CNN
-	1    3650 3950
+F 0 "#PWR0127" H 3300 3800 50  0001 C CNN
+F 1 "+5V" H 3315 4123 50  0000 C CNN
+F 2 "" H 3300 3950 50  0001 C CNN
+F 3 "" H 3300 3950 50  0001 C CNN
+	1    3300 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3450 3600 2350 3600
+	3100 3600 2000 3600
 Wire Wire Line
-	3500 4200 3450 4200
+	3150 4200 3100 4200
 Wire Wire Line
-	3450 4200 3450 3600
+	3100 4200 3100 3600
 Wire Wire Line
-	2350 3300 2450 3300
+	2000 3300 2100 3300
 Wire Wire Line
-	2600 3400 2350 3400
-Connection ~ 2450 3300
+	2250 3400 2000 3400
+Connection ~ 2100 3300
 Wire Wire Line
-	2450 3300 2600 3300
+	2100 3300 2250 3300
 Wire Wire Line
 	4450 2850 5600 2850
 Wire Wire Line
@@ -555,12 +553,9 @@ Connection ~ 4450 2850
 Wire Wire Line
 	4050 2850 3950 2850
 Wire Wire Line
-	2450 2850 2450 3300
+	2100 2850 2100 3300
 Wire Wire Line
 	3950 2850 3950 3200
-Connection ~ 3950 2850
-Wire Wire Line
-	3950 2850 2450 2850
 $Comp
 L power:GND #PWR?
 U 1 1 6289B125
@@ -578,4 +573,7 @@ Wire Wire Line
 	3950 4050 3950 3950
 Text Notes 3900 2600 0    50   ~ 0
 LPF to filter PWM to smooth triangle wave\nR needs to be aggressively low to avoid voltage\ndivider with current limiter
+Wire Wire Line
+	2100 2850 3950 2850
+Connection ~ 3950 2850
 $EndSCHEMATC
