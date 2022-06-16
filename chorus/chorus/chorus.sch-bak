@@ -16,71 +16,71 @@ $EndDescr
 $Comp
 L Amplifier_Operational:TL074 U2
 U 1 1 6245B212
-P 1800 4550
-F 0 "U2" H 1800 4183 50  0000 C CNN
-F 1 "TL074" H 1800 4274 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 1750 4650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 1850 4750 50  0001 C CNN
-	1    1800 4550
+P 3100 4550
+F 0 "U2" H 3100 4183 50  0000 C CNN
+F 1 "TL074" H 3100 4274 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3050 4650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3150 4750 50  0001 C CNN
+	1    3100 4550
 	1    0    0    1   
 $EndComp
 $Comp
 L Device:R_POT R_FLANGE1
 U 1 1 624703E2
-P 1050 4000
-F 0 "R_FLANGE1" V 843 4000 50  0000 C CNN
-F 1 "1M" V 934 4000 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 1050 4000 50  0001 C CNN
-F 3 "~" H 1050 4000 50  0001 C CNN
-	1    1050 4000
+P 2350 4000
+F 0 "R_FLANGE1" V 2143 4000 50  0000 C CNN
+F 1 "1M" V 2234 4000 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical" H 2350 4000 50  0001 C CNN
+F 3 "~" H 2350 4000 50  0001 C CNN
+	1    2350 4000
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1400 4750 1400 4650
+	2700 4750 2700 4650
 Wire Wire Line
-	1400 4650 1500 4650
+	2700 4650 2800 4650
 Wire Wire Line
-	1500 4450 1450 4450
+	2800 4450 2750 4450
 Wire Wire Line
-	1450 4000 1450 4450
-Connection ~ 1450 4450
+	2750 4000 2750 4450
+Connection ~ 2750 4450
 Wire Wire Line
-	1450 4450 1300 4450
+	2750 4450 2600 4450
 $Comp
 L Device:R R2
 U 1 1 6247825B
-P 1800 4000
-F 0 "R2" V 1593 4000 50  0000 C CNN
-F 1 "1M" V 1684 4000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 1730 4000 50  0001 C CNN
-F 3 "~" H 1800 4000 50  0001 C CNN
-	1    1800 4000
+P 3100 4000
+F 0 "R2" V 2893 4000 50  0000 C CNN
+F 1 "1M" V 2984 4000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 3030 4000 50  0001 C CNN
+F 3 "~" H 3100 4000 50  0001 C CNN
+	1    3100 4000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1650 4000 1450 4000
+	2950 4000 2750 4000
 Wire Wire Line
-	1950 4000 2200 4000
+	3250 4000 3500 4000
 Wire Wire Line
-	2200 4000 2200 4550
+	3500 4000 3500 4550
 Wire Wire Line
-	2200 4550 2100 4550
+	3500 4550 3400 4550
 Wire Wire Line
-	1200 4000 1300 4000
+	2500 4000 2600 4000
 Wire Wire Line
-	1300 4000 1300 4450
-Connection ~ 1300 4450
+	2600 4000 2600 4450
+Connection ~ 2600 4450
 Wire Wire Line
-	1300 4450 1200 4450
+	2600 4450 2500 4450
 $Comp
 L Device:R R1
 U 1 1 6250F04B
-P 1050 4450
-F 0 "R1" V 843 4450 50  0000 C CNN
-F 1 "1M" V 934 4450 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 980 4450 50  0001 C CNN
-F 3 "~" H 1050 4450 50  0001 C CNN
-	1    1050 4450
+P 2350 4450
+F 0 "R1" V 2143 4450 50  0000 C CNN
+F 1 "1M" V 2234 4450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 2280 4450 50  0001 C CNN
+F 3 "~" H 2350 4450 50  0001 C CNN
+	1    2350 4450
 	0    1    1    0   
 $EndComp
 $Comp
@@ -214,7 +214,7 @@ $EndComp
 Text Notes 9100 2600 0    50   ~ 0
 NOTE: offically TL07x require higher minimum VCC\nthan 9V but I tested them and they seem to work fine
 Wire Wire Line
-	800  4000 900  4000
+	2100 4000 2200 4000
 Wire Wire Line
 	6500 1150 6500 1250
 Wire Wire Line
@@ -223,46 +223,46 @@ NoConn ~ 6400 1450
 $Comp
 L power:GNDA #PWR0118
 U 1 1 62B9ACE6
-P 100 5050
-F 0 "#PWR0118" H 100 4800 50  0001 C CNN
-F 1 "GNDA" H 105 4877 50  0000 C CNN
-F 2 "" H 100 5050 50  0001 C CNN
-F 3 "" H 100 5050 50  0001 C CNN
-	1    100  5050
+P 1400 5050
+F 0 "#PWR0118" H 1400 4800 50  0001 C CNN
+F 1 "GNDA" H 1405 4877 50  0000 C CNN
+F 2 "" H 1400 5050 50  0001 C CNN
+F 3 "" H 1400 5050 50  0001 C CNN
+	1    1400 5050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDA #PWR0119
 U 1 1 62BA19CE
-P 11950 5800
-F 0 "#PWR0119" H 11950 5550 50  0001 C CNN
-F 1 "GNDA" H 11955 5627 50  0000 C CNN
-F 2 "" H 11950 5800 50  0001 C CNN
-F 3 "" H 11950 5800 50  0001 C CNN
-	1    11950 5800
+P 10100 5850
+F 0 "#PWR0119" H 10100 5600 50  0001 C CNN
+F 1 "GNDA" H 10105 5677 50  0000 C CNN
+F 2 "" H 10100 5850 50  0001 C CNN
+F 3 "" H 10100 5850 50  0001 C CNN
+	1    10100 5850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDA #PWR0120
 U 1 1 62BAF894
-P 1400 4750
-F 0 "#PWR0120" H 1400 4500 50  0001 C CNN
-F 1 "GNDA" H 1405 4577 50  0000 C CNN
-F 2 "" H 1400 4750 50  0001 C CNN
-F 3 "" H 1400 4750 50  0001 C CNN
-	1    1400 4750
+P 2700 4750
+F 0 "#PWR0120" H 2700 4500 50  0001 C CNN
+F 1 "GNDA" H 2705 4577 50  0000 C CNN
+F 2 "" H 2700 4750 50  0001 C CNN
+F 3 "" H 2700 4750 50  0001 C CNN
+	1    2700 4750
 	1    0    0    -1  
 $EndComp
-Connection ~ 2200 4550
-Text Notes 900  5150 0    50   ~ 0
-input buffer / feedback sum\n1M||2M = 666K input impedance
+Connection ~ 3500 4550
+Text Notes 2200 5150 0    50   ~ 0
+input buffer / feedback sum\n1M||1M = 500K input impedance
 $Sheet
-S 3550 4400 700  600 
+S 4850 4400 700  600 
 U 628336F3
 F0 "Anti-Aliasing Filter" 50
 F1 "aafilter.sch" 50
-F2 "IN" I L 3550 4550 50 
-F3 "OUT" I R 4250 4550 50 
+F2 "IN" I L 4850 4550 50 
+F3 "OUT" I R 5550 4550 50 
 $EndSheet
 $Comp
 L Amplifier_Operational:TL072 U6
@@ -286,9 +286,9 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 10900 1750 50  0001 C CNN
 	5    10850 1550
 	1    0    0    -1  
 $EndComp
-Text Notes 2600 6250 0    50   ~ 0
+Text Notes 1950 7350 0    50   ~ 0
 TODO: do we need to scale up and back down the signal\nto increase the dynamic range?
-Text Notes 2000 6000 0    50   ~ 0
+Text Notes 1950 7050 0    50   ~ 0
 TODO: pots oriented correctly?
 $Comp
 L power:GND #PWR0133
@@ -364,90 +364,90 @@ Wire Wire Line
 $Comp
 L Connector:AudioJack3_Switch J1
 U 1 1 62C8FDC8
-P -250 4750
-F 0 "J1" H -529 4658 50  0000 R CNN
-F 1 "IN" H 0   5100 50  0000 R CNN
-F 2 "Connector_Audio:Jack_6.35mm_Neutrik_NMJ6HCD2_Horizontal" H -250 4750 50  0001 C CNN
-F 3 "~" H -250 4750 50  0001 C CNN
-	1    -250 4750
+P 1050 4750
+F 0 "J1" H 771 4658 50  0000 R CNN
+F 1 "IN" H 1300 5100 50  0000 R CNN
+F 2 "Connector_Audio:Jack_6.35mm_Neutrik_NMJ6HCD2_Horizontal" H 1050 4750 50  0001 C CNN
+F 3 "~" H 1050 4750 50  0001 C CNN
+	1    1050 4750
 	1    0    0    1   
 $EndComp
 $Comp
 L Connector:AudioJack3_Switch J4
 U 1 1 62C9DAFE
-P 12300 5450
-F 0 "J4" H 12020 5358 50  0000 R CNN
-F 1 "OUT" H 12450 5850 50  0000 R CNN
-F 2 "Connector_Audio:Jack_6.35mm_Neutrik_NMJ6HCD2_Horizontal" H 12300 5450 50  0001 C CNN
-F 3 "~" H 12300 5450 50  0001 C CNN
-	1    12300 5450
+P 10450 5500
+F 0 "J4" H 10170 5408 50  0000 R CNN
+F 1 "OUT" H 10600 5900 50  0000 R CNN
+F 2 "Connector_Audio:Jack_6.35mm_Neutrik_NMJ6HCD2_Horizontal" H 10450 5500 50  0001 C CNN
+F 3 "~" H 10450 5500 50  0001 C CNN
+	1    10450 5500
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	12100 5450 12050 5450
+	10250 5500 10200 5500
 Wire Wire Line
-	12100 5350 12050 5350
+	10250 5400 10200 5400
 Wire Wire Line
-	-50  4550 300  4550
+	1250 4550 1600 4550
 Wire Wire Line
-	-50  4750 50   4750
+	1250 4750 1350 4750
 Wire Wire Line
-	100  5050 100  4950
+	1400 5050 1400 4950
 Wire Wire Line
-	100  4450 -50  4450
+	1400 4450 1250 4450
 Wire Wire Line
-	-50  4850 100  4850
+	1250 4850 1400 4850
 Wire Wire Line
-	-50  4950 100  4950
-Connection ~ 100  4950
+	1250 4950 1400 4950
+Connection ~ 1400 4950
 Wire Wire Line
-	100  4950 100  4850
+	1400 4950 1400 4850
 Wire Wire Line
-	100  4450 100  4850
-Connection ~ 100  4850
+	1400 4450 1400 4850
+Connection ~ 1400 4850
 Wire Wire Line
-	-50  4650 50   4650
+	1250 4650 1350 4650
 Wire Wire Line
-	50   4650 50   4750
-Connection ~ 50   4750
+	1350 4650 1350 4750
+Connection ~ 1350 4750
 Wire Wire Line
-	50   4750 500  4750
+	1350 4750 1800 4750
 Wire Wire Line
-	11950 5800 11950 5650
+	10100 5850 10100 5700
 Wire Wire Line
-	11950 5150 12100 5150
+	10100 5200 10250 5200
 Wire Wire Line
-	11950 5550 12100 5550
-Connection ~ 11950 5550
+	10100 5600 10250 5600
+Connection ~ 10100 5600
 Wire Wire Line
-	11950 5550 11950 5150
+	10100 5600 10100 5200
 Wire Wire Line
-	12100 5650 11950 5650
-Connection ~ 11950 5650
+	10250 5700 10100 5700
+Connection ~ 10100 5700
 Wire Wire Line
-	11950 5650 11950 5550
+	10100 5700 10100 5600
 Wire Wire Line
-	12050 5350 12050 5450
+	10200 5400 10200 5500
 $Comp
 L Switch:SW_3PDT_x3 SW1
 U 1 1 62E854A9
-P 500 4550
-F 0 "SW1" H 500 4835 50  0000 C CNN
-F 1 "SW_3PDT_x3" H 500 4744 50  0000 C CNN
-F 2 "Button_Switch_THT:Stompbox Switch" H 500 4550 50  0001 C CNN
-F 3 "~" H 500 4550 50  0001 C CNN
-	1    500  4550
+P 1800 4550
+F 0 "SW1" H 1800 4835 50  0000 C CNN
+F 1 "SW_3PDT_x3" H 1800 4744 50  0000 C CNN
+F 2 "Button_Switch_THT:Stompbox Switch" H 1800 4550 50  0001 C CNN
+F 3 "~" H 1800 4550 50  0001 C CNN
+	1    1800 4550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_3PDT_x3 SW1
 U 3 1 62E91F53
-P 11650 5250
-F 0 "SW1" H 11650 5535 50  0000 C CNN
-F 1 "SW_3PDT_x3" H 11650 5444 50  0000 C CNN
-F 2 "Button_Switch_THT:Stompbox Switch" H 11650 5250 50  0001 C CNN
-F 3 "~" H 11650 5250 50  0001 C CNN
-	3    11650 5250
+P 9800 5300
+F 0 "SW1" H 9800 5585 50  0000 C CNN
+F 1 "SW_3PDT_x3" H 9800 5494 50  0000 C CNN
+F 2 "Button_Switch_THT:Stompbox Switch" H 9800 5300 50  0001 C CNN
+F 3 "~" H 9800 5300 50  0001 C CNN
+	3    9800 5300
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -462,51 +462,51 @@ F 3 "~" H 6200 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12100 5250 11850 5250
+	10250 5300 10000 5300
 Wire Wire Line
-	12050 5450 11700 5450
-Connection ~ 12050 5450
+	10200 5500 9850 5500
+Connection ~ 10200 5500
 $Sheet
-S 3200 3600 950  550 
+S 4500 3600 950  550 
 U 62F7B2B4
 F0 "Clock Generator" 50
 F1 "file62F7B2B3.sch" 50
-F2 "CLOCK" I R 4150 3900 50 
+F2 "CLOCK" I R 5450 3900 50 
 $EndSheet
 $Sheet
-S 4600 4250 1000 650 
+S 5900 4250 1000 650 
 U 62FE6C11
 F0 "delay" 50
 F1 "file62FE6C10.sch" 50
-F2 "CLOCK" I L 4600 4350 50 
-F3 "IN" I L 4600 4550 50 
-F4 "OUT" I R 5600 4500 50 
+F2 "CLOCK" I L 5900 4350 50 
+F3 "IN" I L 5900 4550 50 
+F4 "OUT" I R 6900 4500 50 
 $EndSheet
 Wire Wire Line
-	4250 4550 4600 4550
+	5550 4550 5900 4550
 Wire Wire Line
-	5800 4500 5600 4500
+	7100 4500 6900 4500
 Wire Wire Line
-	2200 4550 2350 4550
+	3500 4550 3650 4550
 Wire Wire Line
-	900  4450 800  4450
+	2200 4450 2100 4450
 $Sheet
-S 2350 4350 950  450 
+S 3650 4350 950  450 
 U 6325A0B8
 F0 "Tone Filter" 50
 F1 "file6325A0B7.sch" 50
-F2 "IN" I L 2350 4550 50 
-F3 "HI_OUT" I R 3300 4550 50 
-F4 "LO_OUT" I R 3300 4700 50 
+F2 "IN" I L 3650 4550 50 
+F3 "HI_OUT" I R 4600 4550 50 
+F4 "LO_OUT" I R 4600 4700 50 
 $EndSheet
 Wire Wire Line
-	3550 4550 3300 4550
+	4850 4550 4600 4550
 Wire Wire Line
-	4150 3900 4400 3900
+	5450 3900 5700 3900
 Wire Wire Line
-	4400 3900 4400 4350
+	5700 3900 5700 4350
 Wire Wire Line
-	4400 4350 4600 4350
+	5700 4350 5900 4350
 $Comp
 L Reference_Voltage:TLE2426xLP U8
 U 1 1 6281967A
@@ -561,375 +561,175 @@ Wire Wire Line
 	8200 1400 8150 1400
 Wire Wire Line
 	8150 1400 8150 1300
-Text Notes 850  3450 0    50   ~ 0
-Limit maximum feedback amount to 80%
+Text Notes 2150 3450 0    50   ~ 0
+Limit maximum feedback amount to 50%
 $Comp
 L Amplifier_Operational:TL074 U?
 U 1 1 6282D08A
-P 7650 5200
-F 0 "U?" H 7650 4833 50  0000 C CNN
-F 1 "TL074" H 7650 4924 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 7600 5300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 7700 5400 50  0001 C CNN
-	1    7650 5200
+P 8950 5200
+F 0 "U?" H 8950 4833 50  0000 C CNN
+F 1 "TL074" H 8950 4924 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 8900 5300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9000 5400 50  0001 C CNN
+	1    8950 5200
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	7250 5400 7250 5300
+	8550 5400 8550 5300
 Wire Wire Line
-	7250 5300 7350 5300
+	8550 5300 8650 5300
 Wire Wire Line
-	7350 5100 7300 5100
-Connection ~ 7300 5100
+	8650 5100 8600 5100
+Connection ~ 8600 5100
 Wire Wire Line
-	7300 5100 7150 5100
+	8600 5100 8450 5100
 $Comp
 L Device:R R?
 U 1 1 6282D0A4
-P 7650 4750
-F 0 "R?" V 7443 4750 50  0000 C CNN
-F 1 "100K" V 7534 4750 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 7580 4750 50  0001 C CNN
-F 3 "~" H 7650 4750 50  0001 C CNN
-	1    7650 4750
+P 8950 4750
+F 0 "R?" V 8743 4750 50  0000 C CNN
+F 1 "500K" V 8834 4750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 8880 4750 50  0001 C CNN
+F 3 "~" H 8950 4750 50  0001 C CNN
+	1    8950 4750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8050 5200 7950 5200
+	9350 5200 9250 5200
 Wire Wire Line
-	7050 4500 7150 4500
+	8350 4500 8450 4500
 $Comp
 L power:GNDA #PWR?
 U 1 1 6282D0C0
-P 7250 5400
-F 0 "#PWR?" H 7250 5150 50  0001 C CNN
-F 1 "GNDA" H 7255 5227 50  0000 C CNN
-F 2 "" H 7250 5400 50  0001 C CNN
-F 3 "" H 7250 5400 50  0001 C CNN
-	1    7250 5400
+P 8550 5400
+F 0 "#PWR?" H 8550 5150 50  0001 C CNN
+F 1 "GNDA" H 8555 5227 50  0000 C CNN
+F 2 "" H 8550 5400 50  0001 C CNN
+F 3 "" H 8550 5400 50  0001 C CNN
+	1    8550 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 62843612
-P 6900 4500
-F 0 "R?" V 6693 4500 50  0000 C CNN
-F 1 "100K" V 6784 4500 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6830 4500 50  0001 C CNN
-F 3 "~" H 6900 4500 50  0001 C CNN
-	1    6900 4500
+P 8200 4500
+F 0 "R?" V 7993 4500 50  0000 C CNN
+F 1 "1M" V 8084 4500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 8130 4500 50  0001 C CNN
+F 3 "~" H 8200 4500 50  0001 C CNN
+	1    8200 4500
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8050 5200 8050 4750
-Connection ~ 8050 5200
-Connection ~ 800  4450
+	9350 5200 9350 4750
+Connection ~ 2100 4450
 Wire Wire Line
-	800  4450 700  4450
+	2100 4450 2000 4450
 $Sheet
-S 5800 4350 700  600 
+S 7100 4350 700  600 
 U 629A6A5C
 F0 "Reconstruction Filter" 50
 F1 "rfilter.sch" 50
-F2 "IN" I L 5800 4500 50 
-F3 "OUT" I R 6500 4500 50 
+F2 "IN" I L 7100 4500 50 
+F3 "OUT" I R 7800 4500 50 
 $EndSheet
 $Comp
 L Device:R R?
 U 1 1 62A6A9A3
-P 6900 5100
-F 0 "R?" V 6693 5100 50  0000 C CNN
-F 1 "100K" V 6784 5100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6830 5100 50  0001 C CNN
-F 3 "~" H 6900 5100 50  0001 C CNN
-	1    6900 5100
+P 8200 5100
+F 0 "R?" V 7993 5100 50  0000 C CNN
+F 1 "1M" V 8084 5100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 8130 5100 50  0001 C CNN
+F 3 "~" H 8200 5100 50  0001 C CNN
+	1    8200 5100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3400 5100 3400 4700
+	4700 5100 4700 4700
 Wire Wire Line
-	3400 4700 3300 4700
-$Comp
-L Amplifier_Operational:TL074 U?
-U 1 1 62A761F2
-P 10900 5150
-F 0 "U?" H 10900 4783 50  0000 C CNN
-F 1 "TL074" H 10900 4874 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 10850 5250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 10950 5350 50  0001 C CNN
-	1    10900 5150
-	1    0    0    1   
-$EndComp
+	4700 4700 4600 4700
 Wire Wire Line
-	10500 5350 10500 5250
+	8350 5100 8450 5100
+Connection ~ 8450 5100
 Wire Wire Line
-	10500 5250 10600 5250
-Wire Wire Line
-	10600 5050 10550 5050
-Wire Wire Line
-	10550 4600 10550 5050
-$Comp
-L Device:R R?
-U 1 1 62A76202
-P 10900 4600
-F 0 "R?" V 10693 4600 50  0000 C CNN
-F 1 "100k" V 10784 4600 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 10830 4600 50  0001 C CNN
-F 3 "~" H 10900 4600 50  0001 C CNN
-	1    10900 4600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10750 4600 10550 4600
-Wire Wire Line
-	11050 4600 11300 4600
-Wire Wire Line
-	11300 5150 11200 5150
-$Comp
-L Device:R R?
-U 1 1 62A76213
-P 8500 5350
-F 0 "R?" V 8293 5350 50  0000 C CNN
-F 1 "1M" V 8384 5350 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 8430 5350 50  0001 C CNN
-F 3 "~" H 8500 5350 50  0001 C CNN
-	1    8500 5350
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GNDA #PWR?
-U 1 1 62A7621D
-P 10500 5350
-F 0 "#PWR?" H 10500 5100 50  0001 C CNN
-F 1 "GNDA" H 10505 5177 50  0000 C CNN
-F 2 "" H 10500 5350 50  0001 C CNN
-F 3 "" H 10500 5350 50  0001 C CNN
-	1    10500 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11300 5150 11300 4600
-Wire Wire Line
-	11450 5150 11300 5150
-Connection ~ 11300 5150
-Wire Wire Line
-	7050 5100 7150 5100
-Connection ~ 7150 5100
-Wire Wire Line
-	6500 4500 6750 4500
-Text Notes 8800 5100 0    50   ~ 0
-wet/dry mix\nmin: dry=1 wet=0\nmax: dry=0.5 wet=0.5
-Text Notes 2250 6650 0    50   ~ 0
+	7800 4500 8050 4500
+Text Notes 1900 6850 0    50   ~ 0
 TODO: fix op-amp count and pairings
-$Comp
-L Amplifier_Operational:TL074 U?
-U 1 1 62B4A7F4
-P 9300 4600
-F 0 "U?" H 9300 4233 50  0000 C CNN
-F 1 "TL074" H 9300 4324 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 9250 4700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9350 4800 50  0001 C CNN
-	1    9300 4600
-	1    0    0    1   
-$EndComp
 Wire Wire Line
-	9000 4500 8950 4500
-$Comp
-L power:GNDA #PWR?
-U 1 1 62B4A803
-P 8750 4450
-F 0 "#PWR?" H 8750 4200 50  0001 C CNN
-F 1 "GNDA" H 8755 4277 50  0000 C CNN
-F 2 "" H 8750 4450 50  0001 C CNN
-F 3 "" H 8750 4450 50  0001 C CNN
-	1    8750 4450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9600 4600 9700 4600
-Wire Wire Line
-	8950 4500 8950 4300
-Wire Wire Line
-	8950 4300 9700 4300
-Wire Wire Line
-	9700 4300 9700 4600
-Connection ~ 9700 4600
-Wire Wire Line
-	9700 4600 9800 4600
-$Comp
-L Device:R_POT_Dual_Separate R_WET_DRY?
-U 1 1 62B7361C
-P 8750 4700
-F 0 "R_WET_DRY?" H 8680 4746 50  0000 R CNN
-F 1 "1M" H 8680 4655 50  0000 R CNN
-F 2 "" H 8750 4700 50  0001 C CNN
-F 3 "~" H 8750 4700 50  0001 C CNN
-	1    8750 4700
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	9000 4700 8900 4700
-$Comp
-L Amplifier_Operational:TL074 U?
-U 1 1 62B8B148
-P 9300 5550
-F 0 "U?" H 9300 5183 50  0000 C CNN
-F 1 "TL074" H 9300 5274 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 9250 5650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9350 5750 50  0001 C CNN
-	1    9300 5550
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	9000 5450 8950 5450
-Wire Wire Line
-	9600 5550 9700 5550
-Wire Wire Line
-	8950 5450 8950 5250
-Wire Wire Line
-	8950 5250 9700 5250
-Wire Wire Line
-	9700 5250 9700 5550
-Connection ~ 9700 5550
-Wire Wire Line
-	9700 5550 9850 5550
-$Comp
-L Device:R_POT_Dual_Separate R_WET_DRY?
-U 1 1 62B8B163
-P 8750 5650
-F 0 "R_WET_DRY?" H 8680 5696 50  0000 R CNN
-F 1 "1M" H 8680 5605 50  0000 R CNN
-F 2 "" H 8750 5650 50  0001 C CNN
-F 3 "~" H 8750 5650 50  0001 C CNN
-	1    8750 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9000 5650 8900 5650
-$Comp
-L power:GNDA #PWR?
-U 1 1 62BC944D
-P 8000 5400
-F 0 "#PWR?" H 8000 5150 50  0001 C CNN
-F 1 "GNDA" H 8005 5227 50  0000 C CNN
-F 2 "" H 8000 5400 50  0001 C CNN
-F 3 "" H 8000 5400 50  0001 C CNN
-	1    8000 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8650 5350 8750 5350
-Wire Wire Line
-	8750 5350 8750 5500
-Wire Wire Line
-	8750 5800 8750 5900
-Wire Wire Line
-	8750 5900 800  5900
-Wire Wire Line
-	800  4450 800  5900
-$Comp
-L Device:R R?
-U 1 1 62BEF338
-P 10000 4600
-F 0 "R?" V 9793 4600 50  0000 C CNN
-F 1 "200k" V 9884 4600 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 9930 4600 50  0001 C CNN
-F 3 "~" H 10000 4600 50  0001 C CNN
-	1    10000 4600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 62BEF7AF
-P 10000 5550
-F 0 "R?" V 9793 5550 50  0000 C CNN
-F 1 "100k" V 9884 5550 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 9930 5550 50  0001 C CNN
-F 3 "~" H 10000 5550 50  0001 C CNN
-	1    10000 5550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10150 5550 10250 5550
-Wire Wire Line
-	10250 5550 10250 5050
-Wire Wire Line
-	10250 4600 10150 4600
-Wire Wire Line
-	10550 5050 10250 5050
-Connection ~ 10550 5050
-Connection ~ 10250 5050
-Wire Wire Line
-	10250 5050 10250 4600
+	2100 4450 2100 5400
 $Comp
 L Device:R R?
 U 1 1 62C14D0E
-P 800 3600
-F 0 "R?" V 593 3600 50  0000 C CNN
-F 1 "250K" V 684 3600 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 730 3600 50  0001 C CNN
-F 3 "~" H 800 3600 50  0001 C CNN
-	1    800  3600
+P 2100 3600
+F 0 "R?" V 1893 3600 50  0000 C CNN
+F 1 "1M" V 1984 3600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 2030 3600 50  0001 C CNN
+F 3 "~" H 2100 3600 50  0001 C CNN
+	1    2100 3600
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	800  3750 800  3800
+	2100 3750 2100 3800
 Wire Wire Line
-	800  3450 800  3350
+	2100 3450 2100 3350
 Wire Wire Line
-	1050 3850 1050 3800
+	2350 3850 2350 3800
 Wire Wire Line
-	1050 3800 800  3800
-Connection ~ 800  3800
+	2350 3800 2100 3800
+Connection ~ 2100 3800
 Wire Wire Line
-	800  3800 800  4000
+	2100 3800 2100 4000
 Wire Wire Line
-	700  6300 11300 6300
+	9450 5400 9600 5400
 Wire Wire Line
-	11300 6300 11300 5350
+	2000 4650 2000 6300
 Wire Wire Line
-	11300 5350 11450 5350
+	1800 6400 9850 6400
 Wire Wire Line
-	700  4650 700  6300
+	1800 4750 1800 6400
 Wire Wire Line
-	500  6400 11700 6400
+	8450 4500 8450 5100
 Wire Wire Line
-	500  4750 500  6400
+	8800 4750 8600 4750
 Wire Wire Line
-	11700 5450 11700 6400
+	8600 4750 8600 5100
 Wire Wire Line
-	7150 4500 7150 5100
+	9100 4750 9350 4750
 Wire Wire Line
-	7500 4750 7300 4750
+	4700 5100 8050 5100
 Wire Wire Line
-	7300 4750 7300 5100
+	2100 3350 9450 3350
+Text Notes 6200 4000 0    50   ~ 0
+filter+delay stage are all non-inverting,\nso low + high are in phase\n\ninput sum is inverting, then tone recombination is\ninverting, so wet + dry are in phase
+$Comp
+L Device:R R?
+U 1 1 62A76213
+P 8200 5400
+F 0 "R?" V 7993 5400 50  0000 C CNN
+F 1 "1M" V 8084 5400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 8130 5400 50  0001 C CNN
+F 3 "~" H 8200 5400 50  0001 C CNN
+	1    8200 5400
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	7800 4750 8050 4750
+	9350 5200 9450 5200
+Connection ~ 9350 5200
 Wire Wire Line
-	3400 5100 6750 5100
+	9850 5500 9850 6400
 Wire Wire Line
-	8750 4550 8750 4450
+	9450 5400 9450 6300
 Wire Wire Line
-	8750 4850 8750 5200
+	2000 6300 9450 6300
 Wire Wire Line
-	8000 5400 8000 5350
+	9450 5200 9450 3350
+Connection ~ 9450 5200
 Wire Wire Line
-	8000 5350 8350 5350
-Text Notes 9000 6000 0    50   ~ 0
-TODO: hard-code to 50/50 saves 2 op amps and a dual pot
-Text Notes 2400 5650 0    50   ~ 0
-TODO: probably too complex, but if tone filter became\nBP with only LP side tunable, and allowed high freqs\ncut by filters around the effect, would have a more consistent\ntone
-Text Notes 4100 6550 0    50   ~ 0
-TODO: flange sounds better mixed after tone filter
+	9450 5200 9600 5200
 Wire Wire Line
-	8050 5200 8750 5200
+	8450 5100 8450 5400
 Wire Wire Line
-	9800 4600 9800 3350
+	8450 5400 8350 5400
 Wire Wire Line
-	800  3350 9800 3350
-Connection ~ 9800 4600
-Wire Wire Line
-	9800 4600 9850 4600
-Text Notes 4900 4000 0    50   ~ 0
-filter+delay stage are all non-inverting,\nso low + high are in phase\n\ninput sum is inverting, then tone recombination is\ninverting, so wet + dry are in phase\n\nhowever end-to-end signal is inverted (by final sum/output buffer)
+	8050 5400 2100 5400
 $EndSCHEMATC
