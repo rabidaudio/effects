@@ -74,7 +74,7 @@ F 3 "~" H 4850 3900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Notes 2800 5350 0    50   ~ 0
-5th order LPF (cascade 2nd + 3rd sallen keys)\nButterworth, Cutoff = 4477Hz\nFrom textbook, Q1=.618 Q2=1.620\nhttp://sim.okawa-denshi.jp/en/Sallen3tool.php
+5th order LPF (cascade 2nd sk + 1st passtive + 2nd sk)\nButterworth, Cutoff = 4477Hz\nFrom textbook, Q1=.618 Q2=1.620\nhttp://sim.okawa-denshi.jp/en/Sallen3tool.php\nhttp://sim.okawa-denshi.jp/en/OPstool.php
 $Comp
 L Device:C C6
 U 1 1 62838D1A
