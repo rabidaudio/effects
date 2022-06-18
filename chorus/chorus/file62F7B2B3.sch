@@ -174,34 +174,8 @@ F 3 "" H 2750 3950 50  0001 C CNN
 	1    2750 3950
 	1    0    0    -1  
 $EndComp
-Text Notes 8050 4300 0    50   ~ 0
+Text Notes 8000 4800 0    50   ~ 0
 buffered output clocks between 0.5V and -4V (relative to AGND)\nClock input must be at least 1V to VDD-1V (relative to 5V GND)\nAt VDD=5V this is sufficent and comparator isn’t required
-$Comp
-L Amplifier_Operational:LM13700 U?
-U 1 1 62F9D2DF
-P 5200 3650
-AR Path="/62F9D2DF" Ref="U?"  Part="1" 
-AR Path="/62F7B2B4/62F9D2DF" Ref="U1"  Part="1" 
-F 0 "U1" H 5200 4017 50  0000 C CNN
-F 1 "LM13700" H 5200 3926 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 4900 3675 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 4900 3675 50  0001 C CNN
-	1    5200 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:LM13700 U?
-U 3 1 62F9D2E5
-P 6650 3750
-AR Path="/62F9D2E5" Ref="U?"  Part="3" 
-AR Path="/62F7B2B4/62F9D2E5" Ref="U1"  Part="3" 
-F 0 "U1" H 6650 4117 50  0000 C CNN
-F 1 "LM13700" H 6650 4026 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 6350 3775 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 6350 3775 50  0001 C CNN
-	3    6650 3750
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GNDA #PWR?
 U 1 1 62F9D2EB
@@ -289,46 +263,33 @@ $EndComp
 Wire Wire Line
 	7150 4400 7150 4500
 $Comp
-L Amplifier_Operational:LM13700 U?
-U 4 1 62F9D314
-P 7600 3750
-AR Path="/62F9D314" Ref="U?"  Part="4" 
-AR Path="/62F7B2B4/62F9D314" Ref="U1"  Part="4" 
-F 0 "U1" H 7500 4098 50  0000 C CNN
-F 1 "LM13700" H 7500 4007 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 7300 3775 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 7300 3775 50  0001 C CNN
-	4    7600 3750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R?
 U 1 1 62F9D31A
-P 7750 4150
+P 7750 4650
 AR Path="/62F9D31A" Ref="R?"  Part="1" 
 AR Path="/62F7B2B4/62F9D31A" Ref="R12"  Part="1" 
-F 0 "R12" H 7820 4196 50  0000 L CNN
-F 1 "1K" H 7820 4105 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 7680 4150 50  0001 C CNN
-F 3 "~" H 7750 4150 50  0001 C CNN
-	1    7750 4150
+F 0 "R12" H 7820 4696 50  0000 L CNN
+F 1 "1K" H 7820 4605 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 7680 4650 50  0001 C CNN
+F 3 "~" H 7750 4650 50  0001 C CNN
+	1    7750 4650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 62F9D320
-P 7750 4500
+P 7750 5000
 AR Path="/62F9D320" Ref="#PWR?"  Part="1" 
 AR Path="/62F7B2B4/62F9D320" Ref="#PWR0131"  Part="1" 
-F 0 "#PWR0131" H 7750 4250 50  0001 C CNN
-F 1 "GND" H 7755 4327 50  0000 C CNN
-F 2 "" H 7750 4500 50  0001 C CNN
-F 3 "" H 7750 4500 50  0001 C CNN
-	1    7750 4500
+F 0 "#PWR0131" H 7750 4750 50  0001 C CNN
+F 1 "GND" H 7755 4827 50  0000 C CNN
+F 2 "" H 7750 5000 50  0001 C CNN
+F 3 "" H 7750 5000 50  0001 C CNN
+	1    7750 5000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7750 4500 7750 4300
+	7750 5000 7750 4800
 Wire Wire Line
 	7750 4000 7750 3850
 $Comp
@@ -385,20 +346,17 @@ Wire Wire Line
 Wire Wire Line
 	5600 3750 5500 3750
 Text Notes 5950 3100 0    50   ~ 0
-square wave VCO\n1.8V-5V CV\n~250KHz-20KHz output
+square wave VCO\n1.8V-5V CV\n~~250KHz-20KHz output
 Wire Wire Line
 	2000 3500 2250 3500
 Wire Wire Line
 	2250 3800 2000 3800
 Wire Wire Line
 	2550 3700 2000 3700
-Text HLabel 8250 3850 2    50   Input ~ 0
+Text HLabel 8100 4400 2    50   Input ~ 0
 CLOCK
 Wire Wire Line
 	7700 3850 7750 3850
-Connection ~ 7750 3850
-Wire Wire Line
-	7750 3850 8250 3850
 $Comp
 L Device:LED D?
 U 1 1 631F8C21
@@ -576,4 +534,65 @@ LPF to filter PWM to smooth triangle wave\nR needs to be aggressively low to avo
 Wire Wire Line
 	2100 2850 3950 2850
 Connection ~ 3950 2850
+NoConn ~ 6350 3750
+NoConn ~ 4900 3650
+$Comp
+L Amplifier_Operational:LM13700 U?
+U 3 1 62F9D2E5
+P 5200 3650
+AR Path="/62F9D2E5" Ref="U?"  Part="3" 
+AR Path="/62F7B2B4/62F9D2E5" Ref="U1"  Part="3" 
+F 0 "U1" H 5200 4017 50  0000 C CNN
+F 1 "LM13700" H 5200 3926 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 4900 3675 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 4900 3675 50  0001 C CNN
+	3    5200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM13700 U?
+U 1 1 62F9D2DF
+P 6650 3750
+AR Path="/62F9D2DF" Ref="U?"  Part="1" 
+AR Path="/62F7B2B4/62F9D2DF" Ref="U1"  Part="1" 
+F 0 "U1" H 6650 4117 50  0000 C CNN
+F 1 "LM13700" H 6650 4026 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 6350 3775 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 6350 3775 50  0001 C CNN
+	1    6650 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM13700 U?
+U 4 1 62F9D314
+P 7600 3750
+AR Path="/62F9D314" Ref="U?"  Part="4" 
+AR Path="/62F7B2B4/62F9D314" Ref="U1"  Part="4" 
+F 0 "U1" H 7500 4098 50  0000 C CNN
+F 1 "LM13700" H 7500 4007 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 7300 3775 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm13700.pdf" H 7300 3775 50  0001 C CNN
+	4    7600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62AF3015
+P 7750 4150
+AR Path="/62AF3015" Ref="R?"  Part="1" 
+AR Path="/62F7B2B4/62AF3015" Ref="R?"  Part="1" 
+F 0 "R?" H 7820 4196 50  0000 L CNN
+F 1 "330" H 7820 4105 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 7680 4150 50  0001 C CNN
+F 3 "~" H 7750 4150 50  0001 C CNN
+	1    7750 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 4500 7750 4400
+Wire Wire Line
+	8100 4400 7750 4400
+Connection ~ 7750 4400
+Wire Wire Line
+	7750 4400 7750 4300
 $EndSCHEMATC

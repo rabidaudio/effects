@@ -1,12 +1,14 @@
-#define LFO_OUTPUT_PIN 12
-#define RATE_IN A2
-#define DEPTH_IN A3
+#define LFO_OUTPUT_PIN 0 // device pin 5
+#define RATE_IN A2 // device pin 3
+#define DEPTH_IN A3 // device pin 2
 
 uint8_t lfo_rate = 128;
 uint8_t lfo_depth = 255;
 
 uint32_t start = 0;
 bool up = true;
+
+const uint16_t minimum = 92; // 1.8/5*256
 
 void setup() {
   pinMode(LFO_OUTPUT_PIN, OUTPUT);
@@ -34,6 +36,7 @@ void loop() {
 
   uint32_t v = up ? t : (target - t + start);
   uint8_t rate = (uint8_t) map(v, start, target, 0, lfo_depth);
+  rate = map(rate, 0, 255, 255, minimum);
 
   analogWrite(LFO_OUTPUT_PIN, rate);
 }

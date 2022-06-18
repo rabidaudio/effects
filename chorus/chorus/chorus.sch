@@ -286,8 +286,8 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 10900 1750 50  0001 C CNN
 	5    10850 1550
 	1    0    0    -1  
 $EndComp
-Text Notes 1950 7350 0    50   ~ 0
-TODO: do we need to scale up and back down the signal\nto increase the dynamic range?
+Text Notes 1900 7700 0    50   ~ 0
+TODO: do we need to scale up and back down the signal\nto increase the dynamic range?\nTypical guitar signal is +/- 0.5V. Line level can be +/- 2V.\nOpamps should be able to handle +/- 3V without clipping.\nIf the delay is more efficient with higher signals, can scale up\nand back down on the summing stages
 Text Notes 1950 7050 0    50   ~ 0
 TODO: pots oriented correctly?
 $Comp
@@ -732,8 +732,8 @@ Wire Wire Line
 	8450 5400 8350 5400
 Wire Wire Line
 	8050 5400 2100 5400
-Text Notes 4400 6900 0    50   ~ 0
-todo: tone filter has a smaller filter\nwhich with the aggressive filters\ncreates a notch at ~2-3KHz (depending on tone pos)\nis this a problem? Making a 8th order filter to fix it doesn’t\nseem worthwhile…
 Text Notes 7700 5700 0    50   ~ 0
 sum half dry signal plus half wet signal
+Text Notes 9600 4750 0    50   ~ 0
+TODO: use other LM13700 buffer on output?
 $EndSCHEMATC
