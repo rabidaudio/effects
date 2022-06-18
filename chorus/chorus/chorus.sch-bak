@@ -496,8 +496,8 @@ U 6325A0B8
 F0 "Tone Filter" 50
 F1 "file6325A0B7.sch" 50
 F2 "IN" I L 3650 4550 50 
-F3 "HI_OUT" I R 4600 4550 50 
-F4 "LO_OUT" I R 4600 4700 50 
+F3 "WET_OUT" I R 4600 4550 50 
+F4 "DRY_OUT" I R 4600 4700 50 
 $EndSheet
 Wire Wire Line
 	4850 4550 4600 4550
@@ -732,4 +732,6 @@ Wire Wire Line
 	8450 5400 8350 5400
 Wire Wire Line
 	8050 5400 2100 5400
+Text Notes 4400 6900 0    50   ~ 0
+todo: tone filter has a smaller filter\nwhich with the aggressive filters\ncreates a notch at ~2-3KHz (depending on tone pos)\nis this a problem? Making a 8th order filter to fix it doesn’t\nseem worthwhile…
 $EndSCHEMATC

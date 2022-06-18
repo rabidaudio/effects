@@ -732,4 +732,8 @@ Wire Wire Line
 	8450 5400 8350 5400
 Wire Wire Line
 	8050 5400 2100 5400
+Text Notes 4400 6900 0    50   ~ 0
+todo: tone filter has a smaller filter\nwhich with the aggressive filters\ncreates a notch at ~2-3KHz (depending on tone pos)\nis this a problem? Making a 8th order filter to fix it doesn’t\nseem worthwhile…
+Text Notes 7700 5700 0    50   ~ 0
+sum half dry signal plus half wet signal
 $EndSCHEMATC

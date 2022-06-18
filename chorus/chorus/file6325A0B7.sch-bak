@@ -178,122 +178,121 @@ Wire Wire Line
 	4550 3600 4650 3600
 Wire Wire Line
 	6100 3100 6100 3700
-Connection ~ 6100 3700
 Text HLabel 4000 3600 0    50   Input ~ 0
 IN
 Wire Wire Line
 	4000 3600 4100 3600
-Text HLabel 8750 3800 2    50   Input ~ 0
+Text HLabel 9000 3800 2    50   Input ~ 0
 WET_OUT
-Text HLabel 9950 4450 2    50   Input ~ 0
+Text HLabel 10200 4450 2    50   Input ~ 0
 DRY_OUT
 $Comp
 L Amplifier_Operational:TL074 U?
 U 2 1 62A49A72
-P 9500 4450
+P 9750 4450
 AR Path="/62A49A72" Ref="U?"  Part="2" 
 AR Path="/6325A0B8/62A49A72" Ref="U?"  Part="2" 
-F 0 "U?" H 9500 4817 50  0000 C CNN
-F 1 "TL074" H 9500 4726 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 9450 4550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9550 4650 50  0001 C CNN
-	2    9500 4450
+F 0 "U?" H 9750 4817 50  0000 C CNN
+F 1 "TL074" H 9750 4726 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 9700 4550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 9800 4650 50  0001 C CNN
+	2    9750 4450
 	1    0    0    1   
 $EndComp
-Text Notes 9300 5050 0    50   ~ 0
+Text Notes 9550 5050 0    50   ~ 0
 Diff amp, subtracting BP signal\nfrom original signal to get notch signal
 $Comp
 L Device:R R?
 U 1 1 62A50D45
-P 8850 4550
+P 9100 4550
 AR Path="/62A50D45" Ref="R?"  Part="1" 
 AR Path="/6325A0B8/62A50D45" Ref="R?"  Part="1" 
-F 0 "R?" V 9050 4550 50  0000 C CNN
-F 1 "100K" V 8950 4550 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 8780 4550 50  0001 C CNN
-F 3 "~" H 8850 4550 50  0001 C CNN
-	1    8850 4550
+F 0 "R?" V 9300 4550 50  0000 C CNN
+F 1 "100K" V 9200 4550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 9030 4550 50  0001 C CNN
+F 3 "~" H 9100 4550 50  0001 C CNN
+	1    9100 4550
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 62A52C2B
-P 8850 4350
+P 9100 4350
 AR Path="/62A52C2B" Ref="R?"  Part="1" 
 AR Path="/6325A0B8/62A52C2B" Ref="R?"  Part="1" 
-F 0 "R?" V 8643 4350 50  0000 C CNN
-F 1 "100K" V 8734 4350 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 8780 4350 50  0001 C CNN
-F 3 "~" H 8850 4350 50  0001 C CNN
-	1    8850 4350
+F 0 "R?" V 8893 4350 50  0000 C CNN
+F 1 "100K" V 8984 4350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 9030 4350 50  0001 C CNN
+F 3 "~" H 9100 4350 50  0001 C CNN
+	1    9100 4350
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 62A53369
-P 9550 4100
+P 9800 4100
 AR Path="/62A53369" Ref="R?"  Part="1" 
 AR Path="/6325A0B8/62A53369" Ref="R?"  Part="1" 
-F 0 "R?" V 9343 4100 50  0000 C CNN
-F 1 "100K" V 9434 4100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 9480 4100 50  0001 C CNN
-F 3 "~" H 9550 4100 50  0001 C CNN
-	1    9550 4100
+F 0 "R?" V 9593 4100 50  0000 C CNN
+F 1 "100K" V 9684 4100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 9730 4100 50  0001 C CNN
+F 3 "~" H 9800 4100 50  0001 C CNN
+	1    9800 4100
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 62A538EE
-P 9100 4750
+P 9350 4750
 AR Path="/62A538EE" Ref="R?"  Part="1" 
 AR Path="/6325A0B8/62A538EE" Ref="R?"  Part="1" 
-F 0 "R?" V 8893 4750 50  0000 C CNN
-F 1 "100K" V 8984 4750 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 9030 4750 50  0001 C CNN
-F 3 "~" H 9100 4750 50  0001 C CNN
-	1    9100 4750
+F 0 "R?" V 9143 4750 50  0000 C CNN
+F 1 "100K" V 9234 4750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 9280 4750 50  0001 C CNN
+F 3 "~" H 9350 4750 50  0001 C CNN
+	1    9350 4750
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9000 4550 9100 4550
+	9250 4550 9350 4550
 Wire Wire Line
-	9100 4600 9100 4550
-Connection ~ 9100 4550
+	9350 4600 9350 4550
+Connection ~ 9350 4550
 Wire Wire Line
-	9100 4550 9200 4550
+	9350 4550 9450 4550
 Wire Wire Line
-	9000 4350 9100 4350
+	9250 4350 9350 4350
 Wire Wire Line
-	9400 4100 9100 4100
+	9650 4100 9350 4100
 Wire Wire Line
-	9100 4100 9100 4350
-Connection ~ 9100 4350
+	9350 4100 9350 4350
+Connection ~ 9350 4350
 Wire Wire Line
-	9100 4350 9200 4350
+	9350 4350 9450 4350
 Wire Wire Line
-	9800 4450 9850 4450
+	10050 4450 10100 4450
 Wire Wire Line
-	9850 4450 9850 4100
+	10100 4450 10100 4100
 Wire Wire Line
-	9850 4100 9700 4100
+	10100 4100 9950 4100
 Wire Wire Line
-	9950 4450 9850 4450
-Connection ~ 9850 4450
+	10200 4450 10100 4450
+Connection ~ 10100 4450
 $Comp
 L power:GNDA #PWR?
 U 1 1 62A57D82
-P 9100 5000
+P 9350 5000
 AR Path="/62A57D82" Ref="#PWR?"  Part="1" 
 AR Path="/6325A0B8/62A57D82" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9100 4750 50  0001 C CNN
-F 1 "GNDA" H 9105 4827 50  0000 C CNN
-F 2 "" H 9100 5000 50  0001 C CNN
-F 3 "" H 9100 5000 50  0001 C CNN
-	1    9100 5000
+F 0 "#PWR?" H 9350 4750 50  0001 C CNN
+F 1 "GNDA" H 9355 4827 50  0000 C CNN
+F 2 "" H 9350 5000 50  0001 C CNN
+F 3 "" H 9350 5000 50  0001 C CNN
+	1    9350 5000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9100 5000 9100 4900
+	9350 5000 9350 4900
 Wire Wire Line
 	6200 4900 4100 4900
 Wire Wire Line
@@ -306,127 +305,150 @@ NOTE: should be log taper
 $Comp
 L Amplifier_Operational:TL074 U?
 U 2 1 62B5AE8E
-P 8050 3800
+P 8300 3800
 AR Path="/62B5AE8E" Ref="U?"  Part="2" 
 AR Path="/6325A0B8/62B5AE8E" Ref="U?"  Part="2" 
-F 0 "U?" H 8050 4167 50  0000 C CNN
-F 1 "TL074" H 8050 4076 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 8000 3900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8100 4000 50  0001 C CNN
-	2    8050 3800
+F 0 "U?" H 8300 4167 50  0000 C CNN
+F 1 "TL074" H 8300 4076 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 8250 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8350 4000 50  0001 C CNN
+	2    8300 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 62B5F142
-P 6600 3700
+P 6350 3700
 AR Path="/62B5F142" Ref="R?"  Part="1" 
 AR Path="/6325A0B8/62B5F142" Ref="R?"  Part="1" 
-F 0 "R?" V 6393 3700 50  0000 C CNN
-F 1 "6.8k" V 6484 3700 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6530 3700 50  0001 C CNN
-F 3 "~" H 6600 3700 50  0001 C CNN
-	1    6600 3700
+F 0 "R?" V 6143 3700 50  0000 C CNN
+F 1 "1K" V 6234 3700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6280 3700 50  0001 C CNN
+F 3 "~" H 6350 3700 50  0001 C CNN
+	1    6350 3700
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 62B60231
-P 7100 3700
+P 7350 3700
 AR Path="/62B60231" Ref="R?"  Part="1" 
 AR Path="/6325A0B8/62B60231" Ref="R?"  Part="1" 
-F 0 "R?" V 6893 3700 50  0000 C CNN
-F 1 "3.9k" V 6984 3700 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 7030 3700 50  0001 C CNN
-F 3 "~" H 7100 3700 50  0001 C CNN
-	1    7100 3700
+F 0 "R?" V 7143 3700 50  0000 C CNN
+F 1 "5.6k" V 7234 3700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 7280 3700 50  0001 C CNN
+F 3 "~" H 7350 3700 50  0001 C CNN
+	1    7350 3700
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 62B60B28
-P 7100 3300
+P 7350 3300
 AR Path="/62B60B28" Ref="C?"  Part="1" 
 AR Path="/6325A0B8/62B60B28" Ref="C?"  Part="1" 
-F 0 "C?" V 6848 3300 50  0000 C CNN
-F 1 "10n" V 6939 3300 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 7138 3150 50  0001 C CNN
-F 3 "~" H 7100 3300 50  0001 C CNN
-	1    7100 3300
+F 0 "C?" V 7098 3300 50  0000 C CNN
+F 1 "10n" V 7189 3300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 7388 3150 50  0001 C CNN
+F 3 "~" H 7350 3300 50  0001 C CNN
+	1    7350 3300
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 62B61219
-P 7400 4000
+P 7650 4000
 AR Path="/62B61219" Ref="C?"  Part="1" 
 AR Path="/6325A0B8/62B61219" Ref="C?"  Part="1" 
-F 0 "C?" V 7148 4000 50  0000 C CNN
-F 1 "4.7n" V 7239 4000 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 7438 3850 50  0001 C CNN
-F 3 "~" H 7400 4000 50  0001 C CNN
-	1    7400 4000
+F 0 "C?" V 7398 4000 50  0000 C CNN
+F 1 "4.7n" V 7489 4000 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 7688 3850 50  0001 C CNN
+F 3 "~" H 7650 4000 50  0001 C CNN
+	1    7650 4000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7750 3700 7400 3700
+	8000 3700 7650 3700
 Wire Wire Line
-	7750 3900 7750 4100
+	8000 3900 8000 4100
 Wire Wire Line
-	7750 4100 8450 4100
+	8000 4100 8700 4100
 Wire Wire Line
-	8450 4100 8450 3800
+	8700 4100 8700 3800
 Wire Wire Line
-	8450 3800 8350 3800
+	8700 3800 8600 3800
 $Comp
 L power:GNDA #PWR?
 U 1 1 62B65B34
-P 7400 4300
+P 7650 4300
 AR Path="/62B65B34" Ref="#PWR?"  Part="1" 
 AR Path="/6325A0B8/62B65B34" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7400 4050 50  0001 C CNN
-F 1 "GNDA" H 7405 4127 50  0000 C CNN
-F 2 "" H 7400 4300 50  0001 C CNN
-F 3 "" H 7400 4300 50  0001 C CNN
-	1    7400 4300
+F 0 "#PWR?" H 7650 4050 50  0001 C CNN
+F 1 "GNDA" H 7655 4127 50  0000 C CNN
+F 2 "" H 7650 4300 50  0001 C CNN
+F 3 "" H 7650 4300 50  0001 C CNN
+	1    7650 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7400 4300 7400 4150
+	7650 4300 7650 4150
 Wire Wire Line
-	7400 3850 7400 3700
-Connection ~ 7400 3700
+	7650 3850 7650 3700
+Connection ~ 7650 3700
 Wire Wire Line
-	7400 3700 7250 3700
+	7650 3700 7500 3700
 Wire Wire Line
-	6950 3700 6850 3700
+	7200 3700 7100 3700
 Wire Wire Line
-	6950 3300 6850 3300
+	7200 3300 7100 3300
 Wire Wire Line
-	6850 3300 6850 3700
-Connection ~ 6850 3700
+	7100 3300 7100 3700
 Wire Wire Line
-	6850 3700 6750 3700
+	7500 3300 8700 3300
 Wire Wire Line
-	7250 3300 8450 3300
+	8700 3300 8700 3800
+Connection ~ 8700 3800
+Text Notes 7600 3250 0    50   ~ 0
+2nd order LPF\nR1=9.1K:  Q=.707 Cutoff = 3162Hz\ndetermined imperically, tune R1 to taste\ntradeoff is notch in the 2.5KHz range for effect bw
 Wire Wire Line
-	8450 3300 8450 3800
-Connection ~ 8450 3800
+	8950 4350 8850 4350
 Wire Wire Line
-	6100 3700 6450 3700
-Text Notes 7750 3250 0    50   ~ 0
-2nd order LPF, Q=.707\nCutoff = 4477Hz
+	8850 4350 8850 3800
 Wire Wire Line
-	8700 4350 8600 4350
+	8700 3800 8850 3800
 Wire Wire Line
-	8600 4350 8600 3800
-Wire Wire Line
-	8450 3800 8600 3800
-Wire Wire Line
-	8600 3800 8750 3800
-Connection ~ 8600 3800
-Wire Wire Line
-	8700 4550 6200 4550
+	8850 3800 9000 3800
+Connection ~ 8850 3800
 Wire Wire Line
 	6200 4550 6200 4900
+$Comp
+L Device:R_POT_TRIM RV?
+U 1 1 62AE72D8
+P 6750 3700
+F 0 "RV?" V 6635 3700 50  0000 C CNN
+F 1 "R_TRIM_10K" V 6544 3700 50  0000 C CNN
+F 2 "" H 6750 3700 50  0001 C CNN
+F 3 "~" H 6750 3700 50  0001 C CNN
+	1    6750 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6900 3700 6950 3700
+Connection ~ 7100 3700
+Wire Wire Line
+	6750 3550 6750 3500
+Wire Wire Line
+	6750 3500 6950 3500
+Wire Wire Line
+	6950 3500 6950 3700
+Connection ~ 6950 3700
+Wire Wire Line
+	6950 3700 7100 3700
+Wire Wire Line
+	6600 3700 6500 3700
+Wire Wire Line
+	6200 3700 6100 3700
+Connection ~ 6100 3700
+Wire Wire Line
+	6200 4550 8950 4550
 $EndSCHEMATC
