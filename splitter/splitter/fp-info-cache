@@ -1,4 +1,4 @@
-18635386793029758
+18637044917189758
 AP7313-33SAG-7
 SOT96P240X110-3N
 SOT23_2
@@ -1945,6 +1945,13 @@ switch DPDT
 0
 10
 6
+Button_Switch_THT
+SW_EG2301_DP3T
+CuK sub miniature slide switch, JS series, DPDT, right angle, http://www.ckswitches.com/media/1422/js.pdf
+switch DPDT
+0
+12
+8
 Button_Switch_THT
 SW_Lever_1P2T_NKK_GW12LxH
 Switch, single pole double throw, right angle, http://www.nkkswitches.com/pdf/GW.pdf
