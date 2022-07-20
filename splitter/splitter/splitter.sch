@@ -29,7 +29,7 @@ L Device:C C1
 U 1 1 62D4C254
 P 2700 3600
 F 0 "C1" V 2448 3600 50  0000 C CNN
-F 1 "220n" V 2539 3600 50  0000 C CNN
+F 1 "22n" V 2539 3600 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 2738 3450 50  0001 C CNN
 F 3 "~" H 2700 3600 50  0001 C CNN
 	1    2700 3600
@@ -40,14 +40,14 @@ L Device:C C2
 U 1 1 62D4CBED
 P 3200 3600
 F 0 "C2" V 2948 3600 50  0000 C CNN
-F 1 "220n" V 3039 3600 50  0000 C CNN
+F 1 "22n" V 3039 3600 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 3238 3450 50  0001 C CNN
 F 3 "~" H 3200 3600 50  0001 C CNN
 	1    3200 3600
 	0    1    1    0   
 $EndComp
 Text Notes 800  4550 0    50   ~ 0
-220n, 1K -> 7.2z, Q=0.5\n220n, 1001K -> 7.2KHz, Q=0.5\nNote: subtracting instead of creating separate LP and HP filters\ncreates an uneven split due to component variances. However\nthey will still sum to be even. Creating a true crossover would\nrequire VCOs, which would be more complicated.
+22n, 1K -> 7.2z, Q=0.5\n22n, 1001K -> 7.2KHz, Q=0.5\nNote: subtracting instead of creating separate LP and HP\nfilters creates an uneven split as opposed to summing LR\nfilters. Creating a true crossover would require VCOs,\nwhich would be more complicated.
 $Comp
 L Amplifier_Operational:TL074 U1
 U 2 1 62D4D1DF
@@ -114,7 +114,7 @@ F 3 "~" H 3550 4400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Notes 7400 5700 0    50   ~ 0
-TODO: check pot orientation\nTODO: check switch orientation + pins\nTODO: swap U1C and U1D for easier PCB layout
+TODO: check pot orientation\nTODO: check switch orientation + pins\nTODO: verify mixer on bb\nTODO: verify switching on bb
 $Comp
 L power:GND #PWR02
 U 1 1 62D57F04
@@ -187,12 +187,12 @@ Wire Wire Line
 $Comp
 L Amplifier_Operational:TL074 U1
 U 3 1 62D6659B
-P 5600 3800
-F 0 "U1" H 5600 3433 50  0000 C CNN
-F 1 "TL074" H 5600 3524 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5550 3900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5650 4000 50  0001 C CNN
-	3    5600 3800
+P 10300 3850
+F 0 "U1" H 10300 3483 50  0000 C CNN
+F 1 "TL074" H 10300 3574 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 10250 3950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 10350 4050 50  0001 C CNN
+	3    10300 3850
 	1    0    0    1   
 $EndComp
 Text Label 1400 3700 2    50   ~ 0
@@ -312,12 +312,12 @@ $EndComp
 $Comp
 L Amplifier_Operational:TL074 U1
 U 4 1 62D7837B
-P 10300 3850
-F 0 "U1" H 10300 3483 50  0000 C CNN
-F 1 "TL074" H 10300 3574 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 10250 3950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 10350 4050 50  0001 C CNN
-	4    10300 3850
+P 5600 3800
+F 0 "U1" H 5700 4050 50  0000 C CNN
+F 1 "TL074" H 5700 3950 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5550 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5650 4000 50  0001 C CNN
+	4    5600 3800
 	1    0    0    1   
 $EndComp
 $Comp
@@ -346,33 +346,31 @@ Wire Wire Line
 	9750 3750 9900 3750
 Connection ~ 9900 3750
 Wire Wire Line
-	9900 3750 10000 3750
+	9900 3750 9950 3750
 $Comp
 L Device:R_POT_Dual_Separate RV2
 U 2 1 62D7EC04
-P 9200 3750
-F 0 "RV2" H 9130 3704 50  0000 R CNN
-F 1 "A1M_DUAL_MIX" H 9130 3795 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Alpha_RD902F-40-00D_Dual_Vertical" H 9200 3750 50  0001 C CNN
-F 3 "~" H 9200 3750 50  0001 C CNN
-	2    9200 3750
-	1    0    0    1   
+P 9200 3300
+F 0 "RV2" H 9130 3254 50  0000 R CNN
+F 1 "A1M_DUAL_MIX" H 9130 3345 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_RD902F-40-00D_Dual_Vertical" H 9200 3300 50  0001 C CNN
+F 3 "~" H 9200 3300 50  0001 C CNN
+	2    9200 3300
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_POT_Dual_Separate RV2
 U 1 1 62D7FACD
-P 9200 3300
-F 0 "RV2" H 9050 3250 50  0000 C CNN
-F 1 "A1M_DUAL_MIX" H 8950 3350 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Alpha_RD902F-40-00D_Dual_Vertical" H 9200 3300 50  0001 C CNN
-F 3 "~" H 9200 3300 50  0001 C CNN
-	1    9200 3300
+P 9200 3750
+F 0 "RV2" H 9050 3700 50  0000 C CNN
+F 1 "A1M_DUAL_MIX" H 8950 3800 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_RD902F-40-00D_Dual_Vertical" H 9200 3750 50  0001 C CNN
+F 3 "~" H 9200 3750 50  0001 C CNN
+	1    9200 3750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9750 3300 9900 3300
-Wire Wire Line
-	9900 3300 9900 3550
 Wire Wire Line
 	9450 3750 9350 3750
 Wire Wire Line
@@ -413,14 +411,9 @@ Wire Wire Line
 Wire Wire Line
 	9900 3950 10000 3950
 Wire Wire Line
-	9900 3550 10650 3550
-Wire Wire Line
 	10650 3550 10650 3850
 Wire Wire Line
 	10650 3850 10600 3850
-Connection ~ 9900 3550
-Wire Wire Line
-	9900 3550 9900 3750
 $Comp
 L Switch:SW_3PDT_x3 SW2
 U 1 1 62D8D5D7
@@ -1165,4 +1158,26 @@ Wire Wire Line
 Connection ~ 2700 6300
 Wire Wire Line
 	2700 6300 2700 6650
+Wire Wire Line
+	9900 3300 9900 3750
+$Comp
+L Device:R R10
+U 1 1 640FC6F5
+P 10400 3550
+F 0 "R10" V 10607 3550 50  0000 C CNN
+F 1 "1M" V 10516 3550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 10330 3550 50  0001 C CNN
+F 3 "~" H 10400 3550 50  0001 C CNN
+	1    10400 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10550 3550 10650 3550
+Wire Wire Line
+	10250 3550 9950 3550
+Wire Wire Line
+	9950 3550 9950 3750
+Connection ~ 9950 3750
+Wire Wire Line
+	9950 3750 10000 3750
 $EndSCHEMATC
