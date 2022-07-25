@@ -17,8 +17,8 @@ $Comp
 L Amplifier_Operational:TL074 U1
 U 1 1 62D478AE
 P 4150 3700
-F 0 "U1" H 4150 3333 50  0000 C CNN
-F 1 "TL074" H 4150 3424 50  0000 C CNN
+F 0 "U1" H 4250 3550 50  0000 C CNN
+F 1 "TL074" H 4100 3700 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 4100 3800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4200 3900 50  0001 C CNN
 	1    4150 3700
@@ -52,8 +52,8 @@ $Comp
 L Amplifier_Operational:TL074 U1
 U 2 1 62D4D1DF
 P 2050 3600
-F 0 "U1" H 2050 3967 50  0000 C CNN
-F 1 "TL074" H 2050 3876 50  0000 C CNN
+F 0 "U1" H 2100 3800 50  0000 C CNN
+F 1 "TL074" H 2000 3600 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 2000 3700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2100 3800 50  0001 C CNN
 	2    2050 3600
@@ -114,7 +114,7 @@ F 3 "~" H 3550 4400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Notes 7400 5700 0    50   ~ 0
-TODO: check pot orientation\nTODO: check switch orientation + pins\nTODO: verify mixer on bb\nTODO: verify switching on bb
+TODO: check switch orientation + pins
 $Comp
 L power:GND #PWR02
 U 1 1 62D57F04
@@ -130,16 +130,7 @@ Wire Wire Line
 	4500 3700 4500 3300
 Connection ~ 4500 3700
 Wire Wire Line
-	3450 3000 3350 3000
-Wire Wire Line
 	3600 2850 3600 2750
-Wire Wire Line
-	3600 2750 3350 2750
-Wire Wire Line
-	3350 2750 3350 3000
-Connection ~ 3350 3000
-Wire Wire Line
-	3350 3000 3300 3000
 Wire Wire Line
 	2850 3600 2950 3600
 Wire Wire Line
@@ -150,20 +141,9 @@ Connection ~ 3550 3600
 Wire Wire Line
 	3550 3600 3850 3600
 Wire Wire Line
-	3550 4150 3550 4200
+	3550 4550 3550 4600
 Wire Wire Line
-	3550 4200 3350 4200
-Wire Wire Line
-	3350 4200 3350 4400
-Wire Wire Line
-	3350 4400 3400 4400
-Connection ~ 3550 4200
-Wire Wire Line
-	3550 4200 3550 4250
-Wire Wire Line
-	3550 4550 3550 4700
-Wire Wire Line
-	3750 3000 4500 3000
+	3750 3000 3850 3000
 Wire Wire Line
 	3000 3000 2950 3000
 Wire Wire Line
@@ -188,8 +168,8 @@ $Comp
 L Amplifier_Operational:TL074 U1
 U 3 1 62D6659B
 P 10300 3850
-F 0 "U1" H 10300 3483 50  0000 C CNN
-F 1 "TL074" H 10300 3574 50  0000 C CNN
+F 0 "U1" H 10400 4050 50  0000 C CNN
+F 1 "TL074" H 10250 3850 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 10250 3950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 10350 4050 50  0001 C CNN
 	3    10300 3850
@@ -313,8 +293,8 @@ $Comp
 L Amplifier_Operational:TL074 U1
 U 4 1 62D7837B
 P 5600 3800
-F 0 "U1" H 5700 4050 50  0000 C CNN
-F 1 "TL074" H 5700 3950 50  0000 C CNN
+F 0 "U1" H 5750 3950 50  0000 C CNN
+F 1 "TL074" H 5550 3800 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 5550 3900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5650 4000 50  0001 C CNN
 	4    5600 3800
@@ -323,78 +303,25 @@ $EndComp
 $Comp
 L Device:R R8
 U 1 1 62D7B481
-P 9600 3750
-F 0 "R8" V 9807 3750 50  0000 C CNN
-F 1 "1M" V 9716 3750 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9530 3750 50  0001 C CNN
-F 3 "~" H 9600 3750 50  0001 C CNN
-	1    9600 3750
-	0    -1   -1   0   
+P 9350 4150
+F 0 "R8" V 9557 4150 50  0000 C CNN
+F 1 "470K" V 9466 4150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9280 4150 50  0001 C CNN
+F 3 "~" H 9350 4150 50  0001 C CNN
+	1    9350 4150
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R7
 U 1 1 62D7C138
-P 9600 3300
-F 0 "R7" V 9807 3300 50  0000 C CNN
-F 1 "1M" V 9716 3300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9530 3300 50  0001 C CNN
-F 3 "~" H 9600 3300 50  0001 C CNN
-	1    9600 3300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9750 3750 9900 3750
-Connection ~ 9900 3750
-Wire Wire Line
-	9900 3750 9950 3750
-$Comp
-L Device:R_POT_Dual_Separate RV2
-U 2 1 62D7EC04
-P 9200 3300
-F 0 "RV2" H 9130 3254 50  0000 R CNN
-F 1 "A1M_DUAL_MIX" H 9130 3345 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Alpha_RD902F-40-00D_Dual_Vertical" H 9200 3300 50  0001 C CNN
-F 3 "~" H 9200 3300 50  0001 C CNN
-	2    9200 3300
+P 9350 3350
+F 0 "R7" V 9557 3350 50  0000 C CNN
+F 1 "470K" V 9466 3350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9280 3350 50  0001 C CNN
+F 3 "~" H 9350 3350 50  0001 C CNN
+	1    9350 3350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_POT_Dual_Separate RV2
-U 1 1 62D7FACD
-P 9200 3750
-F 0 "RV2" H 9050 3700 50  0000 C CNN
-F 1 "A1M_DUAL_MIX" H 8950 3800 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Alpha_RD902F-40-00D_Dual_Vertical" H 9200 3750 50  0001 C CNN
-F 3 "~" H 9200 3750 50  0001 C CNN
-	1    9200 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9750 3300 9900 3300
-Wire Wire Line
-	9450 3750 9350 3750
-Wire Wire Line
-	9450 3300 9350 3300
-$Comp
-L power:GND #PWR07
-U 1 1 62D865EB
-P 8750 3550
-F 0 "#PWR07" H 8750 3300 50  0001 C CNN
-F 1 "GND" H 8755 3377 50  0000 C CNN
-F 2 "" H 8750 3550 50  0001 C CNN
-F 3 "" H 8750 3550 50  0001 C CNN
-	1    8750 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9200 3600 9200 3500
-Wire Wire Line
-	8750 3550 8750 3500
-Wire Wire Line
-	8750 3500 9200 3500
-Connection ~ 9200 3500
-Wire Wire Line
-	9200 3500 9200 3450
 $Comp
 L power:GND #PWR010
 U 1 1 62D897BA
@@ -471,18 +398,14 @@ Wire Wire Line
 	7750 1300 7750 1250
 Wire Wire Line
 	7750 1250 7600 1250
-Text Label 9000 4100 2    50   ~ 0
+Text Label 9150 4300 2    50   ~ 0
 RECV_DRY
-Text Label 9000 3000 2    50   ~ 0
+Text Label 9150 3200 2    50   ~ 0
 RECV_WET
 Wire Wire Line
-	9000 3000 9200 3000
+	9150 3200 9350 3200
 Wire Wire Line
-	9200 3000 9200 3150
-Wire Wire Line
-	9000 4100 9200 4100
-Wire Wire Line
-	9200 4100 9200 3900
+	9150 4300 9350 4300
 Text Label 10750 3850 0    50   ~ 0
 OUT
 Wire Wire Line
@@ -715,8 +638,8 @@ Wire Wire Line
 Connection ~ 10900 1200
 Wire Wire Line
 	10900 1200 10900 1300
-Text Notes 8700 4550 0    50   ~ 0
-input impedance: 500K to 1M\nop-amp output impedance (20mA @ 0.5V?)
+Text Notes 9350 4650 0    50   ~ 0
+input impedance: 470K to 1.4M\nop-amp output impedance (20mA @ 0.5V?)
 $Comp
 L Device:LED D1
 U 1 1 630C8C10
@@ -729,10 +652,10 @@ F 3 "~" H 8550 1200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R9
+L Device:R R10
 U 1 1 630C9EA9
 P 8550 1600
-F 0 "R9" H 8620 1646 50  0000 L CNN
+F 0 "R10" H 8620 1646 50  0000 L CNN
 F 1 "220" H 8620 1555 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8480 1600 50  0001 C CNN
 F 3 "~" H 8550 1600 50  0001 C CNN
@@ -1159,25 +1082,60 @@ Connection ~ 2700 6300
 Wire Wire Line
 	2700 6300 2700 6650
 Wire Wire Line
-	9900 3300 9900 3750
+	10550 3550 10650 3550
+Wire Wire Line
+	10250 3550 9950 3550
+Wire Wire Line
+	9950 3550 9950 3750
+Wire Wire Line
+	9950 3750 10000 3750
+Wire Wire Line
+	3550 4150 3550 4250
+Wire Wire Line
+	3550 4600 3350 4600
+Wire Wire Line
+	3350 4600 3350 4400
+Wire Wire Line
+	3350 4400 3400 4400
+Connection ~ 3550 4600
+Wire Wire Line
+	3550 4600 3550 4700
+Wire Wire Line
+	3300 3000 3450 3000
+Wire Wire Line
+	3600 2750 3850 2750
+Wire Wire Line
+	3850 2750 3850 3000
+Connection ~ 3850 3000
+Wire Wire Line
+	3850 3000 4500 3000
 $Comp
-L Device:R R10
+L Device:R_POT RV2
+U 1 1 62F12114
+P 9350 3750
+F 0 "RV2" H 9281 3704 50  0000 R CNN
+F 1 "B1M_MIX" H 9281 3795 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" H 9350 3750 50  0001 C CNN
+F 3 "~" H 9350 3750 50  0001 C CNN
+	1    9350 3750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9350 4000 9350 3900
+Wire Wire Line
+	9350 3500 9350 3600
+Wire Wire Line
+	9500 3750 9950 3750
+Connection ~ 9950 3750
+$Comp
+L Device:R R9
 U 1 1 640FC6F5
 P 10400 3550
-F 0 "R10" V 10607 3550 50  0000 C CNN
+F 0 "R9" V 10607 3550 50  0000 C CNN
 F 1 "1M" V 10516 3550 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 10330 3550 50  0001 C CNN
 F 3 "~" H 10400 3550 50  0001 C CNN
 	1    10400 3550
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	10550 3550 10650 3550
-Wire Wire Line
-	10250 3550 9950 3550
-Wire Wire Line
-	9950 3550 9950 3750
-Connection ~ 9950 3750
-Wire Wire Line
-	9950 3750 10000 3750
 $EndSCHEMATC
