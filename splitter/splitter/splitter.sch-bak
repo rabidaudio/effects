@@ -356,7 +356,7 @@ U 1 1 62D8EF13
 P 9400 950
 F 0 "U2" H 9400 1317 50  0000 C CNN
 F 1 "TLE2426xLP" H 9400 1226 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9400 550 50  0001 C CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 9400 550 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/tle2426.pdf" H 8000 1800 50  0001 C CIN
 	1    9400 950 
 	1    0    0    -1  
@@ -475,19 +475,7 @@ F 3 "" H 5550 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5550 7450 5550 7350
-Wire Wire Line
-	5550 7350 5650 7350
-Wire Wire Line
-	5650 7150 5550 7150
-Wire Wire Line
-	5550 7150 5550 7350
-Connection ~ 5550 7350
-Connection ~ 5550 7150
-Wire Wire Line
 	5650 6950 5550 6950
-Wire Wire Line
-	5550 6950 5550 7150
 $Comp
 L Connector:AudioJack3_Switch J3
 U 1 1 62E418CB
@@ -1136,4 +1124,14 @@ F 3 "~" H 10400 3550 50  0001 C CNN
 	1    10400 3550
 	0    -1   -1   0   
 $EndComp
+NoConn ~ 5650 7350
+Wire Wire Line
+	5550 6950 5550 7450
+NoConn ~ 5650 7150
+NoConn ~ 5050 6300
+NoConn ~ 6550 6600
+NoConn ~ 7800 8400
+NoConn ~ 5300 4700
+NoConn ~ 4250 4350
+NoConn ~ 6900 6600
 $EndSCHEMATC
