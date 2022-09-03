@@ -655,7 +655,7 @@ Wire Wire Line
 Text Notes 10050 2050 0    50   ~ 0
 power filter caps, close to IC
 Text Notes 8450 2150 0    50   ~ 0
-power led
+power led\nmay need to adjust resistor for brightness
 Text Notes 6950 1700 0    50   ~ 0
 9V ac/dc center negative\ncould also be 9V battery
 NoConn ~ 8200 1150
@@ -801,8 +801,8 @@ $Comp
 L Connector:Conn_01x02_Female J8
 U 1 1 63360589
 P 3950 5600
-F 0 "J8" H 3978 5576 50  0000 L CNN
-F 1 "CONN_RECV_DRY" H 3978 5485 50  0000 L CNN
+F 0 "J8" H 4000 5550 50  0000 L CNN
+F 1 "CONN_RECV_DRY" H 3850 5700 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3950 5600 50  0001 C CNN
 F 3 "~" H 3950 5600 50  0001 C CNN
 	1    3950 5600
@@ -858,7 +858,7 @@ L Connector:Conn_01x02_Female J7
 U 1 1 6348B0E6
 P 2950 6100
 F 0 "J7" H 2978 6076 50  0000 L CNN
-F 1 "RING_SEND" H 2900 6150 50  0000 L CNN
+F 1 "RING_SEND" H 2800 6200 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2950 6100 50  0001 C CNN
 F 3 "~" H 2950 6100 50  0001 C CNN
 	1    2950 6100
@@ -901,8 +901,8 @@ $Comp
 L Connector:Conn_01x02_Female J9
 U 1 1 63576DE8
 P 4000 6100
-F 0 "J9" H 3892 5775 50  0000 C CNN
-F 1 "RING_RECV" H 4100 5950 50  0000 C CNN
+F 0 "J9" H 4050 6050 50  0000 C CNN
+F 1 "RING_RECV" H 4050 6200 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4000 6100 50  0001 C CNN
 F 3 "~" H 4000 6100 50  0001 C CNN
 	1    4000 6100
@@ -1051,8 +1051,8 @@ $Comp
 L Connector:Conn_01x02_Female J6
 U 1 1 6335F761
 P 2950 5600
-F 0 "J6" H 2842 5275 50  0000 C CNN
-F 1 "CONN_SEND_DRY" H 3050 5650 50  0000 C CNN
+F 0 "J6" H 3050 5550 50  0000 C CNN
+F 1 "CONN_SEND_DRY" H 3050 5700 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2950 5600 50  0001 C CNN
 F 3 "~" H 2950 5600 50  0001 C CNN
 	1    2950 5600
@@ -1128,10 +1128,4 @@ NoConn ~ 5650 7350
 Wire Wire Line
 	5550 6950 5550 7450
 NoConn ~ 5650 7150
-NoConn ~ 5050 6300
-NoConn ~ 6550 6600
-NoConn ~ 7800 8400
-NoConn ~ 5300 4700
-NoConn ~ 4250 4350
-NoConn ~ 6900 6600
 $EndSCHEMATC

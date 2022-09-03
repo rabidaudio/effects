@@ -1,4 +1,4 @@
-18632070594872758
+18637045589480758
 AP7313-33SAG-7
 SOT96P240X110-3N
 SOT23_2
@@ -1547,6 +1547,13 @@ SWITCH SMD KSA SW
 5
 5
 Button_Switch_THT
+MTS-200_DPDT_6T
+MTS Series mini toggle switch. MTS-202-A2, MTS-203-A2, MTS-212-A2, MTS-213-A2, MTS-223-A2
+switch DPDT footswitch
+0
+6
+6
+Button_Switch_THT
 Nidec_Copal_SH-7010C
 4-bit rotary coded switch, through-hole, https://www.nidec-copal-electronics.com/e/catalog/switch/sh-7000.pdf
 rotary switch bcd
@@ -1938,6 +1945,13 @@ switch DPDT
 0
 10
 6
+Button_Switch_THT
+SW_EG2301_DP3T
+CuK sub miniature slide switch, JS series, DPDT, right angle, http://www.ckswitches.com/media/1422/js.pdf
+switch DPDT
+0
+12
+8
 Button_Switch_THT
 SW_Lever_1P2T_NKK_GW12LxH
 Switch, single pole double throw, right angle, http://www.nkkswitches.com/pdf/GW.pdf
@@ -40550,6 +40564,13 @@ Surface mounted socket strip SMD 2x40 2.54mm double row
 0
 80
 80
+Connector_PinSocket_2.54mm
+PinSocket_3x03_P2.54mm_Vertical
+Through hole straight socket strip, 2x03, 2.54mm pitch, double cols (from Kicad 4.0.7), script generated
+Through hole socket strip THT 2x03 2.54mm double row
+0
+9
+9
 Connector_RJ
 RJ12_Amphenol_54601
 RJ12 connector  https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/c-bmj-0082.pdf
