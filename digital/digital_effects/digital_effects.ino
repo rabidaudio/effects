@@ -1,49 +1,112 @@
 #include <Audio.h>
 #include <Wire.h>
 #include <SPI.h>
-//#include <SD.h>
-//#include <SerialFlash.h>
+#include <SD.h>
+#include <SerialFlash.h>
 
-#define USB_MODE 1
+#define SWITCH1_PIN 28
 
-AudioInputI2S            in;
-AudioOutputI2S           out;
+// In: ORANGE
+// Out: BLUE
 
-#if USB_MODE
-AudioInputUSB            usbIn;
-AudioOutputUSB           usbOut;
-#endif
+// GUItool: begin automatically generated code
+AudioInputI2S            i2s1;           //xy=66,333
+AudioEffectBitcrusher    bitcrusher1;    //xy=343,283
+AudioOutputI2S           i2s2;           //xy=623,321
+AudioConnection          patchCord1(i2s1, 0, bitcrusher1, 0);
+AudioConnection          patchCord2(i2s1, 1, i2s2, 1);
+AudioConnection          patchCord3(bitcrusher1, 0, i2s2, 0);
+// GUItool: end automatically generated code
 
-AudioSynthWaveform       waveform1;
-
-AudioConnection          patchCord1(in, 0, out, 0);
-AudioConnection          patchCord2(in, 1, out, 1);
-#if USB_MODE
-AudioConnection          patchCord3(waveform1, 0, out2, 0);
-AudioConnection          patchCord4(waveform1, 0, out2, 1);
 AudioControlSGTL5000     sgtl5000_1;
 
+// TODO: Debounced Knob? Hold value costant unless value is changing
+template <size_t BUFF_SIZE>
+class BufferedInput
+{
+private:
+  uint8_t _pin;
+  uint16_t _buffer[BUFF_SIZE];
+  size_t _index;
+
+public:
+  void begin(uint8_t pin)
+  {
+    _pin = pin;
+    _index = 0;
+    for (size_t i = 0; i < BUFF_SIZE; i++)
+    {
+      read();
+      delay(10);
+    }
+  }
+
+  uint16_t read()
+  {
+    _buffer[_index] = analogRead(_pin);
+    _index = (_index + 1) % BUFF_SIZE;
+    uint16_t value = 0;
+    for (size_t i = 0; i < BUFF_SIZE; i++)
+    {
+      value += _buffer[i];
+    }
+    return value / BUFF_SIZE;
+  }
+};
+
+BufferedInput<16> knob0;
+//BufferedInput<16> knob1;
+//BufferedInput<16> knob2;
+//BufferedInput<16> knob3;
+//BufferedInput<16> knob4;
+
 void setup() {
-  Serial.begin(115200);
+//  Serial.begin(115200);
   AudioMemory(12);
   sgtl5000_1.enable();
-  sgtl5000_1.volume(0.6);
-  waveform1.begin(WAVEFORM_SINE);
-  waveform1.frequency(440);
-  waveform1.amplitude(0.9);
+  sgtl5000_1.volume(0.5);
+
+  pinMode(SWITCH1_PIN, INPUT_PULLDOWN);
+
+  knob0.begin(A0);  // 14
+//  knob1.begin(A1);  // 15
+//  knob2.begin(A2);  // 16
+//  knob3.begin(A16); // 40
+//  knob4.begin(A17); // 41
+
+//  mixer1.gain(0, 0);
+//  mixer1.gain(1, 0);
+//  mixer1.gain(2, 0);
+//  mixer1.gain(3, 0);
 }
 
 void loop() {
-//  float vol = usb1.volume();
-//  if (vol > 0) {
-//    // scale 0 = 1.0 range to:
-//    //  0.3 = almost silent
-//    //  0.8 = really loud
-//    vol = 0.3 + vol * 0.5;
+//  bitcrusher1.sampleRate(AUDIO_SAMPLE_RATE_EXACT / (float) knob0.read());
+  
+//  Serial.println(AudioMemoryUsage());
+//  float wetLevel = ((float) (knob1.read())) / 1024.0; // %
+//  float dryLevel = 1.0 - wetLevel;
+//  float wetLevel = 0.75;
+//  float dryLevel = 0.25;
+//  float reverbLevel = ((float) knob0.read()) / 1024.0 * 15.0; // seconds
+//  reverb1.reverbTime(reverbLevel);
+//  mixer1.gain(1, wetLevel);
+//  
+//  mixer1.gain(0, dryLevel);
+//  if (digitalRead(SWITCH1_PIN) || true) {
+//    float reverbLevel = ((float) knob0.read()) / 1024.0 * 15.0; // seconds
+//    reverb1.reverbTime(reverbLevel);
+//    mixer1.gain(1, wetLevel);
+//    mixer1.gain(2, 0);  
+//  } else {
+//    float roomSize = ((float) knob0.read()) / 1024.0; // %
+//    float damping = 0.9;
+////    float damping =  ((float) knob2.read()) / 1024.0; // %
+//    freeverb1.roomsize(roomSize);
+//    freeverb1.damping(damping);
+//    mixer1.gain(1, 0);
+//    mixer1.gain(2, wetLevel);
 //  }
-//  sgtl5000_1.volume(vol);
-  Serial.println(AudioMemoryUsage());
 
-
-  delay(1000);
+  delay(50);
 }
