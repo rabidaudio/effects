@@ -4,7 +4,9 @@
 #include <SD.h>
 #include <SerialFlash.h>
 
-#define SWITCH1_PIN 28
+#define SWITCH0_PIN 29
+#define SWITCH1_PIN 30
+#define BYPASS_PIN 31
 
 // In: ORANGE
 // Out: BLUE
@@ -60,24 +62,60 @@ BufferedInput<16> knob0;
 //BufferedInput<16> knob3;
 //BufferedInput<16> knob4;
 
+class DebouncedInterrupt {
+    size_t _pin;
+    uint16_t _delayTime;
+    uint32_t _lastChangeAt;
+    bool _value;
+
+   public:
+
+  void begin(size_t pin, void(*cb)(void), uint16_t delayTime = 10) {
+    _pin = pin;
+    _delayTime = delayTime;
+    _lastChangeAt = 0;
+    pinMode(_pin, INPUT_PULLDOWN);
+    attachInterrupt(digitalPinToInterrupt(_pin), cb, CHANGE);
+  }
+
+  bool check() {
+    uint32_t now = millis();
+    if ((now - _lastChangeAt) > _delayTime) {
+      _lastChangeAt = now;
+      return true;
+    }
+    return false;
+  }
+};
+
+DebouncedInterrupt sw0;
+DebouncedInterrupt sw1;
+
 void setup() {
 //  Serial.begin(115200);
   AudioMemory(12);
   sgtl5000_1.enable();
   sgtl5000_1.volume(0.5);
 
-  pinMode(SWITCH1_PIN, INPUT_PULLDOWN);
-
-  knob0.begin(A0);  // 14
+//  knob0.begin(A0);  // 14
 //  knob1.begin(A1);  // 15
 //  knob2.begin(A2);  // 16
 //  knob3.begin(A16); // 40
 //  knob4.begin(A17); // 41
+//  sw0.begin(SWITCH0_PIN, printSWState);
+   sw1.begin(SWITCH1_PIN, printSWState);
+   pinMode(BYPASS_PIN, OUTPUT);
 
 //  mixer1.gain(0, 0);
 //  mixer1.gain(1, 0);
 //  mixer1.gain(2, 0);
 //  mixer1.gain(3, 0);
+}
+
+void printSWState() {
+  if (sw1.check()) {
+    digitalWrite(BYPASS_PIN, digitalRead(SWITCH1_PIN));
+  }
 }
 
 void loop() {

@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name "shared")(type "KiCad")(uri "/Users/personal/projects/effects/_effects_shared.kicad_sym")(options "")(descr ""))
   (lib (name "_effects_shared")(type "KiCad")(uri "/Users/personal/projects/effects/_effects_shared.kicad_sym")(options "")(descr ""))
+  (lib (name "_proj")(type "KiCad")(uri "${KIPRJMOD}/_proj.kicad_sym")(options "")(descr ""))
 )
