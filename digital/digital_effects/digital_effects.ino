@@ -8,6 +8,10 @@
 #define SWITCH1_PIN 30
 #define BYPASS_PIN 31
 
+#define LED_R_PIN 24
+#define LED_G_PIN 25
+#define LED_B_PIN 28
+
 // In: ORANGE
 // Out: BLUE
 
@@ -57,10 +61,10 @@ public:
 };
 
 BufferedInput<16> knob0;
-//BufferedInput<16> knob1;
-//BufferedInput<16> knob2;
-//BufferedInput<16> knob3;
-//BufferedInput<16> knob4;
+BufferedInput<16> knob1;
+BufferedInput<16> knob2;
+BufferedInput<16> knob3;
+BufferedInput<16> knob4;
 
 class DebouncedInterrupt {
     size_t _pin;
@@ -86,6 +90,10 @@ class DebouncedInterrupt {
     }
     return false;
   }
+
+  bool read() {
+    return digitalRead(_pin);
+  }
 };
 
 DebouncedInterrupt sw0;
@@ -97,14 +105,13 @@ void setup() {
   sgtl5000_1.enable();
   sgtl5000_1.volume(0.5);
 
-//  knob0.begin(A0);  // 14
-//  knob1.begin(A1);  // 15
-//  knob2.begin(A2);  // 16
-//  knob3.begin(A16); // 40
-//  knob4.begin(A17); // 41
-//  sw0.begin(SWITCH0_PIN, printSWState);
-   sw1.begin(SWITCH1_PIN, printSWState);
-   pinMode(BYPASS_PIN, OUTPUT);
+  knob0.begin(A0);  // 14
+  knob1.begin(A1);  // 15
+  knob2.begin(A2);  // 16
+  knob3.begin(A16); // 40
+  knob4.begin(A17); // 41
+  sw1.begin(SWITCH1_PIN, toggleSignal);
+  pinMode(BYPASS_PIN, OUTPUT);
 
 //  mixer1.gain(0, 0);
 //  mixer1.gain(1, 0);
@@ -112,14 +119,20 @@ void setup() {
 //  mixer1.gain(3, 0);
 }
 
-void printSWState() {
+void toggleSignal() {
   if (sw1.check()) {
-    digitalWrite(BYPASS_PIN, digitalRead(SWITCH1_PIN));
+    if (sw1.read()) {
+      analogWrite(LED_R_PIN, 0);
+      digitalWrite(BYPASS_PIN, HIGH);
+    } else {
+      analogWrite(LED_R_PIN, 255);
+      digitalWrite(BYPASS_PIN, LOW);
+    }
   }
 }
 
 void loop() {
-//  bitcrusher1.sampleRate(AUDIO_SAMPLE_RATE_EXACT / (float) knob0.read());
+  bitcrusher1.sampleRate(AUDIO_SAMPLE_RATE_EXACT / (float) knob0.read());
   
 //  Serial.println(AudioMemoryUsage());
 //  float wetLevel = ((float) (knob1.read())) / 1024.0; // %
