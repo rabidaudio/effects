@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "_effects_shared_footprints")(type "KiCad")(uri "/Users/personal/projects/effects/_effects_shared_footprints.pretty")(options "")(descr ""))
+)
