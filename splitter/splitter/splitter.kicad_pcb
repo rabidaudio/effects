@@ -59,9 +59,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "")
+      (outputdirectory "gerbers/")
     )
   )
 
@@ -1365,11 +1365,6 @@
       (net 22 "/SEND_DRY") (pinfunction "7") (pintype "passive") (tstamp bb0cffdc-391e-47b3-81c3-493f800a68f4))
     (pad "8" thru_hole circle locked (at 8 2.5 270) (size 1.4 1.4) (drill 0.9) (layers *.Cu *.Mask)
       (net 10 "/HIGH") (pinfunction "8") (pintype "passive") (tstamp d92275d6-35ec-4f69-a1dc-fe330ff74f76))
-    (model "${KISYS3DMOD}/Button_Switch_THT.3dshapes/SW_CuK_JS202011CQN_DPDT_Straight.wrl"
-      (offset (xyz -0.5 2 0))
-      (scale (xyz 1.8 2 1))
-      (rotate (xyz 0 0 0))
-    )
   )
 
   (footprint "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" (layer "F.Cu")
@@ -72584,7 +72579,6 @@
       6616e536-a4dc-4890-9e0b-c16ff0e8adbe
       6a2dbf1d-6973-4f55-937c-825dea509b3e
       6a354171-a7b6-4b03-a228-3d7ed394f32f
-      6d5d23bd-b7c9-445f-8fdf-2d61c6d6fd8e
       6dd25bfb-2fbc-4279-b006-3105af0d4eac
       7c4410ec-6bf7-4b43-bd0a-4a24f4db7803
       7ccaaeea-c5a8-4615-ae15-d99630be3af8
