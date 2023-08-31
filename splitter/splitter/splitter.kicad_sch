@@ -2269,6 +2269,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid bd103792-2a99-4c4e-80de-221f9c73c52f)
   )
+  (text "TODO: consider 1k 6.8n -> 23kHz  1M 6.8n -> 23Hz\nuse 100k sweep, with 10x adjustment to focus\nmeasure actual values on good bass settings"
+    (at 89.535 89.535 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c5753738-74ee-4975-af46-a5d1f185e038)
+  )
   (text "Even though our analog reference is 4.5V,\nother pedals will use the power supply ground (0V)\nas their ground. So we need to use GNDD for the\njack grounds"
     (at 14.605 160.655 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
