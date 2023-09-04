@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg" x="0px" y="0px" viewBox="0 0 720 930" enable-background="new 0 0 720 930">
+	<rect class="rectangle" x="132.3" y="132.3" width="251.37" height="459.27" id="A-box" stroke="#333">
+	</rect>
+	<rect class="rectangle" x="132.3" y="0" width="251.37" height="132.3" id="B-box" stroke="#333">
+	</rect>
+	<rect class="rectangle" x="0" y="132.3" width="132.3" height="459.27" id="C-box" stroke="#333">
+	</rect>
+	<rect class="rectangle" x="132.3" y="591.57" width="251.37" height="132.3" id="D-box" stroke="#333">
+	</rect>
+	<rect class="rectangle" x="383.67" y="132.3" width="132.3" height="459.27" id="E-box" stroke="#333">
+	</rect>
+	<circle class="B-circle" cx="257.985" cy="66.15" r="22.68" fill="blue">
+	</circle>
+	<circle class="A-circle" cx="191.83500000000004" cy="227.2725" r="13.229999999999999" fill="blue">
+	</circle>
+	<circle class="A-circle" cx="324.135" cy="227.2725" r="13.229999999999999" fill="blue">
+	</circle>
+	<circle class="A-circle" cx="257.985" cy="281.61" r="10.395" fill="blue">
+	</circle>
+	<circle class="A-circle" cx="257.985" cy="490.455" r="22.68" fill="blue">
+	</circle>
+	<circle class="C-circle" cx="47.25000000000001" cy="324.135" r="20.79" fill="blue">
+	</circle>
+	<circle class="C-circle" cx="47.25000000000001" cy="403.515" r="20.79" fill="blue">
+	</circle>
+	<circle class="E-circle" cx="468.72" cy="324.135" r="20.79" fill="blue">
+	</circle>
+	<circle class="E-circle" cx="468.72" cy="403.515" r="20.79" fill="blue">
+	</circle>
+	<line x1="250.425" y1="221.13" x2="265.545" y2="221.13" style="stroke-width: 2px; stroke: blue;">
+	</line>
+	<line x1="250.425" y1="258.93" x2="265.545" y2="258.93" style="stroke-width: 2px; stroke: blue;">
+	</line>
+	<line x1="250.425" y1="221.13" x2="250.425" y2="258.93" style="stroke-width: 2px; stroke: blue;">
+	</line>
+	<line x1="265.545" y1="221.13" x2="265.545" y2="258.93" style="stroke-width: 2px; stroke: blue;">
+	</line>
+	<text class="box-label" x="137.3" y="147.3" id="A-label" stroke="#333">
+		Side A / Face
+	</text>
+	<text class="box-label" x="137.3" y="15" id="B-label" stroke="#333">
+		Side B / Top
+	</text>
+	<text class="box-label" x="5" y="147.3" id="C-label" stroke="#333">
+		Side C / Left
+	</text>
+	<text class="box-label" x="137.3" y="606.57" id="D-label" stroke="#333">
+		Side D / Bottom
+	</text>
+	<text class="box-label" x="388.67" y="147.3" id="E-label" stroke="#333">
+		Side E / Right
+	</text>
+</svg>

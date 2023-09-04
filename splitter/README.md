@@ -76,3 +76,7 @@ A set of jumpers and test points allow reconfiguring the behavior of the circuit
 6. Attach DC jack to case and solder power wires
 
 No calibration required
+
+# Credits
+
+Bacteria graphics from [free-vectors.net](https://free-vectors.net/healthcare/set-of-bacteria-and-virus-icon). Font: Trattatello
