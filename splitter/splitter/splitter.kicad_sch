@@ -3020,7 +3020,7 @@
     (property "Value" "1u" (id 1) (at 279.781 26.543 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "kicad-official/Capacitor_THT.pretty:CP_Radial_D5.0mm_P2.50mm" (id 2) (at 277.8252 29.21 0)
+    (property "Footprint" "kicad-official/Capacitor_THT.pretty:CP_Radial_D4.0mm_P1.50mm" (id 2) (at 277.8252 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 276.86 25.4 0)
@@ -3039,7 +3039,7 @@
     (property "Value" "1u" (id 1) (at 279.781 37.973 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "kicad-official/Capacitor_THT.pretty:CP_Radial_D5.0mm_P2.50mm" (id 2) (at 277.8252 40.64 0)
+    (property "Footprint" "kicad-official/Capacitor_THT.pretty:CP_Radial_D4.0mm_P1.50mm" (id 2) (at 277.8252 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 276.86 36.83 0)
@@ -3831,10 +3831,10 @@
       (reference "C8") (unit 1) (value "100n") (footprint "kicad-official/Capacitor_THT.pretty:C_Rect_L7.0mm_W2.5mm_P5.00mm")
     )
     (path "/00000000-0000-0000-0000-0000630a3eff"
-      (reference "C9") (unit 1) (value "1u") (footprint "kicad-official/Capacitor_THT.pretty:CP_Radial_D5.0mm_P2.50mm")
+      (reference "C9") (unit 1) (value "1u") (footprint "kicad-official/Capacitor_THT.pretty:CP_Radial_D4.0mm_P1.50mm")
     )
     (path "/00000000-0000-0000-0000-0000630a4536"
-      (reference "C10") (unit 1) (value "1u") (footprint "kicad-official/Capacitor_THT.pretty:CP_Radial_D5.0mm_P2.50mm")
+      (reference "C10") (unit 1) (value "1u") (footprint "kicad-official/Capacitor_THT.pretty:CP_Radial_D4.0mm_P1.50mm")
     )
     (path "/00000000-0000-0000-0000-0000630c8c10"
       (reference "D1") (unit 1) (value "LED") (footprint "kicad-official/LED_THT.pretty:LED_D3.0mm")
