@@ -3558,7 +3558,7 @@
     (property "Value" "Conn_01x08" (id 1) (at 241.3 151.13 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "kicad-official/Connector_PinSocket_2.54mm.pretty:PinSocket_2x04_P2.54mm_Vertical" (id 2) (at 241.3 143.51 0)
+    (property "Footprint" "kicad-official/Connector_IDC.pretty:IDC-Header_2x04_P2.54mm_Horizontal" (id 2) (at 241.3 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 241.3 143.51 0)
@@ -3688,7 +3688,7 @@
     (property "Value" "Conn_01x08" (id 1) (at 246.38 151.13 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "kicad-official/Connector_PinHeader_2.54mm.pretty:PinHeader_2x04_P2.54mm_Vertical" (id 2) (at 246.38 143.51 0)
+    (property "Footprint" "kicad-official/Connector_IDC.pretty:IDC-Header_2x04_P2.54mm_Vertical" (id 2) (at 246.38 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 246.38 143.51 0)
@@ -3861,10 +3861,10 @@
       (reference "J7") (unit 1) (value "Jack-DC") (footprint "kicad-official/Connector_PinSocket_2.54mm.pretty:PinSocket_1x02_P2.54mm_Vertical")
     )
     (path "/79db6451-6a70-445a-acbf-38bc9701ab57"
-      (reference "J8") (unit 1) (value "Conn_01x08") (footprint "kicad-official/Connector_PinSocket_2.54mm.pretty:PinSocket_2x04_P2.54mm_Vertical")
+      (reference "J8") (unit 1) (value "Conn_01x08") (footprint "kicad-official/Connector_IDC.pretty:IDC-Header_2x04_P2.54mm_Horizontal")
     )
     (path "/c79d681c-f44c-4d1b-9ea8-c239ce5ca323"
-      (reference "J9") (unit 1) (value "Conn_01x08") (footprint "kicad-official/Connector_PinHeader_2.54mm.pretty:PinHeader_2x04_P2.54mm_Vertical")
+      (reference "J9") (unit 1) (value "Conn_01x08") (footprint "kicad-official/Connector_IDC.pretty:IDC-Header_2x04_P2.54mm_Vertical")
     )
     (path "/75f534ea-57ee-49ff-9960-6d48d840c311"
       (reference "JP1") (unit 1) (value "STEREO_MODE") (footprint "kicad-official/Jumper.pretty:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm")
