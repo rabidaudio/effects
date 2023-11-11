@@ -1354,7 +1354,6 @@
     )
   )
 
-
   (junction (at 50.165 113.03) (diameter 0) (color 0 0 0 0)
     (uuid 39f626d6-6dc9-4586-9a76-779af527cb8c)
   )
@@ -2636,7 +2635,7 @@
   (symbol (lib_id "Amplifier_Operational:LM13700") (at 254 100.33 0) (unit 2)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 3ff7fac8-d636-4cb9-8d46-24789ada3aa8)
-    (property "Reference" "U?" (id 0) (at 251.46 90.805 0))
+    (property "Reference" "U1" (id 0) (at 251.46 90.805 0))
     (property "Value" "LM13700" (id 1) (at 251.46 93.345 0))
     (property "Footprint" "" (id 2) (at 246.38 99.695 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2665,7 +2664,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 264.795 102.87 90) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 52079f04-5edf-4394-a4e0-cdbdc34d27d4)
-    (property "Reference" "C?" (id 0) (at 263.906 95.25 90))
+    (property "Reference" "C16" (id 0) (at 263.906 95.25 90))
     (property "Value" "100u" (id 1) (at 263.906 97.79 90))
     (property "Footprint" "" (id 2) (at 268.605 101.9048 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2680,7 +2679,7 @@
   (symbol (lib_id "Device:R") (at 259.08 109.855 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid e7f7a979-4af5-4886-9e1b-d33551674310)
-    (property "Reference" "R?" (id 0) (at 260.985 108.5849 0)
+    (property "Reference" "R36" (id 0) (at 260.985 108.5849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (id 1) (at 260.985 111.1249 0)
@@ -2699,7 +2698,7 @@
   (symbol (lib_id "power:GND") (at 259.08 115.57 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid ef5bd4b7-e497-4e8f-bf39-267d25b8e837)
-    (property "Reference" "#PWR?" (id 0) (at 259.08 121.92 0)
+    (property "Reference" "#PWR0101" (id 0) (at 259.08 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 259.207 119.9642 0))
@@ -2844,6 +2843,9 @@
     (path "/00000000-0000-0000-0000-0000629a6a5c/00000000-0000-0000-0000-000062c92cae"
       (reference "#PWR06") (unit 1) (value "GNDA") (footprint "")
     )
+    (path "/ef5bd4b7-e497-4e8f-bf39-267d25b8e837"
+      (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-0000628336f3/d0da2238-d6a4-422f-a4e1-2ce398dfd4c9"
       (reference "#PWR0103") (unit 1) (value "GNDA") (footprint "")
     )
@@ -2970,9 +2972,6 @@
     (path "/00000000-0000-0000-0000-00006325a0b8/00000000-0000-0000-0000-0000632692e4"
       (reference "#PWR0146") (unit 1) (value "GNDA") (footprint "")
     )
-    (path "/ef5bd4b7-e497-4e8f-bf39-267d25b8e837"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-00006325a0b8/00000000-0000-0000-0000-000062b60b28"
       (reference "C1") (unit 1) (value "10n") (footprint "")
     )
@@ -3019,7 +3018,7 @@
       (reference "C15") (unit 1) (value "1n") (footprint "")
     )
     (path "/52079f04-5edf-4394-a4e0-cdbdc34d27d4"
-      (reference "C?") (unit 1) (value "100u") (footprint "")
+      (reference "C16") (unit 1) (value "100u") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000062f7b2b4/00000000-0000-0000-0000-0000631f8c21"
       (reference "D1") (unit 1) (value "LED") (footprint "kicad-official/LED_THT.pretty:LED_D3.0mm")
@@ -3145,7 +3144,7 @@
       (reference "R35") (unit 1) (value "30K") (footprint "kicad-legacy/kicad-footprints/Resistor_THT.pretty:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical")
     )
     (path "/e7f7a979-4af5-4886-9e1b-d33551674310"
-      (reference "R?") (unit 1) (value "10k") (footprint "")
+      (reference "R36") (unit 1) (value "10k") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006325a0b8/00000000-0000-0000-0000-000062ae72d8"
       (reference "RV1") (unit 1) (value "R_TRIM_10K") (footprint "kicad-legacy/Potentiometers.pretty:Potentiometer_Trimmer_Bourns_3296W")
@@ -3176,6 +3175,9 @@
     )
     (path "/00000000-0000-0000-0000-000062f7b2b4/00000000-0000-0000-0000-000062f9d2df"
       (reference "U1") (unit 1) (value "LM13700") (footprint "kicad-legacy/kicad-footprints/Package_DIP.pretty:DIP-16_W7.62mm")
+    )
+    (path "/3ff7fac8-d636-4cb9-8d46-24789ada3aa8"
+      (reference "U1") (unit 2) (value "LM13700") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000062f7b2b4/00000000-0000-0000-0000-000062f9d2e5"
       (reference "U1") (unit 3) (value "LM13700") (footprint "kicad-legacy/kicad-footprints/Package_DIP.pretty:DIP-16_W7.62mm")
@@ -3227,9 +3229,6 @@
     )
     (path "/00000000-0000-0000-0000-0000629a6a5c/00000000-0000-0000-0000-000062c92c44"
       (reference "U11") (unit 2) (value "TL072") (footprint "kicad-legacy/Housings_DIP.pretty:DIP-8_W7.62mm")
-    )
-    (path "/3ff7fac8-d636-4cb9-8d46-24789ada3aa8"
-      (reference "U?") (unit 2) (value "LM13700") (footprint "")
     )
   )
 )
