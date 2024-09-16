@@ -4,6 +4,14 @@
 
   (paper "A4")
 
+  (title_block
+    (title "Amoeba")
+    (date "2024-09-16")
+    (rev "F")
+    (company "RabidAudio")
+    (comment 1 "Analog Tone Splitter")
+  )
+
   (lib_symbols
     (symbol "Amplifier_Operational:LM13700" (pin_names (offset 0.127)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (id 0) (at 3.81 5.08 0)
@@ -2651,8 +2659,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 43f7004e-06e3-40c8-b23c-e60437cb3045)
   )
-  (text "voltage divider from\n~2.6Vpp to 26mVpp\n(TODO confirm ranges)"
-    (at 83.82 41.91 180)
+  (text "voltage divider from\n~2.6Vpp to 26mVpp" (at 83.82 41.91 180)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 460bdc41-74ca-44d8-9a5f-a02191fc4dc9)
   )
