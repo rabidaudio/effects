@@ -6494,7 +6494,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-official/Package_DIP.pretty:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
 			(at 102.87 48.26 0)
 			(effects
 				(font
@@ -6597,7 +6597,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 64.77 49.2252 0)
 			(effects
 				(font
@@ -6664,7 +6664,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 77.47 49.2252 0)
 			(effects
 				(font
@@ -6732,7 +6732,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-official/Package_DIP.pretty:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
 			(at 50.8 50.8 0)
 			(effects
 				(font
@@ -6837,7 +6837,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 90.678 58.42 90)
 			(effects
 				(font
@@ -6904,7 +6904,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 80.01 31.242 90)
 			(effects
 				(font
@@ -7198,7 +7198,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-official/Package_DIP.pretty:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
 			(at 251.46 102.87 0)
 			(effects
 				(font
@@ -7301,7 +7301,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 124.46 65.532 90)
 			(effects
 				(font
@@ -7368,7 +7368,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 140.97 55.372 90)
 			(effects
 				(font
@@ -7437,7 +7437,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "kicad-official/Package_DIP.pretty:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
 			(at 264.16 27.94 0)
 			(effects
 				(font
@@ -7541,7 +7541,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-official/Package_DIP.pretty:DIP-14_W7.62mm_Socket"
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
 			(at 139.7 72.39 0)
 			(effects
 				(font
@@ -7644,7 +7644,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 215.9 102.362 90)
 			(effects
 				(font
@@ -7711,7 +7711,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 215.9 94.488 90)
 			(effects
 				(font
@@ -7931,7 +7931,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-official/Package_TO_SOT_THT.pretty:TO-92_Inline_Wide"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
 			(at 238.76 34.29 0)
 			(effects
 				(font
@@ -8906,7 +8906,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "100K"
 			(at 218.948 41.783 0)
 			(effects
 				(font
@@ -8915,7 +8915,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 215.392 40.64 90)
 			(effects
 				(font
@@ -9632,7 +9632,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-official/Connector_PinSocket_2.54mm.pretty:PinSocket_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
 			(at 177.8 30.226 0)
 			(effects
 				(font
@@ -9699,7 +9699,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-official/Jumper.pretty:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 78.74 187.96 0)
 			(effects
 				(font
@@ -9938,7 +9938,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 255.27 94.488 90)
 			(effects
 				(font
@@ -10359,7 +10359,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 34.29 43.942 90)
 			(effects
 				(font
@@ -10768,7 +10768,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "kicad-official/Jumper.pretty:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 46.99 116.84 0)
 			(effects
 				(font
@@ -10840,7 +10840,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "kicad-official/Connector_IDC.pretty:IDC-Header_2x04_P2.54mm_Horizontal"
+		(property "Footprint" "Connector_IDC:IDC-Header_2x04_P2.54mm_Vertical"
 			(at 241.3 143.51 0)
 			(effects
 				(font
@@ -10990,7 +10990,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 232.41 94.488 90)
 			(effects
 				(font
@@ -11126,7 +11126,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 50.8 38.862 90)
 			(effects
 				(font
@@ -11266,7 +11266,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "kicad-official/Jumper.pretty:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 113.03 116.84 0)
 			(effects
 				(font
@@ -11469,7 +11469,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "kicad-official/Connector_IDC.pretty:IDC-Header_2x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector_IDC:IDC-Header_2x04_P2.54mm_Vertical"
 			(at 246.38 143.51 0)
 			(effects
 				(font
@@ -11623,7 +11623,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 232.41 105.918 90)
 			(effects
 				(font
