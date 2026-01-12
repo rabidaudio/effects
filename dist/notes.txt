@@ -1,0 +1,40 @@
+Input buffer
+HP, -3db @40Hz
+Clipping around 6.2V vs 0.5v, gain of 12.4 (21.8db)
+TODO adjust for symmetric clipping
+
+
+Muff double clipping stage
+Input HP: -3db@20Hz
+Tune feedback caps for LP cutoff
+Smaller makes sharper at low freqs
+At 10n it's basically a triangle wave
+Tune emitter resistor for gain (1-1ktrim?)
+Swap transistors and diodes
+Switch bypass second stage
+TODO adjust for symmetric clipping
+
+
+1st order low pass, 20-200Hz
+Avoids rumble
+
+Bandpass 200-800Hz boost or buck
+Adds fatness and power. Vintage=boost, modern scoop
+
+Boost 1.5kHz-2.5kHz (flexible Q and gain)
+Punch and clarity
+
+Notch 4-6KHz
+Removes whistle
+
+Hi Q low pass with a peak around 5-7 kHz
+Boost for presence but avoid harshness
+
+
+1. Start with EQ pedal
+2. Test mixing in an EQ of clean tone
+3. Recreate with circuits
+
+
+Idea: Bode magnitude plot but with N higher harmonics plotted also. Could analyze this plot across common tones, draw in software and simulate
+
