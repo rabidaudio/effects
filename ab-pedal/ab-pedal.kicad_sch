@@ -1187,7 +1187,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:LED_ARGB"
+		(symbol "Device:LED_BGAR"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -1203,7 +1203,7 @@
 					)
 				)
 			)
-			(property "Value" "LED_ARGB"
+			(property "Value" "LED_BGAR"
 				(at 0 -8.89 0)
 				(effects
 					(font
@@ -1229,7 +1229,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "RGB LED, anode/red/green/blue"
+			(property "Description" "RGB LED, blue/green/anode/red"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1256,7 +1256,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "LED_ARGB_0_0"
+			(symbol "LED_BGAR_0_0"
 				(text "R"
 					(at -1.905 3.81 0)
 					(effects
@@ -1282,7 +1282,7 @@
 					)
 				)
 			)
-			(symbol "LED_ARGB_0_1"
+			(symbol "LED_BGAR_0_1"
 				(polyline
 					(pts
 						(xy -1.27 6.35) (xy -1.27 3.81)
@@ -1614,7 +1614,7 @@
 					)
 				)
 			)
-			(symbol "LED_ARGB_1_1"
+			(symbol "LED_BGAR_1_1"
 				(pin passive line
 					(at -5.08 5.08 0)
 					(length 2.54)
@@ -1625,7 +1625,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1643,7 +1643,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1661,7 +1661,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1679,7 +1679,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2848,16 +2848,6 @@
 		)
 		(uuid "580b1145-1b60-44ed-a7ca-4fcfc378eb9f")
 	)
-	(text "TODO: pot orientation"
-		(exclude_from_sim no)
-		(at 186.69 77.724 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "79052024-6b91-4f00-9089-51a776667ef2")
-	)
 	(text "bypass"
 		(exclude_from_sim no)
 		(at 270.51 35.306 0)
@@ -2877,16 +2867,6 @@
 			)
 		)
 		(uuid "9b86b276-7715-4887-bccf-4ac99fcde8f2")
-	)
-	(text "TODO: confirm LEDs"
-		(exclude_from_sim no)
-		(at 227.076 35.306 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "c6d0286b-3ea2-44c8-9098-3196feb14bc5")
 	)
 	(text "RED or GREEN indicates state"
 		(exclude_from_sim no)
@@ -3069,7 +3049,7 @@
 		(uuid "3931309c-a2c5-4cb9-9faf-5c257ef1186a")
 	)
 	(no_connect
-		(at 220.98 45.72)
+		(at 215.9 45.72)
 		(uuid "a07bcb42-e483-40b1-9fdc-3ebc33f89a46")
 	)
 	(no_connect
@@ -3132,16 +3112,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 45.72) (xy 215.9 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0429b1bc-4d75-44b0-8231-f8514eabf487")
-	)
-	(wire
-		(pts
 			(xy 204.47 119.38) (xy 207.01 119.38)
 		)
 		(stroke
@@ -3149,6 +3119,16 @@
 			(type default)
 		)
 		(uuid "0555d5c6-9757-4d40-a614-051d13ee5e78")
+	)
+	(wire
+		(pts
+			(xy 210.82 45.72) (xy 210.82 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0601ce73-93ae-4398-988e-eafcbe6b06dc")
 	)
 	(wire
 		(pts
@@ -3319,16 +3299,6 @@
 			(type default)
 		)
 		(uuid "189dc79f-348c-4c48-9987-4d3a665cd2ea")
-	)
-	(wire
-		(pts
-			(xy 210.82 45.72) (xy 210.82 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "194437f4-f068-4c1a-83fe-19cd58d18ef7")
 	)
 	(wire
 		(pts
@@ -3842,6 +3812,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 50.8) (xy 220.98 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77cdd47f-8b30-4820-bece-39469f52ca50")
+	)
+	(wire
+		(pts
 			(xy 171.45 137.16) (xy 171.45 128.27)
 		)
 		(stroke
@@ -4049,6 +4029,16 @@
 			(type default)
 		)
 		(uuid "9befb8ab-40f5-419b-831c-7b2022e781f1")
+	)
+	(wire
+		(pts
+			(xy 220.98 50.8) (xy 220.98 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9de4685d-d102-4bea-a3bf-874237d7d160")
 	)
 	(wire
 		(pts
@@ -4915,7 +4905,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NMJ6HFD2_Horizontal"
+		(property "Footprint" "_project:Jack_6.35mm_Neutrik_NMJ6HCD3_Horizontal"
 			(at 85.09 116.84 0)
 			(effects
 				(font
@@ -5103,7 +5093,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_ARGB")
+		(lib_id "Device:LED_BGAR")
 		(at 215.9 40.64 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5148,7 +5138,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED, anode/red/green/blue"
+		(property "Description" "RGB LED, blue/green/anode/red"
 			(at 215.9 40.64 0)
 			(effects
 				(font
@@ -5477,7 +5467,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NMJ6HFD2_Horizontal"
+		(property "Footprint" "_project:Jack_6.35mm_Neutrik_NMJ6HCD3_Horizontal"
 			(at 22.86 102.87 0)
 			(effects
 				(font
@@ -6063,7 +6053,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NMJ6HFD2_Horizontal"
+		(property "Footprint" "_project:Jack_6.35mm_Neutrik_NMJ6HCD3_Horizontal"
 			(at 167.64 62.23 0)
 			(effects
 				(font
@@ -6143,7 +6133,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NMJ6HFD2_Horizontal"
+		(property "Footprint" "_project:Jack_6.35mm_Neutrik_NMJ6HCD3_Horizontal"
 			(at 271.78 129.54 0)
 			(effects
 				(font
@@ -7234,7 +7224,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 218.44 30.4799 0)
 			(effects
 				(font
@@ -8035,7 +8025,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Audio:Jack_6.35mm_Neutrik_NMJ6HFD2_Horizontal"
+		(property "Footprint" "_project:Jack_6.35mm_Neutrik_NMJ6HCD3_Horizontal"
 			(at 71.12 116.84 0)
 			(effects
 				(font

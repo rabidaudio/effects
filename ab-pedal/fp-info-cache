@@ -1,4 +1,4 @@
-26649840882955694
+26651625380134651
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106252,6 +106252,13 @@ Varistor VF
 0
 2
 2
+_project
+Jack_6.35mm_Neutrik_NMJ6HCD3_Horizontal
+M Series, 6.35mm (1/4in) stereo jack, switched, with chrome ferrule and offset PCB pins, https://www.neutrik.com/en/product/nmj6hcd3
+neutrik jack m
+0
+6
+6
 _project
 MTS-DPDT
 
