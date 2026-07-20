@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model NMJ6HCD2
+#/265911/577249/2.50/6/3/Connector
+DEF NMJ6HCD2 J 0 30 Y Y 1 F N
+F0 "J" 850 300 50 H V L CNN
+F1 "NMJ6HCD2" 850 200 50 H V L CNN
+F2 "NMJ6HCD2" 850 100 50 H I L CNN
+F3 "https://www.neutrik.com/media/8582/download/st-nmj6hcd2.PDF?v=3" 850 0 50 H I L CNN
+F4 "Phone Connectors STEREO CHROME NOSE 50 V 3 A   Right Angle Female" 850 -100 50 H I L CNN "Description"
+F5 "15.67" 850 -200 50 H I L CNN "Height"
+F6 "550-22302" 850 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Neutrik/NMJ6HCD2?qs=ZNZTMDotSRlKYl2qFVJbQA%3D%3D" 850 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Neutrik" 850 -500 50 H I L CNN "Manufacturer_Name"
+F9 "NMJ6HCD2" 850 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X R1 R1 1000 -100 200 L 50 50 0 0 P
+X S1 S1 1000 -200 200 L 50 50 0 0 P
+X T1 T1 1000 0 200 L 50 50 0 0 P
+X RN1 RN1 0 -100 200 R 50 50 0 0 P
+X SN1 SN1 0 -200 200 R 50 50 0 0 P
+X TN1 TN1 0 0 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 800 100 800 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library
