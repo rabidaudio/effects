@@ -6726,7 +6726,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPDT_x2")
-		(at 234.95 137.16 0)
+		(at 179.07 149.86 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6735,7 +6735,7 @@
 		(dnp no)
 		(uuid "35e3508c-889b-4cfb-9482-798bc673f0db")
 		(property "Reference" "SW1"
-			(at 234.95 128.27 0)
+			(at 179.07 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6743,7 +6743,7 @@
 			)
 		)
 		(property "Value" "TRUE_BYPASS"
-			(at 234.95 130.81 0)
+			(at 179.07 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6751,7 +6751,7 @@
 			)
 		)
 		(property "Footprint" "_project:MTS-DPDT"
-			(at 234.95 137.16 0)
+			(at 179.07 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6760,7 +6760,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 234.95 137.16 0)
+			(at 179.07 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6769,7 +6769,7 @@
 			)
 		)
 		(property "Description" "Switch, dual pole double throw, separate symbols"
-			(at 234.95 137.16 0)
+			(at 179.07 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8678,7 +8678,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:TL074")
-		(at 55.88 92.71 0)
+		(at 214.63 134.62 0)
 		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
@@ -8687,7 +8687,7 @@
 		(dnp no)
 		(uuid "c2290fb0-8ff6-488c-b5d2-80d7ce4bdad8")
 		(property "Reference" "U1"
-			(at 55.88 102.87 0)
+			(at 214.63 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8695,7 +8695,7 @@
 			)
 		)
 		(property "Value" "TL074"
-			(at 55.88 100.33 0)
+			(at 214.63 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8703,7 +8703,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 54.61 95.25 0)
+			(at 213.36 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8712,7 +8712,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 57.15 97.79 0)
+			(at 215.9 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8721,7 +8721,7 @@
 			)
 		)
 		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 55.88 92.71 0)
+			(at 214.63 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8848,7 +8848,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPDT_x2")
-		(at 179.07 149.86 0)
+		(at 234.95 137.16 0)
 		(mirror y)
 		(unit 2)
 		(exclude_from_sim no)
@@ -8857,7 +8857,7 @@
 		(dnp no)
 		(uuid "ca6f5653-9c39-45d4-8a42-43bc6c8c3b19")
 		(property "Reference" "SW1"
-			(at 179.07 140.97 0)
+			(at 234.95 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8865,7 +8865,7 @@
 			)
 		)
 		(property "Value" "TRUE_BYPASS"
-			(at 179.07 143.51 0)
+			(at 234.95 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8873,7 +8873,7 @@
 			)
 		)
 		(property "Footprint" "_project:MTS-DPDT"
-			(at 179.07 149.86 0)
+			(at 234.95 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8882,7 +8882,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 179.07 149.86 0)
+			(at 234.95 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8891,7 +8891,7 @@
 			)
 		)
 		(property "Description" "Switch, dual pole double throw, separate symbols"
-			(at 179.07 149.86 0)
+			(at 234.95 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9773,7 +9773,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:TL074")
-		(at 214.63 134.62 0)
+		(at 55.88 92.71 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9782,7 +9782,7 @@
 		(dnp no)
 		(uuid "f3ad60b1-d169-4168-9721-bb6641d59ae2")
 		(property "Reference" "U1"
-			(at 214.63 144.78 0)
+			(at 55.88 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9790,7 +9790,7 @@
 			)
 		)
 		(property "Value" "TL074"
-			(at 214.63 142.24 0)
+			(at 55.88 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9798,7 +9798,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 213.36 137.16 0)
+			(at 54.61 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9807,7 +9807,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 215.9 139.7 0)
+			(at 57.15 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9816,7 +9816,7 @@
 			)
 		)
 		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 214.63 134.62 0)
+			(at 55.88 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
