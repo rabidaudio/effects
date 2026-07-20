@@ -2787,26 +2787,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "TODO: switch orientation"
-		(exclude_from_sim no)
-		(at 251.968 94.488 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "0e0a3dbe-866c-48a9-9cad-ee92bc34e700")
-	)
-	(text "TODO: switch orientation"
-		(exclude_from_sim no)
-		(at 139.446 118.872 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "24c61b39-b230-4043-b64d-f7a26d0b6f59")
-	)
 	(text "Negative supply charge pump\nconnecting boost to VCC increases\nswtiching frequency to avoid audio interference"
 		(exclude_from_sim no)
 		(at 90.17 20.32 0)
@@ -2858,17 +2838,7 @@
 		)
 		(uuid "835c7dc0-ccf5-4f86-a0c2-078ae79ff1a0")
 	)
-	(text "TODO: switch footprint"
-		(exclude_from_sim no)
-		(at 256.032 113.792 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "9b86b276-7715-4887-bccf-4ac99fcde8f2")
-	)
-	(text "RED or GREEN indicates state"
+	(text "RED or BLUE indicates state"
 		(exclude_from_sim no)
 		(at 204.216 37.084 90)
 		(effects
@@ -2877,16 +2847,6 @@
 			)
 		)
 		(uuid "dd81697f-9e89-4ad6-87e8-57d77ecfe848")
-	)
-	(text "TODO: switch footprint"
-		(exclude_from_sim no)
-		(at 124.46 143.764 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "f7b8614b-c027-468d-9d7b-5ab450e778ab")
 	)
 	(junction
 		(at 63.5 114.3)
