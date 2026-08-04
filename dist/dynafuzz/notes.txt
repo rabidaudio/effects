@@ -1,0 +1,5 @@
+positive feedback didn't increase sustain in MAX experiment.
+
+Sustain comes from the compression. Louder input buffer should mean more
+sustain. Hence devi ever response; the input gain needs to be miniscule
+
