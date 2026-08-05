@@ -3785,7 +3785,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
+		(property "Footprint" "_effects_shared_footprints:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
 			(at 88.9 109.22 0)
 			(effects
 				(font
@@ -3858,7 +3858,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
+		(property "Footprint" "_effects_shared_footprints:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
 			(at 256.54 114.3 0)
 			(effects
 				(font
@@ -4302,7 +4302,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 55.88 111.76 0)
+		(at 55.88 111.76 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4316,7 +4316,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "100k"
@@ -4325,11 +4325,11 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "_project:R"
-			(at 54.102 111.76 90)
+			(at 57.658 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4464,7 +4464,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
+		(property "Footprint" "_effects_shared_footprints:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
 			(at 200.66 110.49 0)
 			(effects
 				(font
@@ -4511,7 +4511,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 38.1 105.41 270)
+		(at 38.1 105.41 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4536,7 +4536,7 @@
 			)
 		)
 		(property "Footprint" "_project:R"
-			(at 38.1 103.632 90)
+			(at 38.1 107.188 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6527,7 +6527,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
+		(property "Footprint" "_effects_shared_footprints:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
 			(at 200.66 95.25 0)
 			(effects
 				(font
@@ -8194,7 +8194,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 200.66 44.45 0)
+		(at 200.66 44.45 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8208,7 +8208,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "1K"
@@ -8217,11 +8217,11 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "_project:R"
-			(at 198.882 44.45 90)
+			(at 202.438 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8332,7 +8332,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 129.54 78.74 180)
+		(at 129.54 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8346,7 +8346,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "18k"
@@ -8355,11 +8355,11 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "_project:R"
-			(at 131.318 78.74 90)
+			(at 127.762 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8538,7 +8538,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 172.72 80.01 180)
+		(at 172.72 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8552,7 +8552,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "18k"
@@ -8561,11 +8561,11 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "_project:R"
-			(at 174.498 80.01 90)
+			(at 170.942 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
