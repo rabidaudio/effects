@@ -446,7 +446,7 @@
 			(xyz 0 0 0)
 		)
 	)
-	(model "${KIPRJMOD}/LIB_NMJ6HCD2/NMJ6HCD2/3D/NMJ6HCD2.stp"
+	(model "${KIPRJMOD}/../../_shared/LIB_NMJ6HCD2/NMJ6HCD2/3D/NMJ6HCD2.stp"
 		(offset
 			(xyz 6.5 -8 0)
 		)
