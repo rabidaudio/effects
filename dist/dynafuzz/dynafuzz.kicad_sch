@@ -4511,7 +4511,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 38.1 105.41 90)
+		(at 38.1 105.41 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4536,7 +4536,7 @@
 			)
 		)
 		(property "Footprint" "_project:R"
-			(at 38.1 107.188 90)
+			(at 38.1 103.632 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5565,7 +5565,7 @@
 	(symbol
 		(lib_id "_project:SW_3PDT_x3")
 		(at 139.7 40.64 0)
-		(unit 1)
+		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -5646,7 +5646,7 @@
 			(project ""
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375"
 					(reference "SW1")
-					(unit 1)
+					(unit 3)
 				)
 			)
 		)
@@ -6845,7 +6845,7 @@
 		(lib_id "_project:SW_3PDT_x3")
 		(at 161.29 40.64 0)
 		(mirror y)
-		(unit 2)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6925,7 +6925,7 @@
 			(project ""
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375"
 					(reference "SW1")
-					(unit 2)
+					(unit 1)
 				)
 			)
 		)
@@ -7797,7 +7797,7 @@
 				)
 			)
 		)
-		(property "Value" "AudioJack3_Switch"
+		(property "Value" "AudioJack_OUT"
 			(at 178.435 26.67 0)
 			(effects
 				(font
@@ -8332,7 +8332,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 129.54 78.74 0)
+		(at 129.54 78.74 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8346,7 +8346,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "18k"
@@ -8355,11 +8355,11 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "_project:R"
-			(at 127.762 78.74 90)
+			(at 131.318 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8538,7 +8538,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 172.72 80.01 0)
+		(at 172.72 80.01 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8552,7 +8552,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "18k"
@@ -8561,11 +8561,11 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "_project:R"
-			(at 170.942 80.01 90)
+			(at 174.498 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9032,7 +9032,7 @@
 				)
 			)
 		)
-		(property "Value" "AudioJack3_Switch"
+		(property "Value" "AudioJack_IN"
 			(at 122.555 26.67 0)
 			(effects
 				(font
@@ -9163,7 +9163,7 @@
 	(symbol
 		(lib_id "_project:SW_3PDT_x3")
 		(at 215.9 25.4 0)
-		(unit 3)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -9243,7 +9243,7 @@
 			(project ""
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375"
 					(reference "SW1")
-					(unit 3)
+					(unit 2)
 				)
 			)
 		)
