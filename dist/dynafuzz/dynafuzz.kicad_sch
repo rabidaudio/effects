@@ -3994,7 +3994,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 190.5 118.618 90)
 			(effects
 				(font
@@ -4328,7 +4328,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 54.102 111.76 90)
 			(effects
 				(font
@@ -4535,7 +4535,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 38.1 107.188 90)
 			(effects
 				(font
@@ -4605,7 +4605,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 221.742 116.84 90)
 			(effects
 				(font
@@ -4819,7 +4819,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 153.67 112.268 90)
 			(effects
 				(font
@@ -5037,7 +5037,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "_project:C"
 			(at 209.55 111.4552 0)
 			(effects
 				(font
@@ -5170,7 +5170,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 60.96 100.838 90)
 			(effects
 				(font
@@ -5383,7 +5383,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "_project:C"
 			(at 121.92 87.9348 0)
 			(effects
 				(font
@@ -5453,7 +5453,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 233.172 93.98 90)
 			(effects
 				(font
@@ -5520,7 +5520,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "_project:C"
 			(at 64.77 94.2848 0)
 			(effects
 				(font
@@ -5972,7 +5972,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 116.332 115.57 90)
 			(effects
 				(font
@@ -6118,7 +6118,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 65.532 88.9 90)
 			(effects
 				(font
@@ -6185,7 +6185,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 208.28 90.678 90)
 			(effects
 				(font
@@ -6321,7 +6321,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 127.762 120.65 90)
 			(effects
 				(font
@@ -6391,7 +6391,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 233.172 121.92 90)
 			(effects
 				(font
@@ -6664,7 +6664,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 110.49 110.998 90)
 			(effects
 				(font
@@ -6731,7 +6731,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "_project:C"
 			(at 127 98.0948 0)
 			(effects
 				(font
@@ -6799,7 +6799,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "_project:C"
 			(at 81.28 98.0948 0)
 			(effects
 				(font
@@ -6955,7 +6955,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "_project:C"
 			(at 201.6252 128.27 0)
 			(effects
 				(font
@@ -7025,7 +7025,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 170.942 121.92 90)
 			(effects
 				(font
@@ -7159,7 +7159,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "_project:C"
 			(at 104.14 108.2548 0)
 			(effects
 				(font
@@ -7229,7 +7229,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 87.122 120.65 90)
 			(effects
 				(font
@@ -7367,7 +7367,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 65.532 116.84 90)
 			(effects
 				(font
@@ -7500,7 +7500,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 123.19 104.648 90)
 			(effects
 				(font
@@ -7737,7 +7737,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 225.298 97.79 90)
 			(effects
 				(font
@@ -7951,7 +7951,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "_project:C"
 			(at 165.1 89.2048 0)
 			(effects
 				(font
@@ -8150,7 +8150,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 166.37 105.918 90)
 			(effects
 				(font
@@ -8220,7 +8220,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 198.882 44.45 90)
 			(effects
 				(font
@@ -8288,7 +8288,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "_project:C"
 			(at 147.32 109.5248 0)
 			(effects
 				(font
@@ -8358,7 +8358,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 127.762 78.74 90)
 			(effects
 				(font
@@ -8426,7 +8426,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "_project:C"
 			(at 52.07 104.4448 0)
 			(effects
 				(font
@@ -8494,7 +8494,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "_project:C"
 			(at 248.92 103.1748 0)
 			(effects
 				(font
@@ -8564,7 +8564,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 170.942 80.01 90)
 			(effects
 				(font
@@ -8631,7 +8631,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "_project:C"
 			(at 186.69 105.1052 0)
 			(effects
 				(font
@@ -8764,7 +8764,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" "_project:C"
 			(at 170.18 99.3648 0)
 			(effects
 				(font
@@ -9276,7 +9276,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "_project:R"
 			(at 159.512 116.84 90)
 			(effects
 				(font

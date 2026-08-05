@@ -1,4 +1,4 @@
-26649753690659788
+26653325604526208
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106266,3 +106266,17 @@ Stompbox Switch
 0
 9
 9
+_project
+C
+C, Rect series, Radial, pin pitch=5.00mm, length*width=7*2.5mm^2, Capacitor
+C Rect series Radial pin pitch 5.00mm length 7mm width 2.5mm Capacitor
+0
+2
+2
+_project
+R
+Resistor, Axial_DIN0207 series, Axial, Vertical, pin pitch=2.54mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0207 series Axial Vertical pin pitch 2.54mm 0.25W = 1/4W length 6.3mm diameter 2.5mm
+0
+2
+2
