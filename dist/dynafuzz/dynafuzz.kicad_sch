@@ -2003,6 +2003,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "TODO: silkscreen gfx"
+		(exclude_from_sim no)
+		(at 148.844 60.452 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1766d5fb-cb91-4da7-a005-c3a6a7b05eff")
+	)
 	(text "HOOF Tone Stack"
 		(exclude_from_sim no)
 		(at 198.12 143.764 0)
@@ -2012,6 +2022,16 @@
 			)
 		)
 		(uuid "7615d4bc-420f-47b7-b4c7-1b053a67bcb2")
+	)
+	(text "TODO: stompboard"
+		(exclude_from_sim no)
+		(at 149.606 51.054 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ad0076be-a8c7-4fb5-ac63-753f0fb61822")
 	)
 	(text "https://tonestack.yuriturov.com/?s=eNpbmpj-NbFsWVKQ02_7261yOwJftyYF-TImBYX8tr_x9VB_jMa3pCDn3_YPFl_nsi1YkhQU9tv-1kP3dSJVj5KCwoFs2wKQTGJFYllSUfGCxJKWRYmZKbmlaYaJySuTgzz9Eg2SgnxSDA0MsoHmNicbmWYn-vyyZ2BgAFrRDBaH8w2TjY2BqoxSjPWAtLNhsqFBXpKzEYQyBqnNgxpulJi8CtNwVNOAphuZophuCFJmlGxmgWR4iomeOcj0ZBMQZYJsCcwHyYam2aT4wRLsByM9I5A1KWZ6FmB7IDRWXyQbGmWT4Q9TM7A_wA4Hhxm6PwB9TKNZ"
 		(exclude_from_sim no)
@@ -2032,16 +2052,6 @@
 			)
 		)
 		(uuid "da00b339-497c-42c1-a581-43451b3ec2a5")
-	)
-	(text "TODO: pot orientation"
-		(exclude_from_sim no)
-		(at 199.39 86.106 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "dabc2f14-4ee1-4bbd-9186-4c55c01daf13")
 	)
 	(text "DUAL GAIN"
 		(exclude_from_sim no)
@@ -3760,15 +3770,15 @@
 	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 88.9 109.22 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "00ab3a53-311a-4b5b-a7b3-a9d3beb83179")
 		(property "Reference" "RV1"
-			(at 86.36 107.9499 0)
+			(at 86.36 110.4901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3777,7 +3787,7 @@
 			)
 		)
 		(property "Value" "R_SUSTAIN-A100K"
-			(at 86.36 110.4899 0)
+			(at 86.36 107.9501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3833,15 +3843,15 @@
 	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 256.54 114.3 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "034603fd-5001-4608-894a-35d1b13408ee")
 		(property "Reference" "RV4"
-			(at 254 113.0299 0)
+			(at 254 115.5701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3850,7 +3860,7 @@
 			)
 		)
 		(property "Value" "R_VOL-A100K"
-			(at 254 115.5699 0)
+			(at 254 113.0301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4439,15 +4449,15 @@
 	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 200.66 110.49 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "211eff97-a2bd-4d58-8bad-bc69280fe8df")
 		(property "Reference" "RV3"
-			(at 198.12 109.2199 0)
+			(at 198.12 111.7601 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4456,7 +4466,7 @@
 			)
 		)
 		(property "Value" "R_TONE-B100K"
-			(at 198.12 111.7599 0)
+			(at 198.12 109.2201 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6502,15 +6512,15 @@
 	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 200.66 95.25 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "73ebee90-5b66-4c20-bd5c-176ee051ce81")
 		(property "Reference" "RV2"
-			(at 198.12 93.9799 0)
+			(at 198.12 96.5201 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6519,7 +6529,7 @@
 			)
 		)
 		(property "Value" "R_MID-B25K"
-			(at 198.12 96.5199 0)
+			(at 198.12 93.9801 0)
 			(effects
 				(font
 					(size 1.27 1.27)
