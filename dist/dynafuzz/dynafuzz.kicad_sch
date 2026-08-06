@@ -6122,6 +6122,7 @@
 	(symbol
 		(lib_id "_project:SW_3PDT_x3")
 		(at 107.95 167.64 0)
+		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6129,7 +6130,7 @@
 		(dnp no)
 		(uuid "52e4b331-89e0-41e0-8166-16683652b649")
 		(property "Reference" "SW1"
-			(at 107.95 158.75 0)
+			(at 107.95 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6137,7 +6138,7 @@
 			)
 		)
 		(property "Value" "SW_3PDT_x3"
-			(at 107.95 161.29 0)
+			(at 107.95 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7399,8 +7400,7 @@
 	)
 	(symbol
 		(lib_id "_project:SW_3PDT_x3")
-		(at 129.54 167.64 0)
-		(mirror y)
+		(at 129.54 167.64 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7408,7 +7408,7 @@
 		(dnp no)
 		(uuid "8b784f69-a068-4b66-be6a-76d425198561")
 		(property "Reference" "SW1"
-			(at 129.54 158.75 0)
+			(at 129.54 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7416,7 +7416,7 @@
 			)
 		)
 		(property "Value" "SW_3PDT_x3"
-			(at 129.54 161.29 0)
+			(at 129.54 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9882,6 +9882,7 @@
 	(symbol
 		(lib_id "_project:SW_3PDT_x3")
 		(at 144.78 181.61 0)
+		(mirror x)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9889,7 +9890,7 @@
 		(dnp no)
 		(uuid "f33d47b9-b6c3-412d-8e0e-4f3e9cdcc754")
 		(property "Reference" "SW1"
-			(at 144.526 187.198 0)
+			(at 144.526 176.022 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9897,7 +9898,7 @@
 			)
 		)
 		(property "Value" "SW_3PDT_x3"
-			(at 144.526 189.738 0)
+			(at 144.526 173.482 0)
 			(effects
 				(font
 					(size 1.27 1.27)
