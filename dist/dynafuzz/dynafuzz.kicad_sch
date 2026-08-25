@@ -518,6 +518,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Audio:AudioJack3_Switch"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2471,6 +2578,12 @@
 		(uuid "677752ee-81ff-4e25-9083-127de55206ae")
 	)
 	(junction
+		(at 175.26 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6cd0799f-2f79-4d5f-9ec1-ef7adcb85115")
+	)
+	(junction
 		(at 251.46 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2543,6 +2656,12 @@
 		(uuid "9b772385-edf3-4f65-a00a-abe29f36936a")
 	)
 	(junction
+		(at 205.74 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1191eea-48fa-4ea0-a822-ed063b505b03")
+	)
+	(junction
 		(at 118.11 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2583,6 +2702,24 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d0cec0bf-3766-465f-8eb2-17101f6435d7")
+	)
+	(junction
+		(at 237.49 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db7bbf9f-9366-4feb-87ab-b2cd351e0246")
+	)
+	(junction
+		(at 69.85 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f1b89bdf-3647-4b40-82c8-6b2acbcb1e76")
+	)
+	(junction
+		(at 132.08 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f3627b64-dad3-4236-b845-60ce1e2d2f06")
 	)
 	(no_connect
 		(at 46.99 171.45)
@@ -2644,7 +2781,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 110.49) (xy 209.55 110.49)
+			(xy 204.47 110.49) (xy 205.74 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2661,6 +2798,16 @@
 			(type default)
 		)
 		(uuid "0b25f6ed-54e4-4ff0-8e3b-c1fd689d0225")
+	)
+	(wire
+		(pts
+			(xy 132.08 102.87) (xy 139.7 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bcc5ef8-e928-462a-a8b0-fe15174bd269")
 	)
 	(wire
 		(pts
@@ -2884,7 +3031,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 104.14) (xy 181.61 104.14)
+			(xy 172.72 104.14) (xy 175.26 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2994,6 +3141,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 99.06) (xy 73.66 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "340ce925-6e2b-4d5f-aa4c-77d8c4ee727e")
+	)
+	(wire
+		(pts
 			(xy 129.54 72.39) (xy 129.54 74.93)
 		)
 		(stroke
@@ -3044,7 +3201,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 102.87) (xy 139.7 102.87)
+			(xy 129.54 102.87) (xy 132.08 102.87)
 		)
 		(stroke
 			(width 0)
@@ -3071,6 +3228,16 @@
 			(type default)
 		)
 		(uuid "45bae876-cdb8-4421-a022-94b393d9a178")
+	)
+	(wire
+		(pts
+			(xy 237.49 104.14) (xy 241.3 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46cb5dae-a952-4624-9ede-debb007d0533")
 	)
 	(wire
 		(pts
@@ -3314,6 +3481,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 110.49) (xy 209.55 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d546c60-b4a8-4ddc-9434-d53e9784bdd4")
+	)
+	(wire
+		(pts
 			(xy 67.31 92.71) (xy 67.31 95.25)
 		)
 		(stroke
@@ -3444,7 +3621,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 99.06) (xy 73.66 99.06)
+			(xy 67.31 99.06) (xy 69.85 99.06)
 		)
 		(stroke
 			(width 0)
@@ -3534,7 +3711,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 104.14) (xy 241.3 104.14)
+			(xy 234.95 104.14) (xy 237.49 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3691,6 +3868,16 @@
 			(type default)
 		)
 		(uuid "a7f7ac20-a2f2-4401-a96e-ca5d60ce9824")
+	)
+	(wire
+		(pts
+			(xy 175.26 104.14) (xy 181.61 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abbc2e28-5a1c-493e-83c1-0c7771ce9f64")
 	)
 	(wire
 		(pts
@@ -4852,6 +5039,72 @@
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 69.85 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "18d2ee25-1285-48b5-ae09-264fe4bdbf8c")
+		(property "Reference" "TP1"
+			(at 70.612 95.758 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 70.612 98.298 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 74.93 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 69.85 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f61caf8e-dae0-4f4a-a9ab-1db96c8b5a0d")
+		)
+		(instances
+			(project ""
+				(path "/b401260a-0de9-4b23-a692-63e5f9163375"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -6939,7 +7192,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "3.3k"
 			(at 237.49 123.1899 0)
 			(effects
 				(font
@@ -7325,6 +7578,72 @@
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 175.26 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8a1736a8-9ec9-4389-ba85-2571425e073b")
+		(property "Reference" "TP3"
+			(at 176.022 100.838 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 176.022 103.378 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 180.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 175.26 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b3702429-ad6b-4eb4-b7f9-3674a6135c09")
+		)
+		(instances
+			(project "dynafuzz"
+				(path "/b401260a-0de9-4b23-a692-63e5f9163375"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -8498,6 +8817,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 237.49 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aa81a7b6-16df-4f59-beb5-bf8cda21e0e5")
+		(property "Reference" "TP5"
+			(at 238.252 100.838 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 238.252 103.378 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 242.57 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 237.49 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4813f1e7-7c62-41e6-abb2-cfaf3d35078c")
+		)
+		(instances
+			(project "dynafuzz"
+				(path "/b401260a-0de9-4b23-a692-63e5f9163375"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 200.66 132.08 0)
 		(unit 1)
@@ -8849,7 +9234,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "3.3k"
 			(at 203.2 45.7199 0)
 			(effects
 				(font
@@ -9511,6 +9896,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 205.74 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d90c0968-fb60-4503-b351-0aaf9a7a21d6")
+		(property "Reference" "TP4"
+			(at 206.502 107.188 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 206.502 109.728 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 210.82 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 205.74 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07776515-85e5-4f0e-85d0-7848065ff981")
+		)
+		(instances
+			(project "dynafuzz"
+				(path "/b401260a-0de9-4b23-a692-63e5f9163375"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:2N3904")
 		(at 232.41 110.49 0)
 		(unit 1)
@@ -10033,6 +10484,72 @@
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375"
 					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 132.08 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fa010d28-6762-4c51-9aa4-a150f8f2b1de")
+		(property "Reference" "TP2"
+			(at 132.842 99.568 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 132.842 102.108 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 137.16 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 132.08 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2311ce4b-9e90-4ab1-b679-e46134c10716")
+		)
+		(instances
+			(project "dynafuzz"
+				(path "/b401260a-0de9-4b23-a692-63e5f9163375"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
