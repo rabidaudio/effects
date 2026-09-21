@@ -5,6 +5,113 @@
 	(uuid "86714696-7360-41b8-9f3a-648f8352d2b6")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -890,6 +997,18 @@
 		(uuid "7e6f42f6-e383-40ae-9b78-613c58c9c208")
 	)
 	(junction
+		(at 114.3 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "88536e33-fcbf-413a-85b5-b36dc740e83c")
+	)
+	(junction
+		(at 153.67 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0310a21-e9d1-4b42-a29d-00c6e277e165")
+	)
+	(junction
 		(at 151.13 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -933,7 +1052,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 87.63) (xy 154.94 87.63)
+			(xy 151.13 87.63) (xy 153.67 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1010,6 +1129,16 @@
 			(type default)
 		)
 		(uuid "4487f9a8-94b0-4a62-bdc9-32de4834823a")
+	)
+	(wire
+		(pts
+			(xy 153.67 87.63) (xy 154.94 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51ea40a4-f725-40f0-85d6-793f5289edf8")
 	)
 	(wire
 		(pts
@@ -1143,7 +1272,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 78.74) (xy 107.95 78.74)
+			(xy 119.38 78.74) (xy 114.3 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1183,6 +1312,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 78.74) (xy 107.95 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faab2039-4aa3-4d90-90a8-ca5ca22e0ac0")
+	)
+	(wire
+		(pts
 			(xy 138.43 91.44) (xy 138.43 102.87)
 		)
 		(stroke
@@ -1191,49 +1330,27 @@
 		)
 		(uuid "fb5257fd-4080-4ee9-bca0-176b57a5ae78")
 	)
-	(global_label "DEVI_OUT"
-		(shape input)
-		(at 166.37 87.63 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1ed5cc91-c8d3-430b-871d-897ad5770d5c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 178.0638 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "DEVI_IN"
+	(hierarchical_label "DEVI_IN"
 		(shape input)
 		(at 73.66 77.47 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "84fd3f4e-956f-489b-a314-05baabd81bf6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 63.6595 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
+		(uuid "2231afc5-22e7-44fb-89a1-b994865c831e")
+	)
+	(hierarchical_label "DEVI_OUT"
+		(shape output)
+		(at 166.37 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left)
 		)
+		(uuid "e6559508-9d78-4082-b713-fc5fe1aafe6e")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1245,7 +1362,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "121dd6c7-535a-460e-ab7d-beb25d38c134")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR038"
 			(at 144.78 111.76 0)
 			(effects
 				(font
@@ -1295,7 +1412,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "#PWR03")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -1311,7 +1428,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "33a28735-0a64-4664-b0f6-e7653291800d")
-		(property "Reference" "RV5"
+		(property "Reference" "RV4"
 			(at 76.2 86.3599 0)
 			(effects
 				(font
@@ -1329,7 +1446,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "_effects_shared_footprints:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
 			(at 78.74 87.63 0)
 			(effects
 				(font
@@ -1368,7 +1485,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "RV5")
+					(reference "RV4")
 					(unit 1)
 				)
 			)
@@ -1384,7 +1501,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b457c3a-9eee-42c9-885e-3b50ac41592a")
-		(property "Reference" "C16"
+		(property "Reference" "C17"
 			(at 123.19 78.74 90)
 			(effects
 				(font
@@ -1400,7 +1517,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 127 85.3948 0)
 			(effects
 				(font
@@ -1436,7 +1553,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "C16")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -1452,7 +1569,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d06a363-ed20-41f3-abf2-0f96f06ecf76")
-		(property "Reference" "Q5"
+		(property "Reference" "Q3"
 			(at 110.49 86.3599 0)
 			(effects
 				(font
@@ -1470,7 +1587,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
 			(at 110.49 85.09 0)
 			(effects
 				(font
@@ -1509,7 +1626,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "Q5")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -1525,7 +1642,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "416edf75-d548-4b01-b228-589597dd1518")
-		(property "Reference" "C17"
+		(property "Reference" "C18"
 			(at 158.75 80.01 90)
 			(effects
 				(font
@@ -1541,7 +1658,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 162.56 86.6648 0)
 			(effects
 				(font
@@ -1577,7 +1694,73 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "C17")
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 114.3 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "44473f8d-c0ab-4c2b-911b-1462be0c5df2")
+		(property "Reference" "TP5"
+			(at 115.062 75.438 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 115.062 77.978 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 119.38 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 114.3 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d413de2-7cf4-4e5f-99b5-c254326e6d0c")
+		)
+		(instances
+			(project "dynafuzz"
+				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -1593,7 +1776,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45ccd724-07d1-4b69-95b5-f9ab1674bf5c")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR039"
 			(at 151.13 66.04 0)
 			(effects
 				(font
@@ -1643,7 +1826,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "#PWR04")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -1659,7 +1842,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f6345f1-7336-40de-a594-5990e5adba03")
-		(property "Reference" "R24"
+		(property "Reference" "R17"
 			(at 81.28 96.5199 0)
 			(effects
 				(font
@@ -1677,7 +1860,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 76.962 97.79 90)
 			(effects
 				(font
@@ -1713,7 +1896,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "R24")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -1729,7 +1912,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6e575f7e-d040-4607-9b00-fbfa876ee31a")
-		(property "Reference" "R26"
+		(property "Reference" "R19"
 			(at 110.49 69.8499 0)
 			(effects
 				(font
@@ -1747,7 +1930,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 106.172 71.12 90)
 			(effects
 				(font
@@ -1783,7 +1966,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "R26")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -1799,7 +1982,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74856164-6a62-4954-9b0d-f9bbc615dec3")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR035"
 			(at 78.74 110.49 0)
 			(effects
 				(font
@@ -1849,7 +2032,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "#PWR05")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -1865,7 +2048,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "78419603-a8f4-4f69-8f0c-3609f8225e0a")
-		(property "Reference" "R27"
+		(property "Reference" "R20"
 			(at 153.67 67.3099 0)
 			(effects
 				(font
@@ -1883,7 +2066,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 149.352 68.58 90)
 			(effects
 				(font
@@ -1919,7 +2102,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "R27")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -1935,7 +2118,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f2f5039-1ce0-48ab-9a4a-16a97a27a325")
-		(property "Reference" "Q6"
+		(property "Reference" "Q4"
 			(at 140.97 85.0899 0)
 			(effects
 				(font
@@ -1953,7 +2136,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
 			(at 140.97 83.82 0)
 			(effects
 				(font
@@ -1992,7 +2175,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "Q6")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -2008,7 +2191,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ca2bd26-7924-4bde-9971-5ad1a5823959")
-		(property "Reference" "C15"
+		(property "Reference" "C16"
 			(at 90.17 80.01 90)
 			(effects
 				(font
@@ -2024,7 +2207,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 93.98 86.6648 0)
 			(effects
 				(font
@@ -2060,7 +2243,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "C15")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -2076,7 +2259,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a1613537-92e1-4755-ad32-e0dbecddea47")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR037"
 			(at 107.95 102.87 0)
 			(effects
 				(font
@@ -2126,7 +2309,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "#PWR02")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -2142,7 +2325,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6491375-11dd-42cc-b543-160890d079b8")
-		(property "Reference" "Q7"
+		(property "Reference" "Q5"
 			(at 153.67 93.9799 0)
 			(effects
 				(font
@@ -2160,7 +2343,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
 			(at 153.67 92.71 0)
 			(effects
 				(font
@@ -2199,7 +2382,73 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "Q7")
+					(reference "Q5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 153.67 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bb60130a-a832-45a8-b289-8d7038c55f48")
+		(property "Reference" "TP6"
+			(at 154.432 84.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 154.432 86.868 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 158.75 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 153.67 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c7ad8124-4978-4f76-ac74-39a234813439")
+		)
+		(instances
+			(project "dynafuzz"
+				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -2215,7 +2464,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d53d8819-0fba-4101-8487-c835248a7fbb")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR036"
 			(at 107.95 68.58 0)
 			(effects
 				(font
@@ -2265,7 +2514,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "#PWR01")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -2280,7 +2529,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f6a70304-c882-482f-b845-2269adad186f")
-		(property "Reference" "R25"
+		(property "Reference" "R18"
 			(at 103.378 73.914 90)
 			(effects
 				(font
@@ -2296,7 +2545,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 104.14 80.518 90)
 			(effects
 				(font
@@ -2332,7 +2581,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "R25")
+					(reference "R18")
 					(unit 1)
 				)
 			)
