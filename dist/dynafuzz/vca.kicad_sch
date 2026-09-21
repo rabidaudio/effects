@@ -2045,7 +2045,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+9V"
+		(symbol "power:+7.5V"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -2066,7 +2066,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+9V"
+			(property "Value" "+7.5V"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -2092,7 +2092,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+9V\""
+			(property "Description" "Power symbol creates a global label with name \"+7.5V\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2110,7 +2110,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+9V_0_1"
+			(symbol "+7.5V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -2148,7 +2148,7 @@
 					)
 				)
 			)
-			(symbol "+9V_1_1"
+			(symbol "+7.5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -2170,7 +2170,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:-9V"
+		(symbol "power:-8V"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -2191,7 +2191,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "-9V"
+			(property "Value" "-8V"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -2217,7 +2217,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"-9V\""
+			(property "Description" "Power symbol creates a global label with name \"-8V\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2235,33 +2235,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "-9V_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 1.27) (xy -0.762 1.27) (xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "-9V_1_1"
+			(symbol "-8V_0_0"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -2278,6 +2252,20 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(symbol "-8V_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy 0.762 1.27) (xy 0 2.54) (xy -0.762 1.27) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 			)
@@ -3702,72 +3690,6 @@
 		(uuid "fe72de46-3f1d-438c-9455-8492a54a44d2")
 	)
 	(symbol
-		(lib_id "power:+9V")
-		(at 151.13 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "04b80141-3ce7-4053-993e-270c744dea1f")
-		(property "Reference" "#PWR049"
-			(at 151.13 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+9V"
-			(at 151.13 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 151.13 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 151.13 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+9V\""
-			(at 151.13 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7aff6c04-f10f-4877-a4cd-e27118c397bf")
-		)
-		(instances
-			(project "dynafuzz"
-				(path "/b401260a-0de9-4b23-a692-63e5f9163375/f1f48dbc-08ba-440b-8310-6ec9ab55161d"
-					(reference "#PWR049")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Transistor_BJT:DMMT5401")
 		(at 157.48 36.83 0)
 		(mirror x)
@@ -4163,15 +4085,15 @@
 		(dnp no)
 		(uuid "273be5a8-2566-4937-9aae-8fb9dc3c84a9")
 		(property "Reference" "RV5"
-			(at 84.836 30.734 90)
+			(at 85.09 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "1M"
-			(at 84.836 33.274 90)
+		(property "Value" "R_THRESHOLD_B1M"
+			(at 92.71 34.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4352,6 +4274,72 @@
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/f1f48dbc-08ba-440b-8310-6ec9ab55161d"
 					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+7.5V")
+		(at 151.13 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f70171d-97e2-49cb-8eb8-8d81423280cb")
+		(property "Reference" "#PWR058"
+			(at 151.13 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+7.5V"
+			(at 151.13 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 151.13 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 151.13 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+7.5V\""
+			(at 151.13 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "75e6bacd-13be-4264-8eee-38f4707055c0")
+		)
+		(instances
+			(project ""
+				(path "/b401260a-0de9-4b23-a692-63e5f9163375/f1f48dbc-08ba-440b-8310-6ec9ab55161d"
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -4717,7 +4705,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-14_5.3x6.2mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 74.93 48.26 0)
 			(effects
 				(font
@@ -5094,72 +5082,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:-9V")
-		(at 90.17 153.67 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6def8ce8-9787-47ee-aed1-af03dcb2d939")
-		(property "Reference" "#PWR042"
-			(at 90.17 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-9V"
-			(at 90.17 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 90.17 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 90.17 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-9V\""
-			(at 90.17 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bc7c9cc6-6d03-4554-b8c5-6c8a54512265")
-		)
-		(instances
-			(project ""
-				(path "/b401260a-0de9-4b23-a692-63e5f9163375/f1f48dbc-08ba-440b-8310-6ec9ab55161d"
-					(reference "#PWR042")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 128.27 92.71 0)
 		(unit 1)
@@ -5220,6 +5142,72 @@
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/f1f48dbc-08ba-440b-8310-6ec9ab55161d"
 					(reference "TP10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-8V")
+		(at 90.17 153.67 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8af2a822-d51b-45dc-bf43-1d69e1935c41")
+		(property "Reference" "#PWR042"
+			(at 90.17 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-7.5V"
+			(at 90.17 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-8V\""
+			(at 90.17 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd92e6df-d554-49c5-9ee2-0bdab2fa2d52")
+		)
+		(instances
+			(project "dynafuzz"
+				(path "/b401260a-0de9-4b23-a692-63e5f9163375/f1f48dbc-08ba-440b-8310-6ec9ab55161d"
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -5294,7 +5282,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:TL074")
-		(at 114.3 146.05 0)
+		(at 186.69 85.09 0)
 		(mirror x)
 		(unit 4)
 		(exclude_from_sim no)
@@ -5303,7 +5291,7 @@
 		(dnp no)
 		(uuid "9a763120-fcea-4723-9068-f79f198fc500")
 		(property "Reference" "U1"
-			(at 116.84 152.908 0)
+			(at 189.23 91.948 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5311,15 +5299,15 @@
 			)
 		)
 		(property "Value" "TL074"
-			(at 116.84 150.368 0)
+			(at 189.23 89.408 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-14_5.3x6.2mm_P0.65mm"
-			(at 113.03 148.59 0)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 185.42 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5328,7 +5316,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 115.57 151.13 0)
+			(at 187.96 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5337,7 +5325,7 @@
 			)
 		)
 		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 114.3 146.05 0)
+			(at 186.69 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5603,6 +5591,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+7.5V")
+		(at 151.13 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bef76cb3-9c6a-4e4f-82b1-5fc024ec2df1")
+		(property "Reference" "#PWR048"
+			(at 151.13 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+7.5V"
+			(at 151.13 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 151.13 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 151.13 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+7.5V\""
+			(at 151.13 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e3ec205-4116-4c6b-b531-50e7ebb157ad")
+		)
+		(instances
+			(project "dynafuzz"
+				(path "/b401260a-0de9-4b23-a692-63e5f9163375/f1f48dbc-08ba-440b-8310-6ec9ab55161d"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 187.96 76.2 90)
 		(unit 1)
@@ -5665,72 +5719,6 @@
 			(project ""
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/f1f48dbc-08ba-440b-8310-6ec9ab55161d"
 					(reference "R34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+9V")
-		(at 151.13 25.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c36cdf50-09c1-4e79-86f9-cabd22864260")
-		(property "Reference" "#PWR048"
-			(at 151.13 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+9V"
-			(at 151.13 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 151.13 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 151.13 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+9V\""
-			(at 151.13 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8ced6e0c-db5d-4c5c-a6cb-ea3cb2d001fe")
-		)
-		(instances
-			(project ""
-				(path "/b401260a-0de9-4b23-a692-63e5f9163375/f1f48dbc-08ba-440b-8310-6ec9ab55161d"
-					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -6494,7 +6482,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:TL074")
-		(at 186.69 85.09 0)
+		(at 114.3 146.05 0)
 		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
@@ -6503,7 +6491,7 @@
 		(dnp no)
 		(uuid "ec615942-5b6a-4a1f-9394-64209d817768")
 		(property "Reference" "U1"
-			(at 188.468 91.44 0)
+			(at 116.078 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6511,15 +6499,15 @@
 			)
 		)
 		(property "Value" "TL074"
-			(at 188.468 88.9 0)
+			(at 116.078 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-14_5.3x6.2mm_P0.65mm"
-			(at 185.42 87.63 0)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 113.03 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6528,7 +6516,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 187.96 90.17 0)
+			(at 115.57 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6537,7 +6525,7 @@
 			)
 		)
 		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 186.69 85.09 0)
+			(at 114.3 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)

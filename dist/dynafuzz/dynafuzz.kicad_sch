@@ -8634,7 +8634,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-14_5.3x6.2mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 33.02 173.99 0)
 			(effects
 				(font
@@ -10515,7 +10515,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 113.03 35.56 0)
 			(effects
 				(font
@@ -11630,7 +11630,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SSOP-14_5.3x6.2mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
 			(at 248.92 29.21 0)
 			(effects
 				(font
