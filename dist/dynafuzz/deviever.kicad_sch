@@ -1362,7 +1362,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "121dd6c7-535a-460e-ab7d-beb25d38c134")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR030"
 			(at 144.78 111.76 0)
 			(effects
 				(font
@@ -1412,7 +1412,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "#PWR038")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -1501,7 +1501,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b457c3a-9eee-42c9-885e-3b50ac41592a")
-		(property "Reference" "C17"
+		(property "Reference" "C15"
 			(at 123.19 78.74 90)
 			(effects
 				(font
@@ -1553,7 +1553,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "C17")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -1642,7 +1642,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "416edf75-d548-4b01-b228-589597dd1518")
-		(property "Reference" "C18"
+		(property "Reference" "C16"
 			(at 158.75 80.01 90)
 			(effects
 				(font
@@ -1694,7 +1694,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "C18")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -1776,7 +1776,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45ccd724-07d1-4b69-95b5-f9ab1674bf5c")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR031"
 			(at 151.13 66.04 0)
 			(effects
 				(font
@@ -1826,7 +1826,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "#PWR039")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -1982,7 +1982,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74856164-6a62-4954-9b0d-f9bbc615dec3")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR027"
 			(at 78.74 110.49 0)
 			(effects
 				(font
@@ -2032,7 +2032,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "#PWR035")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -2191,7 +2191,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ca2bd26-7924-4bde-9971-5ad1a5823959")
-		(property "Reference" "C16"
+		(property "Reference" "C14"
 			(at 90.17 80.01 90)
 			(effects
 				(font
@@ -2243,7 +2243,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "C16")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -2259,7 +2259,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a1613537-92e1-4755-ad32-e0dbecddea47")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR029"
 			(at 107.95 102.87 0)
 			(effects
 				(font
@@ -2309,7 +2309,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "#PWR037")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -2464,7 +2464,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d53d8819-0fba-4101-8487-c835248a7fbb")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR028"
 			(at 107.95 68.58 0)
 			(effects
 				(font
@@ -2514,7 +2514,7 @@
 		(instances
 			(project "dynafuzz"
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375/3a19848d-9449-4a2f-9659-066f51bd527c"
-					(reference "#PWR036")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
