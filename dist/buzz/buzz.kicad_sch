@@ -2443,9 +2443,29 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "HOOF Tone Stack"
+	(text "scoop happens when MID is short\n0% - R=0 - super scoop\n50% - R=~15k - small scoop\n80% - R=~30k - flat EQ\n100% - R=100k - slight mid boost"
 		(exclude_from_sim no)
-		(at 198.12 143.764 0)
+		(at 199.39 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "34bbb1fd-88a3-45c2-ae26-e3d99b013148")
+	)
+	(text "A or B taper\nA preferred"
+		(exclude_from_sim no)
+		(at 190.5 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6c7c384b-4a96-4745-aa71-83f4a1079120")
+	)
+	(text "HOOF Tone Stack - modified values\n\nat tone even (45%),\nmids go from huge scoop at 3kHz to slight boost\nphase flat"
+		(exclude_from_sim no)
+		(at 186.69 148.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2724,6 +2744,14 @@
 	(no_connect
 		(at 46.99 171.45)
 		(uuid "acd543bf-fabf-4576-ad9e-cdfa4016d7ec")
+	)
+	(no_connect
+		(at 33.02 166.37)
+		(uuid "af700ff2-644a-40d0-abb9-3a1a7b662738")
+	)
+	(no_connect
+		(at 33.02 163.83)
+		(uuid "d251b80f-ffe6-4d4b-b64d-a7021d8d2807")
 	)
 	(no_connect
 		(at 149.86 184.15)
@@ -6987,7 +7015,7 @@
 				)
 			)
 		)
-		(property "Value" "3.3k"
+		(property "Value" "1k"
 			(at 208.026 93.726 90)
 			(effects
 				(font
@@ -7328,7 +7356,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R_MID-B25K"
+		(property "Value" "R_MID-A100K"
 			(at 198.12 93.9801 0)
 			(effects
 				(font
@@ -10551,90 +10579,6 @@
 				(path "/b401260a-0de9-4b23-a692-63e5f9163375"
 					(reference "TP2")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(sheet
-		(at 5.715 -36.195)
-		(size 31.115 20.955)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "3a19848d-9449-4a2f-9659-066f51bd527c")
-		(property "Sheetname" "deviever"
-			(at 5.715 -36.9066 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "deviever.kicad_sch"
-			(at 5.715 -14.6554 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "dynafuzz"
-				(path "/b401260a-0de9-4b23-a692-63e5f9163375"
-					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 48.26 -36.83)
-		(size 33.02 25.4)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "f1f48dbc-08ba-440b-8310-6ec9ab55161d")
-		(property "Sheetname" "vca"
-			(at 48.26 -37.5416 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "vca.kicad_sch"
-			(at 48.26 -10.8454 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "dynafuzz"
-				(path "/b401260a-0de9-4b23-a692-63e5f9163375"
-					(page "3")
 				)
 			)
 		)
