@@ -24,3 +24,12 @@ jacks: 22-23mm
 
 dc: 23.1mm
 
+
+cases: $20
+pcbs: $1.6
+switches: $2.67
+pots: 1.56*4=6.24
+passives: 46*0.10=4.60
+jacks: 33.74/18*2 = 3.74
+
+total: $40
