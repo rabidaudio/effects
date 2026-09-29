@@ -1,0 +1,35 @@
+outer case: 127.52, 41.6
+
+holes (relative to outer case origin):
+12.47, 14.788
+12.47, 33.55
+52.6, 14.788
+52.6, 43.55
+
+led:
+32.5, 67.112
+
+stomp
+32.441, 85.654
+
+
+
+15.4-4.4: 1.6
+from top of pcb, jack hole 9.9mm
+
+top of pcb to inside case: 10.6, expected 10
+expected height from outer case top: 2 + 10..10.5 + 9.9
+
+jacks: 22-23mm
+
+dc: 23.1mm
+
+
+cases: $20
+pcbs: $1.6
+switches: $2.67
+pots: 1.56*4=6.24
+passives: 46*0.10=4.60
+jacks: 33.74/18*2 = 3.74
+
+total: $40
