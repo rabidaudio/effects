@@ -7389,7 +7389,7 @@
 				)
 			)
 		)
-		(property "Value" "3.3k"
+		(property "Value" "1k"
 			(at 206.756 107.696 90)
 			(effects
 				(font
@@ -7660,7 +7660,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R_MID-B25K"
+		(property "Value" "R_MID-B100K"
 			(at 196.85 107.9501 0)
 			(effects
 				(font
