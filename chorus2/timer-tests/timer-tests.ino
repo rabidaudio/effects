@@ -1,32 +1,9 @@
-/*
-  Blink
-
-  Turns an LED on for one second, then off for one second, repeatedly.
-
-  Most Arduinos have an on-board LED you can control. On the UNO, MEGA and ZERO
-  it is attached to digital pin 13, on MKR1000 on pin 6. LED_BUILTIN is set to
-  the correct LED pin independent of which board is used.
-  If you want to know what pin the on-board LED is connected to on your Arduino
-  model, check the Technical Specs of your board at:
-  https://docs.arduino.cc/hardware/
-
-  modified 8 May 2014
-  by Scott Fitzgerald
-  modified 2 Sep 2016
-  by Arturo Guadalupi
-  modified 8 Sep 2016
-  by Colby Newman
-
-  This example code is in the public domain.
-
-  https://docs.arduino.cc/built-in-examples/basics/Blink/
-*/
-
-#define LED_BUILTIN PB0
+#define CLOCK_OUTPUT PB0
 
 uint8_t lfoCounter = 0;
 bool lfoDirectionUp = true;
 uint16_t depthCounter = 0;
+uint8_t depthStep;
 
 volatile uint8_t freqValue = 199;
 
@@ -34,7 +11,7 @@ uint8_t depth = 255;
 uint8_t width = 255;
 
 // TODO: put in PROGMEM
-const uint8_t DEPTH_COUNTER_LUT[] = {
+const uint8_t DEPTH_COUNTER_LUT[] PROGMEM = {
    0, 1, 1, 2, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9, 10, 11, 11, 12, 13, 13, 14, 15, 15, 16, 17, 18, 18, 19, 20, 20, 21, 22, 23, 23, 24, 25, 25, 26, 27, 27, 28, 29, 30, 30, 31, 32, 32, 33, 34, 34, 35, 36, 37, 37, 38, 39, 39, 40, 41, 41, 42, 43, 44, 44, 45, 46, 46, 47, 48, 49, 49, 50, 51, 51, 52, 53, 53, 54, 55, 56, 56, 57, 58, 58, 59, 60, 60, 61, 62, 63, 63, 64, 65, 65, 66, 67, 68, 68, 69, 70, 70, 71, 72, 72, 73, 74, 75, 75, 76, 77, 77, 78, 79, 79, 80, 81, 82, 82, 83, 84, 84, 85, 86, 86, 87, 88, 89, 89, 90, 91, 91, 92, 93, 94, 94, 95, 96, 96, 97, 98, 98, 99, 100, 101, 101, 102, 103, 103, 104, 105, 105, 106, 107, 108, 108, 109, 110, 110, 111, 112, 113, 113, 114, 115, 115, 116, 117, 117, 118, 119, 120, 120, 121, 122, 122, 123, 124, 124, 125, 126, 127, 127, 128, 129, 129, 130, 131, 131, 132, 133, 134, 134, 135, 136, 136, 137, 138, 139, 139, 140, 141, 141, 142, 143, 143, 144, 145, 146, 146, 147, 148, 148, 149, 150, 150, 151, 152, 153, 153, 154, 155, 155, 156, 157, 158, 158, 159, 160, 160, 161, 162, 162, 163, 164, 165, 165, 166, 167, 167, 168, 169, 169, 170, 171, 172, 172, 173, 174, 174, 175, 176, 176, 177, 178, 179, 179,
 };
 
@@ -43,7 +20,7 @@ void setup() {
   CLKPR = (1 << CLKPCE); // initialize prescale change, 4 cycles to update the prescale
   CLKPR = 1; // change runtime sysclock prescaler to /2 (4MHz)
 
-  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(CLOCK_OUTPUT, OUTPUT);
   
   // disable timers
   TCCR0B = 0;
@@ -96,26 +73,27 @@ ISR(TIMER0_COMPA_vect) {
 }
 
 ISR(TIMER1_COMPA_vect) {
-  cli();
   TCNT1 = 0; // restart counter
-  sei();
 
   lfoCounter++;
   if (lfoCounter == 0) {
-    if (!lfoDirectionUp) depthCounter = 0; // reset
+    if (!lfoDirectionUp) {
+      depthCounter = 0; // reset
+      depthStep = pgm_read_byte_near(DEPTH_COUNTER_LUT + depth);
+    }
     lfoDirectionUp = !lfoDirectionUp;
   }
 
   cli();
   if (lfoCounter == 0) {
-    OCR1A = clamp(width, 49, 244); // update width TODO: could probably remove clamp: gives range from 0.5Hz to 120Hz
+    OCR1A = clamp(width, 49, 255); // update width TODO: could probably remove clamp: gives range from 0.5Hz to 120Hz
   }
   freqValue = 199-(uint8_t)(depthCounter / 256);
   sei();
   if (lfoDirectionUp) {
-    depthCounter += DEPTH_COUNTER_LUT[depth];
+    depthCounter += depthStep;
   } else {
-    depthCounter -= DEPTH_COUNTER_LUT[depth];
+    depthCounter -= depthStep;
   }
 }
 
