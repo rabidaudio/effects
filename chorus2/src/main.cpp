@@ -17,9 +17,9 @@ volatile uint8_t freqValue = 19; //CLOCK_FREQ_MAX;
 volatile uint8_t depth = 255;
 volatile uint8_t width = 255;
 
-// switch between ADC1 (1, PB2, depth) and ADC2 (2, PB4, width)
+// switch between ADC3 (3, PB3, depth) and ADC1 (2, PB4, width)
 volatile uint8_t adcSourceIdx = 0;
-#define CURRENT_ADC (adcSourceIdx ? 2 : 1)
+#define CURRENT_ADC (adcSourceIdx ? 3 : 2)
 
 // scales 0..255 to 0..(199-19)
 // ruby -e 'puts (0..255).map { |d| ((d.to_f / 256)*(199-19)).round }.join(", ")'
@@ -38,7 +38,7 @@ int main(void) {
   CLKPR = (1 << CLKPCE); // initialize prescale change, 4 cycles to update the prescale
   CLKPR = 1; // change runtime sysclock prescaler to /2 (4MHz)
 
-  DDRB |= (1 << DDB0) | (1 << DDB3); // set OC0A and PB3 as outputs
+  DDRB |= (1 << DDB0) | (1 << DDB2); // set OC0A and PB2 as outputs
 
   // CONFIGURE ADC
 
@@ -79,7 +79,7 @@ int main(void) {
   TCNT0 = 0; // restart counter 0
   TCNT1 = 0; // restart counter 1
 
-  GTCCR = 0; // reset timers and start counting
+  GTCCR &= ~(1 << PSR0); // reset timers and start counting
   ADCSRA |= (1 << ADSC); // start conversion
   sei();
 
@@ -91,16 +91,13 @@ int main(void) {
 }
 
 ISR(TIMER0_COMPA_vect) {
-  cli();
   OCR0A = freqValue; // use the latest computed value to update TIM0 period
-  sei();
 }
 
 ISR(TIMER1_COMPA_vect) {
   TCNT1 = 0; // restart counter
 
   lfoCounter++;
-  cli();
   if (lfoCounter == 0) {
     if (!lfoDirectionUp) {
       // end of a full LFO period, use the latest value of depth to restart the software counter
@@ -109,24 +106,25 @@ ISR(TIMER1_COMPA_vect) {
     }
     lfoDirectionUp = !lfoDirectionUp;
 
-    OCR1A = clamp(width, 10, 254); // load the latest value into TIM1 period NOTE: could clamp to 49-255
+    OCR1A = clamp(width, 5, 255); // load the latest value into TIM1 period NOTE: could clamp to 49-255
+    OCR1B = depthStep;
   }
   freqValue = CLOCK_FREQ_MAX-(uint8_t)(depthCounter / 256); // garanteed by LUT not to overflow
-  sei();
   if (lfoDirectionUp) {
     depthCounter += depthStep;
   } else {
     depthCounter -= depthStep;
   }
+  // hacky low-frequency pwm without an additional timer
+  // TODO: could we use OCR1B instead?
   if (lfoCounter >= depthStep) {
-    PORTB &= ~(1 << PORTB3); // off
+    PORTB |= (1 << PORTB2); // on
   } else {
-    PORTB |= (1 << PORTB3); // on
+    PORTB &= ~(1 << PORTB2); // off
   }
 }
 
 ISR(ADC_vect) {
-  cli();
   // read value
   if (adcSourceIdx) {
     depth = ADCH;
@@ -136,5 +134,4 @@ ISR(ADC_vect) {
   adcSourceIdx = !adcSourceIdx;
   ADMUX = (ADMUX & 0xF0) | CURRENT_ADC; // switch source
   ADCSRA |= (1 << ADSC); // start measurement
-  sei();
 }
