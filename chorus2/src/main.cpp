@@ -4,6 +4,7 @@
 
 // F_CLK/(2*N*(1+OCR0A)) for 10kHz to 100kHz -> OCR0A: [19, 199]
 #define CLOCK_FREQ_MAX 199
+#define CLOCK_FREQ_MIN 19
 
 // software triangle LFO. lfoCounter counts 0..255 up, then lfoDirection inverts
 // and lfoCounter counts 0..255 again to complete 1 period. At each step, depthCounter
@@ -13,7 +14,7 @@ bool lfoDirectionUp = true;
 uint16_t depthCounter = 0;
 uint8_t depthStep;
 
-volatile uint8_t freqValue = 19; //CLOCK_FREQ_MAX;
+volatile uint8_t freqValue = CLOCK_FREQ_MAX;
 volatile uint8_t depth = 255;
 volatile uint8_t width = 255;
 
@@ -116,7 +117,7 @@ ISR(TIMER1_COMPA_vect) {
     OCR1A =  pgm_read_byte_near(WIDTH_PERIOD_LUT + width);
     OCR1B = depthStep;
   }
-  freqValue = CLOCK_FREQ_MAX-(uint8_t)(depthCounter / 256); // garanteed by LUT not to overflow
+  freqValue = CLOCK_FREQ_MIN + (uint8_t)(depthCounter / 256); // garanteed by LUT not to overflow
   if (lfoDirectionUp) {
     depthCounter += depthStep;
   } else {
