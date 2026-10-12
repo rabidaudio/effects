@@ -5,7 +5,7 @@
 	(uuid "acb413bb-613f-42f3-8493-e64b41463da2")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Amplifier_Operational:TL072"
+		(symbol "Amplifier_Operational:TL074"
 			(pin_names
 				(offset 0.127)
 			)
@@ -21,7 +21,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "TL072"
+			(property "Value" "TL074"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -31,7 +31,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at -1.27 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -40,7 +40,7 @@
 				)
 			)
 			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-				(at 0 0 0)
+				(at 1.27 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -48,7 +48,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8"
+			(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
 				(at 0 0 0)
 				(effects
 					(font
@@ -65,7 +65,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "dual opamp"
+			(property "ki_keywords" "quad opamp"
 				(at 0 0 0)
 				(effects
 					(font
@@ -74,7 +74,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*"
+			(property "ki_fp_filters" "SOIC*3.9x8.7mm*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm* SSOP*5.3x6.2mm*P0.65mm* MSOP*3x3mm*P0.5mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -83,7 +83,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "TL072_1_1"
+			(symbol "TL074_1_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -151,7 +151,7 @@
 					)
 				)
 			)
-			(symbol "TL072_2_1"
+			(symbol "TL074_2_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -219,7 +219,143 @@
 					)
 				)
 			)
-			(symbol "TL072_3_1"
+			(symbol "TL074_3_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TL074_4_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TL074_5_1"
 				(pin power_in line
 					(at -2.54 7.62 270)
 					(length 3.81)
@@ -230,7 +366,7 @@
 							)
 						)
 					)
-					(number "8"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -248,7 +384,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "11"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1078,7 +1214,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000062836d79")
-		(property "Reference" "R19"
+		(property "Reference" "R25"
 			(at 180.34 97.6122 90)
 			(effects
 				(font
@@ -1129,7 +1265,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/89406d17-d719-4016-b0cb-a2835ffb8d3f"
-					(reference "R19")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -1144,7 +1280,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000062837e6b")
-		(property "Reference" "R18"
+		(property "Reference" "R24"
 			(at 166.37 97.6122 90)
 			(effects
 				(font
@@ -1195,92 +1331,8 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/89406d17-d719-4016-b0cb-a2835ffb8d3f"
-					(reference "R18")
+					(reference "R24")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:TL072")
-		(at 128.27 102.87 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000062c92c44")
-		(property "Reference" "U11"
-			(at 128.27 93.5482 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TL072"
-			(at 128.27 95.8596 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "kicad-legacy/Housings_DIP.pretty:DIP-8_W7.62mm"
-			(at 128.27 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 128.27 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 128.27 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "36acded1-1324-4ef0-8d7c-9d21979a95b4")
-		)
-		(pin "2"
-			(uuid "97030ccd-d779-4d28-ba9a-f019eefd9ca3")
-		)
-		(pin "3"
-			(uuid "135149b4-8d91-44c9-85f4-d1b2c7fcad7e")
-		)
-		(pin "5"
-			(uuid "97c7070d-9f79-4400-822a-336b7b4bf120")
-		)
-		(pin "6"
-			(uuid "0bce8420-76d9-4ee0-85bc-4cbd028861a6")
-		)
-		(pin "7"
-			(uuid "4e6cf4bc-1ca3-45d7-83f8-bcf1932e2721")
-		)
-		(pin "4"
-			(uuid "4c322b8d-e6dd-4b60-838c-c95d36bd4c37")
-		)
-		(pin "8"
-			(uuid "a45e4174-8922-406a-9a4c-3a73f40b25bd")
-		)
-		(instances
-			(project "basschorus"
-				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/89406d17-d719-4016-b0cb-a2835ffb8d3f"
-					(reference "U11")
-					(unit 2)
 				)
 			)
 		)
@@ -1294,7 +1346,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000062c92c4e")
-		(property "Reference" "R35"
+		(property "Reference" "R22"
 			(at 106.68 95.0722 90)
 			(effects
 				(font
@@ -1345,7 +1397,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/89406d17-d719-4016-b0cb-a2835ffb8d3f"
-					(reference "R35")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -1360,7 +1412,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000062c92c58")
-		(property "Reference" "R34"
+		(property "Reference" "R21"
 			(at 92.71 95.0722 90)
 			(effects
 				(font
@@ -1411,7 +1463,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/89406d17-d719-4016-b0cb-a2835ffb8d3f"
-					(reference "R34")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -1486,32 +1538,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:TL072")
+		(lib_id "Amplifier_Operational:TL074")
 		(at 201.93 105.41 0)
-		(unit 2)
+		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "30ae748f-2707-4764-9829-e0fc7f1ff76f")
-		(property "Reference" "U8"
-			(at 201.93 96.0882 0)
+		(fields_autoplaced yes)
+		(uuid "34e85877-75f9-4a76-a2d1-57ac961ebd78")
+		(property "Reference" "U4"
+			(at 201.93 95.885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "TL072"
-			(at 201.93 98.3996 0)
+		(property "Value" "TL074"
+			(at 201.93 98.425 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "kicad-legacy/Housings_DIP.pretty:DIP-8_W7.62mm"
-			(at 201.93 105.41 0)
+		(property "Footprint" ""
+			(at 200.66 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1520,6 +1573,15 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 203.2 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
 			(at 201.93 105.41 0)
 			(effects
 				(font
@@ -1528,43 +1590,53 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 201.93 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
-			(uuid "2ac6e3d1-5fb0-411b-9048-4cd51a4f8015")
-		)
-		(pin "2"
-			(uuid "903b7ca9-2f95-471d-9934-d5d516bfc15d")
+			(uuid "36cb4021-0eb4-416d-a3a9-6be827256cb3")
 		)
 		(pin "3"
-			(uuid "b389288b-93f3-445c-9efa-2e1bcc35145e")
+			(uuid "7265f458-a300-44bd-ad83-14cfbb816654")
+		)
+		(pin "2"
+			(uuid "55753974-797d-4422-9076-ced038ecd89a")
 		)
 		(pin "5"
-			(uuid "42d07a68-9631-4418-915f-edc7c55a5c70")
+			(uuid "46706d5e-feb0-4745-abeb-e033e37a06e0")
 		)
-		(pin "6"
-			(uuid "96f96660-481c-4f46-8439-29c77690eb1e")
+		(pin "14"
+			(uuid "0e1c3ba8-14ab-4aef-832a-540d753c81f1")
 		)
-		(pin "7"
-			(uuid "ff85f33d-3343-441b-b3fd-f48595cd8ddd")
-		)
-		(pin "4"
-			(uuid "cc119c7a-c744-4098-852d-a3cfe895219c")
+		(pin "10"
+			(uuid "d5b4bcda-039b-43e2-bdf6-7b07acd38c75")
 		)
 		(pin "8"
-			(uuid "c10f2ebb-9cfd-4a9c-b7b4-cd138a579f60")
+			(uuid "7b09b8b1-355b-4cd5-891f-f85148c48936")
+		)
+		(pin "6"
+			(uuid "5b5b3d9b-d455-4b1a-a866-14505ebe07d8")
+		)
+		(pin "9"
+			(uuid "c0e75f39-b430-44eb-9997-334da34d2088")
+		)
+		(pin "11"
+			(uuid "5bba32ce-3e6a-4c5b-9d5e-06d3b9cc45a1")
+		)
+		(pin "12"
+			(uuid "4eef066d-5ba3-40d7-bdf3-46870b2f3bb4")
+		)
+		(pin "7"
+			(uuid "2730e296-e6af-43f8-b4a3-e5a0555f1b56")
+		)
+		(pin "13"
+			(uuid "45600fcd-a1ec-4cae-b9d5-84f8c74b5f6a")
+		)
+		(pin "4"
+			(uuid "08ae553b-c1e3-4c2f-9c91-74907248e2b7")
 		)
 		(instances
-			(project "basschorus"
+			(project ""
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/89406d17-d719-4016-b0cb-a2835ffb8d3f"
-					(reference "U8")
-					(unit 2)
+					(reference "U4")
+					(unit 3)
 				)
 			)
 		)
@@ -1712,7 +1784,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "86e70099-bcd0-49fe-900b-dd3cd0586657")
-		(property "Reference" "R18"
+		(property "Reference" "R23"
 			(at 153.67 97.6122 90)
 			(effects
 				(font
@@ -1763,7 +1835,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/89406d17-d719-4016-b0cb-a2835ffb8d3f"
-					(reference "R18")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -1779,7 +1851,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "89ed8356-4c9a-4077-80bd-1d0698da44ff")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR047"
 			(at 160.02 123.19 0)
 			(effects
 				(font
@@ -1829,7 +1901,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/89406d17-d719-4016-b0cb-a2835ffb8d3f"
-					(reference "#PWR043")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -1845,7 +1917,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b04413b6-3d86-426a-9eb4-72ec31fe1a82")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR048"
 			(at 187.96 123.19 0)
 			(effects
 				(font
@@ -1895,7 +1967,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/89406d17-d719-4016-b0cb-a2835ffb8d3f"
-					(reference "#PWR047")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -2029,6 +2101,109 @@
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/89406d17-d719-4016-b0cb-a2835ffb8d3f"
 					(reference "#PWR046")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL074")
+		(at 128.27 102.87 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e2989ce1-5d80-42e4-92d0-9b1c455080e7")
+		(property "Reference" "U4"
+			(at 128.27 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL074"
+			(at 128.27 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 129.54 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
+			(at 128.27 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "36cb4021-0eb4-416d-a3a9-6be827256cb4")
+		)
+		(pin "3"
+			(uuid "7265f458-a300-44bd-ad83-14cfbb816655")
+		)
+		(pin "2"
+			(uuid "55753974-797d-4422-9076-ced038ecd89b")
+		)
+		(pin "5"
+			(uuid "46706d5e-feb0-4745-abeb-e033e37a06e1")
+		)
+		(pin "14"
+			(uuid "0e1c3ba8-14ab-4aef-832a-540d753c81f2")
+		)
+		(pin "10"
+			(uuid "d5b4bcda-039b-43e2-bdf6-7b07acd38c76")
+		)
+		(pin "8"
+			(uuid "7b09b8b1-355b-4cd5-891f-f85148c48937")
+		)
+		(pin "6"
+			(uuid "5b5b3d9b-d455-4b1a-a866-14505ebe07d9")
+		)
+		(pin "9"
+			(uuid "c0e75f39-b430-44eb-9997-334da34d2089")
+		)
+		(pin "11"
+			(uuid "5bba32ce-3e6a-4c5b-9d5e-06d3b9cc45a2")
+		)
+		(pin "12"
+			(uuid "4eef066d-5ba3-40d7-bdf3-46870b2f3bb5")
+		)
+		(pin "7"
+			(uuid "2730e296-e6af-43f8-b4a3-e5a0555f1b57")
+		)
+		(pin "13"
+			(uuid "45600fcd-a1ec-4cae-b9d5-84f8c74b5f6b")
+		)
+		(pin "4"
+			(uuid "08ae553b-c1e3-4c2f-9c91-74907248e2b8")
+		)
+		(instances
+			(project ""
+				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/89406d17-d719-4016-b0cb-a2835ffb8d3f"
+					(reference "U4")
+					(unit 2)
 				)
 			)
 		)
