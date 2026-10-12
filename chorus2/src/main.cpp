@@ -1,6 +1,7 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <avr/pgmspace.h>
+#include <avr/sleep.h>
 
 // F_CLK/(2*N*(1+OCR0A)) for 10kHz to 100kHz -> OCR0A: [19, 199]
 #define CLOCK_FREQ_MAX 199
@@ -51,6 +52,7 @@ int main(void) {
   // CONFIGURE ADC
 
   PRR &= ~(1 << PRADC); // ensure ADC is powered on
+  ACSR |= (1 << ACD); // disable analog comparator (for power savings during sleep)
   
   ADMUX = (0b00 << REFS0) | (1 << ADLAR) | CURRENT_ADC; // Vref=Vcc, left-align, mux select
   ADCSRA |= (1 << ADEN) | (1 << ADIE) | (0 << ADATE) | (0b101 << ADPS0); // enable ADC, enable interrupt, manual trigger, prescaler = 32
@@ -65,7 +67,7 @@ int main(void) {
 
   // TIM0: a variable-frequency square wave from 10kHz to 100kHz, controlled by OCR0A
   TCCR0A = (0 << COM0A1) | (1 << COM0A0) | (1 << WGM01) | (0 << WGM00); // toggle OC0A output on compare match, CTC mode
-  TCCR0B = (0 << WGM02) | (0 < CS02) | (0 << CS01) | (1 << CS00); // clock prescaler = 1 (no scaling, run timer at 4MHz)
+  TCCR0B = (0 << WGM02) | (0 < CS02) | (0 << CS01) | (1 << CS00); // clock prescaler = 1 (no scaling, run timer at 2MHz)
   // TCCR0B = 0b101; // puts the output clock in a visual range for debugging
   // Due to toggle, the output frequency is F_CLK/(2*N*(1+OCR0A))
   // Thus OCR0A varies clock from 2MHz to 7.8kHz
@@ -89,10 +91,13 @@ int main(void) {
 
   GTCCR &= ~(1 << PSR0); // reset timers and start counting
   ADCSRA |= (1 << ADSC); // start conversion
-  sei();
 
   while (1) {
-    ;; // TODO: sleep to idle mode
+    set_sleep_mode(SLEEP_MODE_IDLE); // idle mode keeps timers and ADC running
+    sleep_enable();
+    sei();
+    sleep_cpu(); // cpu will turn off until next interrupt is triggered, then we will resume here
+    sleep_disable(); // re-disable on wakeup (good practice, will enable again next sleep loop)
   }
 
   return 0;
@@ -117,7 +122,7 @@ ISR(TIMER1_COMPA_vect) {
     OCR1A =  pgm_read_byte_near(WIDTH_PERIOD_LUT + width);
     OCR1B = depthStep;
   }
-  freqValue = CLOCK_FREQ_MIN + (uint8_t)(depthCounter / 256); // garanteed by LUT not to overflow
+  freqValue = CLOCK_FREQ_MIN + (uint8_t)(depthCounter / 256); // guaranteed by LUT not to overflow
   if (lfoDirectionUp) {
     depthCounter += depthStep;
   } else {
