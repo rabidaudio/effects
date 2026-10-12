@@ -1947,16 +1947,6 @@
 		)
 		(uuid "54e017dc-c8ef-43c7-932a-5a063b4b52cc")
 	)
-	(text "NOTE: inverted pot\n(clockwise = more freq = less period)"
-		(exclude_from_sim no)
-		(at 172.72 156.21 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "eaea5860-717f-4310-b5d9-16482e273ec8")
-	)
 	(junction
 		(at 162.56 72.39)
 		(diameter 0)
@@ -6334,8 +6324,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Potentiometer")
-		(at 157.48 147.32 0)
-		(mirror y)
+		(at 157.48 147.32 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6343,7 +6332,7 @@
 		(dnp no)
 		(uuid "94471e9f-8f8d-4574-9e11-27ebc85a0d51")
 		(property "Reference" "RV1"
-			(at 160.02 148.5901 0)
+			(at 160.02 146.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6352,7 +6341,7 @@
 			)
 		)
 		(property "Value" "B100K_WIDTH"
-			(at 160.02 146.0501 0)
+			(at 160.02 148.5899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
