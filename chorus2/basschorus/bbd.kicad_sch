@@ -5173,7 +5173,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0928f328-7c60-4338-90f9-eaab0c17ddb3")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR047"
 			(at 259.08 73.66 0)
 			(effects
 				(font
@@ -5223,7 +5223,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR042")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -5239,7 +5239,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a19004b-ad68-469c-b76d-0e1a722a9522")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR030"
 			(at 57.15 68.58 0)
 			(effects
 				(font
@@ -5289,7 +5289,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR023")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -5305,7 +5305,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1599348f-a9c5-43e9-a4db-9a89a6628949")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR046"
 			(at 242.57 92.71 0)
 			(effects
 				(font
@@ -5355,7 +5355,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR041")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -5371,7 +5371,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c377149-29f4-48dc-883c-b3c7f6519505")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR040"
 			(at 157.48 160.02 0)
 			(effects
 				(font
@@ -5421,7 +5421,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR035")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -5506,7 +5506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "515f5973-0841-4972-940e-14ac84def85c")
-		(property "Reference" "R15"
+		(property "Reference" "R16"
 			(at 120.65 39.3699 0)
 			(effects
 				(font
@@ -5560,7 +5560,7 @@
 		(instances
 			(project ""
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "R15")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -5576,7 +5576,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "53ef9f79-8f8b-44ef-a323-6fd5f6bc9dcf")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR033"
 			(at 86.36 142.24 0)
 			(effects
 				(font
@@ -5626,7 +5626,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR026")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -5642,7 +5642,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5cf5cdb6-0256-4853-b833-81d16cce98a8")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR042"
 			(at 173.99 93.98 0)
 			(effects
 				(font
@@ -5692,7 +5692,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR037")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -5708,7 +5708,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f403b3c-917d-49aa-aeae-5b5b7cef53c2")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR031"
 			(at 57.15 83.82 0)
 			(effects
 				(font
@@ -5758,7 +5758,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR024")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -5774,7 +5774,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a8a9575-b92f-4f78-8d99-c25ed6593cfc")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR034"
 			(at 92.71 59.69 0)
 			(effects
 				(font
@@ -5824,7 +5824,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR027")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -5840,7 +5840,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a808611-c845-47ae-9ef0-9de818687b9b")
-		(property "Reference" "R17"
+		(property "Reference" "R18"
 			(at 245.11 77.4699 0)
 			(effects
 				(font
@@ -5894,7 +5894,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "R17")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -5910,7 +5910,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e22fafb-b272-4fef-ba68-862d42d4309c")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR043"
 			(at 181.61 93.98 0)
 			(effects
 				(font
@@ -5960,7 +5960,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR038")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -5976,7 +5976,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84f4fa86-81f7-49f1-a5b8-ee26bc23eb23")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR036"
 			(at 118.11 38.1 0)
 			(effects
 				(font
@@ -6026,7 +6026,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR029")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -6112,7 +6112,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "93c0e854-f016-4dc9-b06d-502adfd17621")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR045"
 			(at 204.47 95.25 0)
 			(effects
 				(font
@@ -6162,7 +6162,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR040")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -6178,7 +6178,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "93e15ea9-87f4-4c36-9285-36e734691498")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR044"
 			(at 204.47 62.23 0)
 			(effects
 				(font
@@ -6228,7 +6228,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR039")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -6331,7 +6331,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "94471e9f-8f8d-4574-9e11-27ebc85a0d51")
-		(property "Reference" "RV1"
+		(property "Reference" "RV2"
 			(at 160.02 146.0499 0)
 			(effects
 				(font
@@ -6388,7 +6388,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "RV1")
+					(reference "RV2")
 					(unit 1)
 				)
 			)
@@ -6645,7 +6645,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b24b3c53-3800-49e3-a9ef-1dee4f9c96a0")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR041"
 			(at 162.56 91.44 0)
 			(effects
 				(font
@@ -6695,7 +6695,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR036")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -6711,7 +6711,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b694e7a2-6c47-47bb-bc4b-683c086fb6e5")
-		(property "Reference" "C9"
+		(property "Reference" "C11"
 			(at 60.96 69.8499 0)
 			(effects
 				(font
@@ -6765,7 +6765,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "C9")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -6781,7 +6781,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bee1d13e-d69e-48bc-9d1f-9754a7c0f59d")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR032"
 			(at 86.36 110.49 0)
 			(effects
 				(font
@@ -6831,7 +6831,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR025")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -6847,7 +6847,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cdb41567-bd7a-4e0e-bd3e-1a3a07ef30ef")
-		(property "Reference" "R16"
+		(property "Reference" "R17"
 			(at 156.21 66.04 90)
 			(effects
 				(font
@@ -6899,7 +6899,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "R16")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -6915,7 +6915,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d411539a-eed1-49fd-ade4-aef1cce57f2c")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR039"
 			(at 157.48 144.78 0)
 			(effects
 				(font
@@ -6965,7 +6965,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR034")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -6981,7 +6981,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db913bbd-a387-4a25-b8c8-718719bf0d9a")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR048"
 			(at 259.08 88.9 0)
 			(effects
 				(font
@@ -7031,7 +7031,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR043")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -7046,7 +7046,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dcf68531-a9c8-4cd0-9e30-fc9d196d4cbe")
-		(property "Reference" "RV2"
+		(property "Reference" "RV1"
 			(at 149.86 121.9199 0)
 			(effects
 				(font
@@ -7103,7 +7103,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "RV2")
+					(reference "RV1")
 					(unit 1)
 				)
 			)
@@ -7119,7 +7119,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2360905-1aea-4e83-ad3e-ed68a6aa76e0")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR037"
 			(at 147.32 120.65 0)
 			(effects
 				(font
@@ -7169,7 +7169,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR031")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -7185,7 +7185,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f53b95e7-cd3b-4f55-9cd0-ebec0a19ea8b")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR035"
 			(at 92.71 100.33 0)
 			(effects
 				(font
@@ -7235,7 +7235,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR028")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -7251,7 +7251,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa594ae5-be43-4d3a-9ba4-52ce12e3631c")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR038"
 			(at 147.32 135.89 0)
 			(effects
 				(font
@@ -7301,7 +7301,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/6358d57b-3820-48b6-8dc6-10ef393466f2"
-					(reference "#PWR032")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)

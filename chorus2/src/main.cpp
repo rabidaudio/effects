@@ -15,7 +15,7 @@ bool lfoDirectionUp = true;
 uint16_t depthCounter = 0;
 uint8_t depthStep;
 
-volatile uint8_t freqValue = CLOCK_FREQ_MAX;
+volatile uint8_t freqValue = CLOCK_FREQ_MIN;
 volatile uint8_t depth = 255;
 volatile uint8_t width = 255;
 
