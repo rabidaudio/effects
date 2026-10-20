@@ -2443,29 +2443,29 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "scoop happens when MID is short\n0% - R=0 - super scoop\n50% - R=~15k - small scoop\n80% - R=~30k - flat EQ\n100% - R=100k - slight mid boost"
+	(text "NOTE: transistors are always biased when power applied, even when bypassed"
 		(exclude_from_sim no)
-		(at 199.39 78.74 0)
+		(at 100.33 160.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "34bbb1fd-88a3-45c2-ae26-e3d99b013148")
+		(uuid "6ae0addb-1d3a-41b4-8a97-91748289a2a2")
 	)
-	(text "A or B taper\nA preferred"
+	(text "Low-resistance is heavily scooped\nA or B taper, A allows finer control of mids\nAt 15K (50% on A taper pot), scoop comparable\nto classic Big Muff"
 		(exclude_from_sim no)
-		(at 190.5 90.17 0)
+		(at 194.31 86.36 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.64 0.64)
 			)
 		)
 		(uuid "6c7c384b-4a96-4745-aa71-83f4a1079120")
 	)
-	(text "HOOF Tone Stack - modified values\n\nat tone even (45%),\nmids go from huge scoop at 3kHz to slight boost\nphase flat"
+	(text "TONE STACK"
 		(exclude_from_sim no)
-		(at 186.69 148.59 0)
+		(at 196.85 142.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2473,7 +2473,17 @@
 		)
 		(uuid "7615d4bc-420f-47b7-b4c7-1b053a67bcb2")
 	)
-	(text "https://tonestack.yuriturov.com/?s=eNpbmpj-NbFsWVKQ02_7261yOwJftyYF-TImBYX8tr_x9VB_jMa3pCDn3_YPFl_nsi1YkhQU9tv-1kP3dSJVj5KCwoFs2wKQTGJFYllSUfGCxJKWRYmZKbmlaYaJySuTgzz9Eg2SgnxSDA0MsoHmNicbmWYn-vyyZ2BgAFrRDBaH8w2TjY2BqoxSjPWAtLNhsqFBXpKzEYQyBqnNgxpulJi8CtNwVNOAphuZophuCFJmlGxmgWR4iomeOcj0ZBMQZYJsCcwHyYam2aT4wRLsByM9I5A1KWZ6FmB7IDRWXyQbGmWT4Q9TM7A_wA4Hhxm6PwB9TKNZ"
+	(text "better low end than 100n\nbut replaceable for less parts"
+		(exclude_from_sim no)
+		(at 213.36 114.3 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+		)
+		(uuid "76b3157f-ee93-4be1-b91c-305356046e3b")
+	)
+	(text "https://tonestack.yuriturov.com/?s=eNpbmpj-NbFsWVKQ02_7261yOwJftyYF-f62P2wMBklBIb_sGRgYkoKcf9s_WHydy7ZgSVJQ2G_7Ww_d14lUPUoKCgeybQtAMokViWVJRcULEkuaFyVmpuSWphkmJq9MDvL0S7HQM8pOCvJJMTQwANK-zWBGog_U6BA0vmGysTFQmVGSYXaSs2GyoUFekrMRhDJOMixdjGp4sqEpitnJRqZ4jbYEGZ1iBHKRs2GKmZ4FyHQobQxSnZdUlvkF6gODxOQVmJbgMjXZyAjJxUkmUAcDACKXfVU"
 		(exclude_from_sim no)
 		(at 210.058 216.154 0)
 		(effects
@@ -2493,6 +2503,16 @@
 		)
 		(uuid "da00b339-497c-42c1-a581-43451b3ec2a5")
 	)
+	(text "R18 adjusts LED brightness"
+		(exclude_from_sim no)
+		(at 195.58 43.18 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e26e6bcb-e2ad-4f82-8314-fdfa433d5c2a")
+	)
 	(text "DUAL GAIN"
 		(exclude_from_sim no)
 		(at 144.78 124.46 0)
@@ -2502,16 +2522,6 @@
 			)
 		)
 		(uuid "e853ab02-7f63-4bb2-b758-7375830ea566")
-	)
-	(text "or 10k"
-		(exclude_from_sim no)
-		(at 137.16 78.486 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "f9f99a45-6a50-465b-bc53-22440f0bc1b2")
 	)
 	(junction
 		(at 165.1 90.17)
@@ -2584,6 +2594,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "538ab72c-1b7d-4d60-b3ce-d406303d0b7b")
+	)
+	(junction
+		(at 200.66 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57541ae3-9546-4a74-8087-457928f7336d")
 	)
 	(junction
 		(at 121.92 88.9)
@@ -2668,12 +2684,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "99b39184-8e0f-4a59-b0aa-1f9b6ec72401")
-	)
-	(junction
-		(at 200.66 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9b772385-edf3-4f65-a00a-abe29f36936a")
 	)
 	(junction
 		(at 205.74 110.49)
@@ -3189,6 +3199,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 99.06) (xy 200.66 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37d1e21b-a42e-4382-8395-9114f52a0348")
+	)
+	(wire
+		(pts
 			(xy 172.72 100.33) (xy 172.72 104.14)
 		)
 		(stroke
@@ -3659,16 +3679,6 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 99.06) (xy 200.66 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84a6f8ff-bc68-4c06-a453-de749ecc85a6")
-	)
-	(wire
-		(pts
 			(xy 242.57 36.83) (xy 242.57 31.75)
 		)
 		(stroke
@@ -3766,6 +3776,16 @@
 			(type default)
 		)
 		(uuid "93bde8ff-20dd-4c8a-b80c-802ce41eabe4")
+	)
+	(wire
+		(pts
+			(xy 204.47 95.25) (xy 204.47 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95f1f7d5-f97f-4352-9724-fca5a3593298")
 	)
 	(wire
 		(pts
@@ -4046,16 +4066,6 @@
 			(type default)
 		)
 		(uuid "c2f9c0e4-80d1-490a-b2ab-c93ac59176d1")
-	)
-	(wire
-		(pts
-			(xy 204.47 95.25) (xy 204.47 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3b247a6-433c-4fb4-a85e-5ac044c2f956")
 	)
 	(wire
 		(pts
@@ -5349,7 +5359,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 38.1 105.41 90)
+		(at 38.1 105.41 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5374,7 +5384,7 @@
 			)
 		)
 		(property "Footprint" "_project:R"
-			(at 38.1 107.188 90)
+			(at 38.1 103.632 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5867,7 +5877,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "1u"
 			(at 213.614 106.68 90)
 			(effects
 				(font
@@ -7340,7 +7350,6 @@
 	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 200.66 95.25 0)
-		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7348,7 +7357,7 @@
 		(dnp no)
 		(uuid "73ebee90-5b66-4c20-bd5c-176ee051ce81")
 		(property "Reference" "RV2"
-			(at 198.12 96.5201 0)
+			(at 198.12 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7357,7 +7366,7 @@
 			)
 		)
 		(property "Value" "R_MID-A100K"
-			(at 198.12 93.9801 0)
+			(at 198.12 96.5199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7843,7 +7852,7 @@
 		(dnp no)
 		(uuid "8ddaf0f7-60fb-489c-b85b-b6943a9ee715")
 		(property "Reference" "C11"
-			(at 195.834 127 90)
+			(at 194.31 124.46 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7851,7 +7860,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 198.374 127 90)
+			(at 196.85 124.46 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9262,7 +9271,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "3.3k"
+		(property "Value" "10k"
 			(at 203.2 45.7199 0)
 			(effects
 				(font
@@ -9667,7 +9676,7 @@
 		(dnp no)
 		(uuid "cb3fae6f-0d73-4b08-8f80-f1ec0c15a0b7")
 		(property "Reference" "C10"
-			(at 187.96 99.314 90)
+			(at 190.5 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9675,7 +9684,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 187.96 101.854 90)
+			(at 190.5 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
