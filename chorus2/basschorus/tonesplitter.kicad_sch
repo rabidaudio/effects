@@ -1166,7 +1166,7 @@
 		)
 		(uuid "a1fee690-7c07-4262-b878-35ec6910c9f3")
 	)
-	(text "2nd order HPF, Q=0.5\nAdjustable Cutoff: 50Hz - 5KHz"
+	(text "2nd order HPF, Q=0.5\nAdjustable Cutoff: 10Hz - 10KHz"
 		(exclude_from_sim no)
 		(at 81.28 113.03 0)
 		(effects
@@ -2906,7 +2906,7 @@
 				)
 			)
 		)
-		(property "Value" "33n"
+		(property "Value" "150n"
 			(at 88.9 78.4606 90)
 			(effects
 				(font
@@ -2951,108 +2951,6 @@
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/266c062e-3d0a-4a44-9ad1-7a160f1a9b37"
 					(reference "C25")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:TL074")
-		(at 105.41 85.09 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8c489476-d0f1-40c9-af9c-564524c547da")
-		(property "Reference" "U1"
-			(at 105.41 75.7682 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TL074"
-			(at 105.41 78.0796 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "kicad-legacy/kicad-footprints/Package_DIP.pretty:DIP-14_W7.62mm"
-			(at 104.14 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 106.68 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 105.41 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8a97e359-ef6f-4c15-9e91-947588633f14")
-		)
-		(pin "2"
-			(uuid "d8466b78-d8a4-4a88-92ac-beb3990d0870")
-		)
-		(pin "3"
-			(uuid "8b4d8b11-9e8c-40a4-a5bc-655201091a9f")
-		)
-		(pin "5"
-			(uuid "c3710f41-e685-4ecd-9493-0429f902fe7b")
-		)
-		(pin "6"
-			(uuid "b514755b-f486-4503-9d05-3074eb71d189")
-		)
-		(pin "7"
-			(uuid "747a3b02-b48f-46bc-9db4-a01354de241d")
-		)
-		(pin "10"
-			(uuid "e1cba116-8e4d-4e95-aa15-4b3a3d9c8083")
-		)
-		(pin "8"
-			(uuid "28fdf86d-0b1c-45af-97a9-bba1bb35df5c")
-		)
-		(pin "9"
-			(uuid "97d6163e-2dae-47d7-b2fe-3a22da7ba4b5")
-		)
-		(pin "12"
-			(uuid "6e7710da-1a5a-4932-ad4c-1dfa7749d616")
-		)
-		(pin "13"
-			(uuid "1181fa27-63f1-4154-bcf4-55553cf3ef89")
-		)
-		(pin "14"
-			(uuid "b6393c75-96a1-4daa-9e1a-359bfe4f4316")
-		)
-		(pin "11"
-			(uuid "b39bac53-e2c4-4c10-929c-a125e2b218fe")
-		)
-		(pin "4"
-			(uuid "755337d9-e131-4b0f-98b5-109a8edc0f99")
-		)
-		(instances
-			(project "basschorus"
-				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/266c062e-3d0a-4a44-9ad1-7a160f1a9b37"
-					(reference "U1")
-					(unit 2)
 				)
 			)
 		)
@@ -3140,7 +3038,7 @@
 				)
 			)
 		)
-		(property "Value" "33n"
+		(property "Value" "150n"
 			(at 76.2 78.4606 90)
 			(effects
 				(font
@@ -3185,6 +3083,108 @@
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/266c062e-3d0a-4a44-9ad1-7a160f1a9b37"
 					(reference "C24")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL074")
+		(at 105.41 85.09 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b6cb923d-67ac-4aa0-b3f8-f1037de0c121")
+		(property "Reference" "U1"
+			(at 105.41 75.7682 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL074"
+			(at 105.41 78.0796 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "kicad-legacy/kicad-footprints/Package_DIP.pretty:DIP-14_W7.62mm"
+			(at 104.14 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 106.68 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 105.41 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8a97e359-ef6f-4c15-9e91-947588633f14")
+		)
+		(pin "2"
+			(uuid "d8466b78-d8a4-4a88-92ac-beb3990d0870")
+		)
+		(pin "3"
+			(uuid "8b4d8b11-9e8c-40a4-a5bc-655201091a9f")
+		)
+		(pin "5"
+			(uuid "a0bc7591-c92f-4a1a-8386-e404e2a3629a")
+		)
+		(pin "6"
+			(uuid "5d4adcb3-7e4d-4188-8411-05226068f050")
+		)
+		(pin "7"
+			(uuid "701bbcfb-17df-4e98-a850-7228ee2366b6")
+		)
+		(pin "10"
+			(uuid "e1cba116-8e4d-4e95-aa15-4b3a3d9c8083")
+		)
+		(pin "8"
+			(uuid "28fdf86d-0b1c-45af-97a9-bba1bb35df5c")
+		)
+		(pin "9"
+			(uuid "97d6163e-2dae-47d7-b2fe-3a22da7ba4b5")
+		)
+		(pin "12"
+			(uuid "6e7710da-1a5a-4932-ad4c-1dfa7749d616")
+		)
+		(pin "13"
+			(uuid "1181fa27-63f1-4154-bcf4-55553cf3ef89")
+		)
+		(pin "14"
+			(uuid "b6393c75-96a1-4daa-9e1a-359bfe4f4316")
+		)
+		(pin "11"
+			(uuid "b39bac53-e2c4-4c10-929c-a125e2b218fe")
+		)
+		(pin "4"
+			(uuid "755337d9-e131-4b0f-98b5-109a8edc0f99")
+		)
+		(instances
+			(project "basschorus"
+				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/266c062e-3d0a-4a44-9ad1-7a160f1a9b37"
+					(reference "U1")
+					(unit 2)
 				)
 			)
 		)
