@@ -428,6 +428,10 @@
     [
       "266c062e-3d0a-4a44-9ad1-7a160f1a9b37",
       "tone splitter"
+    ],
+    [
+      "33ab3349-f426-4332-ae70-9827b26539ee",
+      "Compressor"
     ]
   ],
   "text_variables": {}
