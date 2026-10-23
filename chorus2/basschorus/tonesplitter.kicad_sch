@@ -2829,7 +2829,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 121.92 85.725 180)
+		(at 121.92 85.09 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2838,7 +2838,7 @@
 		(fields_autoplaced yes)
 		(uuid "2ed03c82-a1de-4598-80af-e6a949ad0ea6")
 		(property "Reference" "TP4"
-			(at 124.46 87.7569 0)
+			(at 124.46 87.1219 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2846,8 +2846,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 124.46 90.2969 0)
+		(property "Value" "TONE_HP"
+			(at 124.46 89.6619 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2856,7 +2856,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_THTPad_2.5x2.5mm_Drill1.2mm"
-			(at 116.84 85.725 0)
+			(at 116.84 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2865,7 +2865,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 116.84 85.725 0)
+			(at 116.84 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2874,7 +2874,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 121.92 85.725 0)
+			(at 121.92 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)

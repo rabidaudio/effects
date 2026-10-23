@@ -2706,7 +2706,7 @@
 		(fields_autoplaced yes)
 		(uuid "adf94b35-70f4-443f-b170-608b613504ec")
 		(property "Reference" "TP1"
-			(at 158.115 98.5519 0)
+			(at 157.48 98.5519 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2714,8 +2714,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 158.115 101.0919 0)
+		(property "Value" "DC"
+			(at 157.48 101.0919 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -6364,7 +6364,7 @@
 		(fields_autoplaced yes)
 		(uuid "0220d9ee-b040-4008-967f-13a4f1f257b4")
 		(property "Reference" "TP15"
-			(at 188.595 117.3479 0)
+			(at 187.96 117.3479 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6372,8 +6372,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 188.595 119.8879 0)
+		(property "Value" "BBD2"
+			(at 187.96 119.8879 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6887,7 +6887,7 @@
 		(fields_autoplaced yes)
 		(uuid "12a88836-4875-48cb-8385-f7ac0ed50464")
 		(property "Reference" "TP3"
-			(at 95.885 123.9519 0)
+			(at 96.52 123.9519 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6895,8 +6895,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 95.885 126.4919 0)
+		(property "Value" "SUM"
+			(at 96.52 126.4919 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7375,7 +7375,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "AA"
 			(at 163.83 119.8879 0)
 			(effects
 				(font
@@ -8305,7 +8305,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "5V"
 			(at 154.94 25.3999 90)
 			(effects
 				(font
@@ -8364,7 +8364,7 @@
 		(fields_autoplaced yes)
 		(uuid "56ed8b08-b2fc-432a-bbe3-cf69a50b49bd")
 		(property "Reference" "TP11"
-			(at 141.605 117.3479 0)
+			(at 140.97 117.3479 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8372,8 +8372,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 141.605 119.8879 0)
+		(property "Value" "COMP"
+			(at 140.97 119.8879 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8501,7 +8501,7 @@
 		(fields_autoplaced yes)
 		(uuid "571a8667-adcf-4d98-89dd-65888040919f")
 		(property "Reference" "TP2"
-			(at 64.135 139.6999 90)
+			(at 64.77 139.6999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8509,8 +8509,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 64.135 142.2399 90)
+		(property "Value" "IN"
+			(at 64.77 142.2399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8708,7 +8708,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "9V"
 			(at 113.03 25.3999 90)
 			(effects
 				(font
@@ -8841,7 +8841,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "RF"
 			(at 209.55 119.8879 0)
 			(effects
 				(font
@@ -9014,7 +9014,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "TONEW"
 			(at 119.38 119.8879 0)
 			(effects
 				(font
@@ -9217,7 +9217,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "FLANGE"
 			(at 62.23 102.1079 0)
 			(effects
 				(font
@@ -10551,7 +10551,7 @@
 		(fields_autoplaced yes)
 		(uuid "a38bfe0d-7e5c-4712-a552-bcea24a3f3b6")
 		(property "Reference" "TP18"
-			(at 252.095 141.7319 0)
+			(at 251.46 141.7319 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10559,8 +10559,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 252.095 144.2719 0)
+		(property "Value" "OUT"
+			(at 251.46 144.2719 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10626,7 +10626,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "-7.5V"
 			(at 278.13 62.2299 90)
 			(effects
 				(font
@@ -10825,7 +10825,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "TONED"
 			(at 128.27 135.1279 0)
 			(effects
 				(font
@@ -11635,7 +11635,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "+7.5V"
 			(at 278.13 24.1299 90)
 			(effects
 				(font

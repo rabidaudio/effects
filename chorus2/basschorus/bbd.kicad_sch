@@ -6574,7 +6574,7 @@
 				)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "BBD1"
 			(at 185.293 86.36 90)
 			(effects
 				(font
@@ -8513,7 +8513,7 @@
 		(fields_autoplaced yes)
 		(uuid "e4296185-f9c5-408b-93f7-e8165c3560cc")
 		(property "Reference" "TP13"
-			(at 75.565 71.6279 0)
+			(at 76.2 71.6279 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8521,8 +8521,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 75.565 74.1679 0)
+		(property "Value" "CLK"
+			(at 76.2 74.1679 0)
 			(effects
 				(font
 					(size 1.27 1.27)

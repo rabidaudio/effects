@@ -2590,7 +2590,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "COMP_IN"
 			(at 125.73 86.4869 0)
 			(effects
 				(font
@@ -3552,7 +3552,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "COMP_GAIN"
 			(at 100.33 74.1679 0)
 			(effects
 				(font
@@ -3619,7 +3619,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "COMP_OUT"
 			(at 199.39 104.2669 0)
 			(effects
 				(font
@@ -4329,15 +4329,15 @@
 		(fields_autoplaced yes)
 		(uuid "ef80ba8a-409e-489b-a235-74bd23c2deae")
 		(property "Reference" "TP10"
-			(at 145.923 97.155 90)
+			(at 145.923 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 145.923 99.695 90)
+		(property "Value" "ENV"
+			(at 145.923 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
