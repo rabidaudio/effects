@@ -2016,7 +2016,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 163.195 66.04 0)
 			(effects
 				(font
@@ -2103,7 +2103,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "070fbc5a-7bac-4d92-913e-ae2ec636488a")
-		(property "Reference" "R36"
+		(property "Reference" "R26"
 			(at 168.0972 86.36 90)
 			(effects
 				(font
@@ -2119,7 +2119,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-legacy/kicad-footprints/Resistor_THT.pretty:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 171.577 86.36 90)
 			(effects
 				(font
@@ -2154,7 +2154,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/55ec0f37-0f57-44d5-88f5-fd537ba2da80"
-					(reference "R36")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -2169,7 +2169,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1c2152ff-a210-40e8-b53e-aa6473ece47b")
-		(property "Reference" "R19"
+		(property "Reference" "R22"
 			(at 116.205 60.7822 90)
 			(effects
 				(font
@@ -2185,7 +2185,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-legacy/kicad-footprints/Resistor_THT.pretty:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 116.205 64.262 90)
 			(effects
 				(font
@@ -2220,7 +2220,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/55ec0f37-0f57-44d5-88f5-fd537ba2da80"
-					(reference "R19")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -2235,7 +2235,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "28af04b0-aa96-49c7-9a95-88e141aaf3c0")
-		(property "Reference" "R35"
+		(property "Reference" "R24"
 			(at 142.875 45.5422 90)
 			(effects
 				(font
@@ -2251,7 +2251,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-legacy/kicad-footprints/Resistor_THT.pretty:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 142.875 49.022 90)
 			(effects
 				(font
@@ -2286,7 +2286,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/55ec0f37-0f57-44d5-88f5-fd537ba2da80"
-					(reference "R35")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -2301,7 +2301,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2f87c514-d4a9-4fe0-947a-41734a91db20")
-		(property "Reference" "C17"
+		(property "Reference" "C22"
 			(at 130.175 73.025 0)
 			(effects
 				(font
@@ -2319,7 +2319,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
 			(at 135.5598 69.85 0)
 			(effects
 				(font
@@ -2354,7 +2354,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/55ec0f37-0f57-44d5-88f5-fd537ba2da80"
-					(reference "C17")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -2369,7 +2369,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "305a818b-4742-491b-b69b-6ef180a0606f")
-		(property "Reference" "RV5"
+		(property "Reference" "RV6"
 			(at 176.276 96.52 90)
 			(effects
 				(font
@@ -2385,7 +2385,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-legacy/Potentiometers.pretty:Potentiometer_Trimmer_Bourns_3296W"
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical"
 			(at 173.355 96.52 0)
 			(effects
 				(font
@@ -2423,7 +2423,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/55ec0f37-0f57-44d5-88f5-fd537ba2da80"
-					(reference "RV5")
+					(reference "RV6")
 					(unit 1)
 				)
 			)
@@ -2438,7 +2438,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "40a920ea-26e5-49ed-b5c6-2cdbce3abceb")
-		(property "Reference" "R21"
+		(property "Reference" "R25"
 			(at 142.875 60.7822 90)
 			(effects
 				(font
@@ -2454,7 +2454,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-legacy/kicad-footprints/Resistor_THT.pretty:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 142.875 64.262 90)
 			(effects
 				(font
@@ -2489,7 +2489,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/55ec0f37-0f57-44d5-88f5-fd537ba2da80"
-					(reference "R21")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -2504,7 +2504,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "50eaaa9d-4177-4410-a639-3410771d1298")
-		(property "Reference" "R20"
+		(property "Reference" "R23"
 			(at 128.905 60.7822 90)
 			(effects
 				(font
@@ -2520,7 +2520,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-legacy/kicad-footprints/Resistor_THT.pretty:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 128.905 64.262 90)
 			(effects
 				(font
@@ -2555,7 +2555,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/55ec0f37-0f57-44d5-88f5-fd537ba2da80"
-					(reference "R20")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -2570,7 +2570,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "81535a70-a58f-4b97-b6d5-d19a96da8ba4")
-		(property "Reference" "C18"
+		(property "Reference" "C23"
 			(at 144.0942 57.15 90)
 			(effects
 				(font
@@ -2586,7 +2586,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
 			(at 151.4602 60.96 0)
 			(effects
 				(font
@@ -2621,7 +2621,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/55ec0f37-0f57-44d5-88f5-fd537ba2da80"
-					(reference "C18")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -2636,7 +2636,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9b9e1f5c-440f-4ccb-a987-95201f538f13")
-		(property "Reference" "C16"
+		(property "Reference" "C21"
 			(at 114.935 72.6186 0)
 			(effects
 				(font
@@ -2654,7 +2654,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
 			(at 121.5898 69.85 0)
 			(effects
 				(font
@@ -2689,7 +2689,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/55ec0f37-0f57-44d5-88f5-fd537ba2da80"
-					(reference "C16")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -2723,7 +2723,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.5x2.5mm_Drill1.2mm"
 			(at 150.495 96.52 0)
 			(effects
 				(font
@@ -2772,7 +2772,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b48a06bf-70a3-4ed0-b9ae-d4ba5c1dc71c")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR059"
 			(at 122.555 86.36 0)
 			(effects
 				(font
@@ -2822,7 +2822,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/55ec0f37-0f57-44d5-88f5-fd537ba2da80"
-					(reference "#PWR049")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -2837,7 +2837,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bbc7f8a2-61a4-49ef-87ae-8cca2856ade3")
-		(property "Reference" "R37"
+		(property "Reference" "R27"
 			(at 168.0972 106.68 90)
 			(effects
 				(font
@@ -2853,7 +2853,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kicad-legacy/kicad-footprints/Resistor_THT.pretty:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 171.577 106.68 90)
 			(effects
 				(font
@@ -2888,7 +2888,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/55ec0f37-0f57-44d5-88f5-fd537ba2da80"
-					(reference "R37")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -2904,7 +2904,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d63cc556-92a2-43d7-b81d-53eb3f2f46da")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR060"
 			(at 136.525 86.36 0)
 			(effects
 				(font
@@ -2954,7 +2954,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/55ec0f37-0f57-44d5-88f5-fd537ba2da80"
-					(reference "#PWR050")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -2970,7 +2970,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da509fd6-fb8f-4a04-83bb-a90da48b34f4")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR062"
 			(at 173.355 119.38 0)
 			(effects
 				(font
@@ -3020,7 +3020,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/55ec0f37-0f57-44d5-88f5-fd537ba2da80"
-					(reference "#PWR058")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -3036,7 +3036,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dff37c8c-4b21-4a39-ac3c-9d2a3416f0b2")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR061"
 			(at 173.355 83.82 0)
 			(effects
 				(font
@@ -3086,7 +3086,7 @@
 		(instances
 			(project ""
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/55ec0f37-0f57-44d5-88f5-fd537ba2da80"
-					(reference "#PWR057")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)

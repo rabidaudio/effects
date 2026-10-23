@@ -395,6 +395,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1519,6 +1626,12 @@
 		(uuid "b441b940-bc39-45a1-b446-368439cbcb03")
 	)
 	(junction
+		(at 97.79 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b939022b-917a-4134-8df0-59157971d44a")
+	)
+	(junction
 		(at 197.485 99.695)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2162,7 +2275,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "05754f06-0b78-4f2d-8f04-7b839ec24b22")
-		(property "Reference" "U9"
+		(property "Reference" "U3"
 			(at 189.865 109.22 0)
 			(effects
 				(font
@@ -2178,7 +2291,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 188.595 102.235 0)
 			(effects
 				(font
@@ -2250,7 +2363,7 @@
 		(instances
 			(project ""
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "U9")
+					(reference "U3")
 					(unit 3)
 				)
 			)
@@ -2266,7 +2379,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "15592973-7b46-4f49-9a91-59b789ffb32b")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR070"
 			(at 69.85 87.63 0)
 			(effects
 				(font
@@ -2316,7 +2429,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "#PWR064")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -2332,7 +2445,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2ef56d7f-fc9d-4b6c-8069-b264b2c0c780")
-		(property "Reference" "C30"
+		(property "Reference" "C35"
 			(at 157.48 74.295 90)
 			(effects
 				(font
@@ -2348,7 +2461,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
 			(at 161.29 80.9498 0)
 			(effects
 				(font
@@ -2384,7 +2497,7 @@
 		(instances
 			(project ""
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "C30")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -2400,7 +2513,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2ffb6fea-4d5b-4a7f-867c-1134bc7800f8")
-		(property "Reference" "R44"
+		(property "Reference" "R42"
 			(at 74.93 60.96 90)
 			(effects
 				(font
@@ -2416,7 +2529,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 74.93 69.088 90)
 			(effects
 				(font
@@ -2452,7 +2565,74 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "R44")
+					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 123.19 81.915 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "319cd914-a9ed-48e2-8d19-8ed36a2beff7")
+		(property "Reference" "TP8"
+			(at 125.73 83.9469 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 125.73 86.4869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.5x2.5mm_Drill1.2mm"
+			(at 118.11 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 123.19 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4bd5892d-bcb6-4ec3-85f7-135995c5c5d7")
+		)
+		(instances
+			(project "basschorus"
+				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -2468,7 +2648,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "320e6f93-41e6-465b-87bb-d3083ce437d0")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR072"
 			(at 140.335 120.65 0)
 			(effects
 				(font
@@ -2518,7 +2698,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "#PWR062")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -2534,7 +2714,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "38cf8c03-ed6b-409d-a743-0ecee10d12a8")
-		(property "Reference" "U9"
+		(property "Reference" "U3"
 			(at 79.375 86.36 0)
 			(effects
 				(font
@@ -2550,7 +2730,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 78.105 78.74 0)
 			(effects
 				(font
@@ -2622,7 +2802,7 @@
 		(instances
 			(project ""
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "U9")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -2638,7 +2818,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b065b17-9023-45b8-9d4f-5d13553b638d")
-		(property "Reference" "R46"
+		(property "Reference" "R47"
 			(at 230.505 93.98 90)
 			(effects
 				(font
@@ -2654,7 +2834,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 230.505 101.473 90)
 			(effects
 				(font
@@ -2690,7 +2870,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "R46")
+					(reference "R47")
 					(unit 1)
 				)
 			)
@@ -2706,7 +2886,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "424934a7-a97e-4f47-9e01-0d4f4b42f2e2")
-		(property "Reference" "U9"
+		(property "Reference" "U3"
 			(at 115.57 91.44 0)
 			(effects
 				(font
@@ -2722,7 +2902,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 114.3 84.455 0)
 			(effects
 				(font
@@ -2794,7 +2974,7 @@
 		(instances
 			(project ""
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "U9")
+					(reference "U3")
 					(unit 2)
 				)
 			)
@@ -2810,7 +2990,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f66fd01-9e0e-4bdf-b13d-c05c189caba3")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR073"
 			(at 149.225 120.65 0)
 			(effects
 				(font
@@ -2860,7 +3040,7 @@
 		(instances
 			(project ""
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "#PWR060")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -2894,7 +3074,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal"
 			(at 167.005 107.95 0)
 			(effects
 				(font
@@ -2945,7 +3125,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5b37e04f-1520-4b4d-9b16-a2f054602fbe")
-		(property "Reference" "C31"
+		(property "Reference" "C34"
 			(at 152.4 107.315 0)
 			(effects
 				(font
@@ -2963,7 +3143,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm"
 			(at 149.225 107.95 0)
 			(effects
 				(font
@@ -2999,7 +3179,7 @@
 		(instances
 			(project ""
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "C31")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -3033,7 +3213,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal"
 			(at 149.225 87.63 0)
 			(effects
 				(font
@@ -3085,7 +3265,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6855594f-53c6-4c6c-8aa0-94a4034ffb0f")
-		(property "Reference" "R43"
+		(property "Reference" "R41"
 			(at 62.865 60.96 90)
 			(effects
 				(font
@@ -3101,7 +3281,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 62.865 69.088 90)
 			(effects
 				(font
@@ -3137,7 +3317,7 @@
 		(instances
 			(project ""
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "R43")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -3153,7 +3333,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7882dc18-713c-47cb-9b61-10b73acfa205")
-		(property "Reference" "R42"
+		(property "Reference" "R43"
 			(at 142.24 95.8849 0)
 			(effects
 				(font
@@ -3171,7 +3351,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 138.557 97.155 90)
 			(effects
 				(font
@@ -3207,7 +3387,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "R42")
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -3223,7 +3403,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "89ff8bcf-6e00-4d64-88f2-2a2427610479")
-		(property "Reference" "R39"
+		(property "Reference" "R44"
 			(at 151.13 95.8849 0)
 			(effects
 				(font
@@ -3241,7 +3421,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 147.447 97.155 90)
 			(effects
 				(font
@@ -3277,7 +3457,7 @@
 		(instances
 			(project ""
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "R39")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -3292,7 +3472,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8a39d2ff-22a8-47f4-b153-85496b757091")
-		(property "Reference" "RV7"
+		(property "Reference" "RV8"
 			(at 88.9 57.785 90)
 			(effects
 				(font
@@ -3308,7 +3488,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical"
 			(at 88.9 67.31 0)
 			(effects
 				(font
@@ -3347,7 +3527,141 @@
 		(instances
 			(project ""
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "RV7")
+					(reference "RV8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 97.79 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ab422dc-b705-44b6-a08c-810f35b2870e")
+		(property "Reference" "TP7"
+			(at 100.33 71.6279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 100.33 74.1679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.5x2.5mm_Drill1.2mm"
+			(at 102.87 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 97.79 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f6e2f9f0-c4f3-4295-b5d4-eba59efdb803")
+		)
+		(instances
+			(project "basschorus"
+				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 197.485 99.695 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "973f3f43-a094-4a39-a0da-c7cc13b2cc8b")
+		(property "Reference" "TP9"
+			(at 199.39 101.7269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 199.39 104.2669 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.5x2.5mm_Drill1.2mm"
+			(at 192.405 99.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 192.405 99.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 197.485 99.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f194955d-2874-49dd-bf5f-50d58bbad3ca")
+		)
+		(instances
+			(project "basschorus"
+				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -3363,7 +3677,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a48b2d8-dc47-4f26-a1a9-a239ca46854f")
-		(property "Reference" "R40"
+		(property "Reference" "R45"
 			(at 168.91 92.0749 0)
 			(effects
 				(font
@@ -3381,7 +3695,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 165.227 93.345 90)
 			(effects
 				(font
@@ -3417,7 +3731,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "R40")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -3448,7 +3762,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical"
 			(at 158.115 102.235 0)
 			(effects
 				(font
@@ -3503,7 +3817,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c9d25389-b49f-4f3f-9184-5142094590f4")
-		(property "Reference" "RV6"
+		(property "Reference" "RV9"
 			(at 95.25 84.455 90)
 			(effects
 				(font
@@ -3519,7 +3833,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical_CircularHoles"
 			(at 97.79 84.455 0)
 			(effects
 				(font
@@ -3558,7 +3872,7 @@
 		(instances
 			(project ""
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "RV6")
+					(reference "RV9")
 					(unit 1)
 				)
 			)
@@ -3574,7 +3888,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c9efc6f2-ffac-4285-8052-97c3fd6b4138")
-		(property "Reference" "R45"
+		(property "Reference" "R46"
 			(at 218.44 93.345 90)
 			(effects
 				(font
@@ -3590,7 +3904,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
 			(at 218.44 101.473 90)
 			(effects
 				(font
@@ -3626,7 +3940,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "R45")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -3642,7 +3956,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf7da544-7e4d-4abc-8352-561aa455a597")
-		(property "Reference" "C32"
+		(property "Reference" "C36"
 			(at 204.47 92.075 90)
 			(effects
 				(font
@@ -3658,7 +3972,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
 			(at 208.28 98.7298 0)
 			(effects
 				(font
@@ -3694,7 +4008,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "C32")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -3710,7 +4024,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d1fc0b2b-382b-4e9c-93bb-4637bc8041ba")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR075"
 			(at 223.52 122.555 0)
 			(effects
 				(font
@@ -3760,7 +4074,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "#PWR063")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -3776,7 +4090,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d4d460cb-b5ca-47d9-9dcb-56b897696442")
-		(property "Reference" "C29"
+		(property "Reference" "C33"
 			(at 132.08 74.295 90)
 			(effects
 				(font
@@ -3792,7 +4106,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
 			(at 135.89 80.9498 0)
 			(effects
 				(font
@@ -3828,7 +4142,7 @@
 		(instances
 			(project ""
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "C29")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -3844,7 +4158,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dda05dc0-5a96-41fc-909f-438fe7cc823c")
-		(property "Reference" "U9"
+		(property "Reference" "U3"
 			(at 233.045 120.65 0)
 			(effects
 				(font
@@ -3860,7 +4174,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
 			(at 231.775 113.03 0)
 			(effects
 				(font
@@ -3932,7 +4246,7 @@
 		(instances
 			(project ""
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "U9")
+					(reference "U3")
 					(unit 4)
 				)
 			)
@@ -3948,7 +4262,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e291bd5a-ef4c-41d3-94c3-33a64560ab00")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR071"
 			(at 97.79 98.425 0)
 			(effects
 				(font
@@ -3998,7 +4312,72 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "#PWR067")
+					(reference "#PWR071")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 149.225 102.235 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef80ba8a-409e-489b-a235-74bd23c2deae")
+		(property "Reference" "TP10"
+			(at 145.923 97.155 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 145.923 99.695 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.5x2.5mm_Drill1.2mm"
+			(at 149.225 97.155 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.225 97.155 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 149.225 102.235 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f0a3a7c2-532c-4076-b704-c6c22c6a75df")
+		)
+		(instances
+			(project "basschorus"
+				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -4013,7 +4392,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "efd00cfa-ec4a-48ef-917f-b293542f1e65")
-		(property "Reference" "RV8"
+		(property "Reference" "RV11"
 			(at 241.935 90.17 90)
 			(effects
 				(font
@@ -4029,7 +4408,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical"
 			(at 241.935 99.695 0)
 			(effects
 				(font
@@ -4068,7 +4447,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "RV8")
+					(reference "RV11")
 					(unit 1)
 				)
 			)
@@ -4084,7 +4463,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9166899-d240-49af-8948-078f26ce6fcc")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR074"
 			(at 167.005 121.285 0)
 			(effects
 				(font
@@ -4134,7 +4513,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/33ab3349-f426-4332-ae70-9827b26539ee"
-					(reference "#PWR061")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)

@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "_effects_shared_footprints")(type "KiCad")(uri "/Users/personal/projects/effects/_shared/_effects_shared_footprints.pretty")(options "")(descr ""))
+  (lib (name "basschorus")(type "KiCad")(uri "/Users/personal/projects/effects/chorus2/basschorus.pretty")(options "")(descr ""))
+  (lib (name "_project")(type "KiCad")(uri "${KIPRJMOD}/_project.pretty")(options "")(descr ""))
+)
