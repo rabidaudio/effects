@@ -1273,7 +1273,7 @@
 		)
 		(uuid "a1fee690-7c07-4262-b878-35ec6910c9f3")
 	)
-	(text "2nd order HPF, Q=0.5\nAdjustable Cutoff: 10Hz - 10KHz"
+	(text "2nd order HPF, Q=0.5\nAdjustable Cutoff: 10Hz - 1KHz"
 		(exclude_from_sim no)
 		(at 81.28 113.03 0)
 		(effects
@@ -1283,6 +1283,17 @@
 			(justify left bottom)
 		)
 		(uuid "a54c6357-bf4f-4cff-b501-c2b64217f2a0")
+	)
+	(text "from .core import db\n\ntone_splitter_hp = filters.sallen_key_hp()\n# An adjustable sub-butterworth filter (Q=0.5)\n# with a cutoff from ~10Hz to ~1kHz\n\n# 1kHz\n# tone_splitter_hp.realize(c1=\"150n\", c2=\"150n\", r3=\"1k\", r4=\"1k\")\n# 100Hz\ntone_splitter_hp.realize(c1=\"150n\", c2=\"150n\", r3=\"11k\", r4=\"11k\")\n# 10Hz\n# tone_splitter_hp.realize(c1=\"150n\", c2=\"150n\", r3=\"101k\", r4=\"101k\")\n# tone_splitter_hp.plot_bode()\ndb(np.abs(tone_splitter_hp.evaluate(10)))\ndb(np.abs(tone_splitter_hp.evaluate(100)))\ndb(np.abs(tone_splitter_hp.evaluate(1000)))\n\n# upper bound of bandpass filter. fc=3.162kHz, Q=0.707 (butterworth)\ntone_splitter_lp = filters.sallen_key_lp()\ntone_splitter_lp.realize(r1=\"9.1k\", r2=\"5.6k\", c3=\"10n\", c4=\"4.7n\")\n# adjusted for less novel parts\ntone_splitter_lp.realize(r1=\"10k\", r2=\"5.6k\", c3=\"10n\", c4=\"4.7n\")\n# tone_splitter_lp.plot_bode()\ndb(np.abs(tone_splitter_lp.evaluate(3162))) # -3.2db\n\ntone_splitter = tone_splitter_hp.cascade(tone_splitter_lp)\ntone_stopband = db(np.abs(tone_splitter.evaluate(5_000))) # -9.3dB\n# tone_splitter.plot_bode()"
+		(exclude_from_sim no)
+		(at 16.51 133.985 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "ea96dcec-09e8-46c6-ad1b-054c3ff8ed30")
 	)
 	(junction
 		(at 143.51 85.09)
@@ -2541,84 +2552,6 @@
 	)
 	(symbol
 		(lib_id "Device:R_Potentiometer_Dual_Separate")
-		(at 115.57 69.85 270)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-0000632692be")
-		(property "Reference" "R_CUTOFF_1"
-			(at 115.57 64.5922 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "A100K"
-			(at 115.57 66.9036 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD902F-40-00D_Dual_Vertical_CircularHoles"
-			(at 115.57 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 115.57 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 115.57 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7fd051bf-23af-407d-a421-f519ee3a5013")
-		)
-		(pin "2"
-			(uuid "92daec31-d219-4e99-9bac-40f5c50acb32")
-		)
-		(pin "3"
-			(uuid "e480b0eb-260a-4c99-85cb-eb3733eb4474")
-		)
-		(pin "4"
-			(uuid "c289e386-edf1-4844-94fa-fc4f87d9f45d")
-		)
-		(pin "5"
-			(uuid "ad2699dc-f35c-4d43-b5d0-c9bfccf1a2d7")
-		)
-		(pin "6"
-			(uuid "830ea6c6-da08-4166-b218-30f192396a1f")
-		)
-		(instances
-			(project "basschorus"
-				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/266c062e-3d0a-4a44-9ad1-7a160f1a9b37"
-					(reference "R_CUTOFF_1")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Potentiometer_Dual_Separate")
 		(at 113.03 101.6 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2626,7 +2559,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000632692c4")
-		(property "Reference" "R_CUTOFF_1"
+		(property "Reference" "RV12"
 			(at 113.03 96.3422 90)
 			(effects
 				(font
@@ -2634,7 +2567,7 @@
 				)
 			)
 		)
-		(property "Value" "A100K"
+		(property "Value" "R_CUTOFF_A100K"
 			(at 113.03 98.6536 90)
 			(effects
 				(font
@@ -2689,7 +2622,7 @@
 		(instances
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/266c062e-3d0a-4a44-9ad1-7a160f1a9b37"
-					(reference "R_CUTOFF_1")
+					(reference "RV12")
 					(unit 1)
 				)
 			)
@@ -3491,6 +3424,84 @@
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/266c062e-3d0a-4a44-9ad1-7a160f1a9b37"
 					(reference "#PWR069")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer_Dual_Separate")
+		(at 115.57 69.85 270)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c48a1db0-6ce8-4779-8022-ff7a18b1e73a")
+		(property "Reference" "RV12"
+			(at 115.57 64.5922 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_CUTOFF_A100K"
+			(at 115.57 66.9036 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD902F-40-00D_Dual_Vertical_CircularHoles"
+			(at 115.57 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 115.57 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "beb6b7f1-93b0-4b8e-8fea-1da73202195b")
+		)
+		(pin "2"
+			(uuid "c940d834-bc79-4a22-9fb3-f87dd07a4862")
+		)
+		(pin "3"
+			(uuid "ba5f9fc6-c29c-499c-a284-73e5d19894f0")
+		)
+		(pin "4"
+			(uuid "ea95b269-5071-4d4b-9d40-598dc02e84bd")
+		)
+		(pin "5"
+			(uuid "e36c351a-6126-4aa3-a756-390ee1d23a4b")
+		)
+		(pin "6"
+			(uuid "1d882824-138d-4fd7-8af2-8a825a0eff7e")
+		)
+		(instances
+			(project "basschorus"
+				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393/266c062e-3d0a-4a44-9ad1-7a160f1a9b37"
+					(reference "RV12")
+					(unit 2)
 				)
 			)
 		)

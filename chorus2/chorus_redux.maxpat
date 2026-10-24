@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 254.0, 100.0, 1224.0, 848.0 ],
+		"rect" : [ 672.0, 175.0, 1671.0, 1047.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -836,8 +836,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "dictionary" ],
-					"patching_rect" : [ 133.015955567359924, 137.652045488357544, 120.0, 89.0 ],
-					"text" : "filterdesign @frequency 4477 @order 2 @response lowpass @topology butterworth"
+					"patching_rect" : [ 133.015955567359924, 137.652045488357544, 121.0, 89.0 ],
+					"text" : "filterdesign @frequency 3162 @order 2 @response lowpass @topology butterworth"
 				}
 
 			}
