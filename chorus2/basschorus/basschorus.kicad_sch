@@ -5783,7 +5783,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 239.395 126.492 90)
 			(effects
 				(font
@@ -5849,7 +5849,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 220.345 135.382 90)
 			(effects
 				(font
@@ -5915,7 +5915,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 220.345 145.542 90)
 			(effects
 				(font
@@ -6636,7 +6636,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 76.962 41.91 90)
 			(effects
 				(font
@@ -6769,7 +6769,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 212.09 120.142 90)
 			(effects
 				(font
@@ -6971,7 +6971,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 129.032 38.1 90)
 			(effects
 				(font
@@ -7041,7 +7041,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 263.652 55.88 90)
 			(effects
 				(font
@@ -7177,7 +7177,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 139.192 30.48 90)
 			(effects
 				(font
@@ -7599,7 +7599,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 64.77 117.602 90)
 			(effects
 				(font
@@ -7665,7 +7665,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 83.82 106.172 90)
 			(effects
 				(font
@@ -7933,7 +7933,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 64.77 102.362 90)
 			(effects
 				(font
@@ -8685,6 +8685,110 @@
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393"
 					(reference "#PWR011")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL074")
+		(at 239.395 139.7 0)
+		(mirror x)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "63c0ce24-a5f2-45ae-825b-d8c0e09dea09")
+		(property "Reference" "U2"
+			(at 239.395 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL074"
+			(at 239.395 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
+			(at 238.125 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 240.665 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
+			(at 239.395 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "36cb4021-0eb4-416d-a3a9-6be827256cb4")
+		)
+		(pin "3"
+			(uuid "7265f458-a300-44bd-ad83-14cfbb816655")
+		)
+		(pin "2"
+			(uuid "55753974-797d-4422-9076-ced038ecd89b")
+		)
+		(pin "5"
+			(uuid "9972b306-bff7-437f-b994-03c9eac11d6a")
+		)
+		(pin "14"
+			(uuid "0e1c3ba8-14ab-4aef-832a-540d753c81f2")
+		)
+		(pin "10"
+			(uuid "d5b4bcda-039b-43e2-bdf6-7b07acd38c76")
+		)
+		(pin "8"
+			(uuid "7b09b8b1-355b-4cd5-891f-f85148c48937")
+		)
+		(pin "6"
+			(uuid "dbeeb8c8-9200-4082-a8a5-6df9ebf5f002")
+		)
+		(pin "9"
+			(uuid "c0e75f39-b430-44eb-9997-334da34d2089")
+		)
+		(pin "11"
+			(uuid "5bba32ce-3e6a-4c5b-9d5e-06d3b9cc45a2")
+		)
+		(pin "12"
+			(uuid "4eef066d-5ba3-40d7-bdf3-46870b2f3bb5")
+		)
+		(pin "7"
+			(uuid "d8665b34-1023-4d8d-ad71-a4726a80866d")
+		)
+		(pin "13"
+			(uuid "45600fcd-a1ec-4cae-b9d5-84f8c74b5f6b")
+		)
+		(pin "4"
+			(uuid "08ae553b-c1e3-4c2f-9c91-74907248e2b8")
+		)
+		(instances
+			(project "basschorus"
+				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393"
+					(reference "U2")
+					(unit 2)
 				)
 			)
 		)
@@ -9823,108 +9927,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:TL074")
-		(at 83.82 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9185314d-0152-4966-bae7-f8dd212ccec7")
-		(property "Reference" "U1"
-			(at 83.82 131.2418 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TL074"
-			(at 83.82 128.9304 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
-			(at 82.55 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 85.09 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 83.82 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7b9479a8-029a-48a9-802a-955d2ae653f6")
-		)
-		(pin "2"
-			(uuid "85eb656a-a25c-408f-b1bb-5060d94c4c92")
-		)
-		(pin "3"
-			(uuid "24713f07-f111-4a90-9101-0b1022fb995d")
-		)
-		(pin "5"
-			(uuid "c9378b57-4200-471d-a885-f5bbdb54ac27")
-		)
-		(pin "6"
-			(uuid "79cc4ac8-0d5a-486d-980a-2178755dbc32")
-		)
-		(pin "7"
-			(uuid "13fc8a10-ad9c-4db8-ad08-8df4a6bfb302")
-		)
-		(pin "10"
-			(uuid "314504a3-03fc-4249-a462-5645768bc3df")
-		)
-		(pin "8"
-			(uuid "7d9dbd21-d8c5-4577-91e6-b9098caf7c65")
-		)
-		(pin "9"
-			(uuid "df3591e6-20bb-44d6-a8d8-16acc1cb1f58")
-		)
-		(pin "12"
-			(uuid "6fde7ab8-d9e5-4a7b-8cfd-885efb92a76c")
-		)
-		(pin "13"
-			(uuid "7188bea3-96f6-4c09-bafd-cc61243bf803")
-		)
-		(pin "14"
-			(uuid "9aee08b4-1f51-44ae-98df-079768233ab8")
-		)
-		(pin "11"
-			(uuid "61e2ba2a-2805-4685-8f23-3b236fbaeaa0")
-		)
-		(pin "4"
-			(uuid "010d9aaa-0bed-42dd-ad7d-1e2941c61703")
-		)
-		(instances
-			(project "basschorus"
-				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+7.5V")
 		(at 273.05 19.05 0)
 		(unit 1)
@@ -10085,7 +10087,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 57.658 93.98 90)
 			(effects
 				(font
@@ -10874,110 +10876,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:TL074")
-		(at 239.395 139.7 0)
-		(mirror x)
-		(unit 4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b412edbf-6fc4-4937-af12-6d0b06640ebb")
-		(property "Reference" "U2"
-			(at 241.3 133.985 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TL074"
-			(at 242.57 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
-			(at 238.125 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
-			(at 240.665 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad Low-Noise JFET-Input Operational Amplifiers, DIP-14/SOIC-14"
-			(at 239.395 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8bc00c04-2c6b-48a3-bd1c-ffd226bb1863")
-		)
-		(pin "2"
-			(uuid "e1ebb054-bbdc-42ad-83d6-72cecab318d1")
-		)
-		(pin "3"
-			(uuid "b9baa9ae-92f9-4905-b6fb-200422b15957")
-		)
-		(pin "5"
-			(uuid "18794594-e471-489f-813b-f1bd52c0ce10")
-		)
-		(pin "6"
-			(uuid "c5384426-ce65-41e8-8390-b78f1ca6a3a7")
-		)
-		(pin "7"
-			(uuid "8dbdfa3a-36e7-4cba-80b7-5fe9974c3fda")
-		)
-		(pin "10"
-			(uuid "67ab1273-d2b1-4b6c-9cb0-728e44dc8218")
-		)
-		(pin "8"
-			(uuid "0d2857d5-620a-4948-8fcc-6d7e0e6f4156")
-		)
-		(pin "9"
-			(uuid "a8c1f988-6b5f-4d90-b255-e57c6da41424")
-		)
-		(pin "12"
-			(uuid "1619f6bc-6a2b-4f1f-a794-9922e7bc3483")
-		)
-		(pin "13"
-			(uuid "b7594970-6f9c-4cd9-a95a-3130b37bcb0e")
-		)
-		(pin "14"
-			(uuid "a8ddd6b4-23a7-487a-bb64-e993d1f045b3")
-		)
-		(pin "11"
-			(uuid "7ed14a54-cd32-424a-a22c-ac1ec4757321")
-		)
-		(pin "4"
-			(uuid "b6513dd6-af6d-44ba-a0af-a963cbf57003")
-		)
-		(instances
-			(project "basschorus"
-				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393"
-					(reference "U2")
-					(unit 4)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 130.81 45.72 0)
 		(unit 1)
@@ -11335,7 +11233,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 253.492 46.99 90)
 			(effects
 				(font
@@ -11574,7 +11472,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 253.492 36.83 90)
 			(effects
 				(font
@@ -11612,6 +11510,108 @@
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393"
 					(reference "R12")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TL074")
+		(at 83.82 121.92 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e7a82a9e-aa07-47c0-84ce-b0b3e69e7075")
+		(property "Reference" "U1"
+			(at 83.82 112.5982 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TL074"
+			(at 83.82 114.9096 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SO-14_3.9x8.65mm_P1.27mm"
+			(at 82.55 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+			(at 85.09 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8a97e359-ef6f-4c15-9e91-947588633f14")
+		)
+		(pin "2"
+			(uuid "d8466b78-d8a4-4a88-92ac-beb3990d0870")
+		)
+		(pin "3"
+			(uuid "8b4d8b11-9e8c-40a4-a5bc-655201091a9f")
+		)
+		(pin "5"
+			(uuid "f161baef-e889-41f0-951b-7c4cb5e9ab95")
+		)
+		(pin "6"
+			(uuid "5f3a659a-6b27-44a8-9373-24e5123b92f6")
+		)
+		(pin "7"
+			(uuid "68e874ca-ae55-45a3-af48-a5836a1c5617")
+		)
+		(pin "10"
+			(uuid "e1cba116-8e4d-4e95-aa15-4b3a3d9c8083")
+		)
+		(pin "8"
+			(uuid "28fdf86d-0b1c-45af-97a9-bba1bb35df5c")
+		)
+		(pin "9"
+			(uuid "97d6163e-2dae-47d7-b2fe-3a22da7ba4b5")
+		)
+		(pin "12"
+			(uuid "6e7710da-1a5a-4932-ad4c-1dfa7749d616")
+		)
+		(pin "13"
+			(uuid "1181fa27-63f1-4154-bcf4-55553cf3ef89")
+		)
+		(pin "14"
+			(uuid "b6393c75-96a1-4daa-9e1a-359bfe4f4316")
+		)
+		(pin "11"
+			(uuid "b39bac53-e2c4-4c10-929c-a125e2b218fe")
+		)
+		(pin "4"
+			(uuid "755337d9-e131-4b0f-98b5-109a8edc0f99")
+		)
+		(instances
+			(project "basschorus"
+				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393"
+					(reference "U1")
+					(unit 2)
 				)
 			)
 		)
@@ -12049,7 +12049,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
 			(at 263.652 29.21 90)
 			(effects
 				(font
