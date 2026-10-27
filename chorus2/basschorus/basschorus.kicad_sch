@@ -3438,6 +3438,16 @@
 		)
 		(uuid "57b309a1-1766-4c37-820b-be86569b8351")
 	)
+	(text "TODO:reconnect"
+		(exclude_from_sim no)
+		(at 20.955 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "62c63f3b-e760-4c90-9aef-c146bd282642")
+	)
 	(text "opamps=1, inverting"
 		(exclude_from_sim no)
 		(at 150.495 113.665 0)
@@ -3459,16 +3469,6 @@
 		)
 		(uuid "76db4cb2-bf06-470b-bf6f-e9c16c85b03e")
 	)
-	(text "TODO: change to 4.5kHz or test 3.1khz in max"
-		(exclude_from_sim no)
-		(at 55.88 176.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "7e2753db-a9e6-4278-9069-43d95d29a1c8")
-	)
 	(text "K=0.5"
 		(exclude_from_sim no)
 		(at 219.71 139.7 0)
@@ -3478,16 +3478,6 @@
 			)
 		)
 		(uuid "80022117-2d33-46c4-86e7-697d7a093187")
-	)
-	(text "TODO: should clock go up to 200MHz instead of 100?"
-		(exclude_from_sim no)
-		(at 56.515 184.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8226c144-6b67-4204-b2d0-584e813696a7")
 	)
 	(text "regulators further reduce power supply ripple"
 		(exclude_from_sim no)
@@ -3531,7 +3521,7 @@
 	)
 	(text "use defused LED for less hash brightness"
 		(exclude_from_sim no)
-		(at 85.09 57.15 0)
+		(at 83.82 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3605,12 +3595,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "056b378c-6e46-4559-b4bc-0a1bcca31e9a")
-	)
-	(junction
-		(at 29.21 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "08d6fa82-a923-4a50-8606-8e47e553b516")
 	)
 	(junction
 		(at 71.12 119.38)
@@ -3707,12 +3691,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "59735cc6-4246-4efc-a648-399a82e4303c")
-	)
-	(junction
-		(at 268.605 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "59bca0b2-9f2b-4629-ab89-7b3b08b51f59")
 	)
 	(junction
 		(at 217.805 121.92)
@@ -3907,6 +3885,14 @@
 	(no_connect
 		(at 176.53 34.29)
 		(uuid "3f8b650e-b3e7-4429-a82f-acebc49d429d")
+	)
+	(no_connect
+		(at 272.415 139.7)
+		(uuid "ab5d2d70-506a-46cc-bcbe-4a2556ca7587")
+	)
+	(no_connect
+		(at 29.21 116.84)
+		(uuid "e4b18b20-5e74-433a-bd60-e35099f961f3")
 	)
 	(wire
 		(pts
@@ -4640,16 +4626,6 @@
 	)
 	(wire
 		(pts
-			(xy 268.605 144.78) (xy 268.605 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68d11f78-925f-4cd6-ba15-ff6c9b35ae33")
-	)
-	(wire
-		(pts
 			(xy 29.21 121.92) (xy 29.21 124.46)
 		)
 		(stroke
@@ -4830,6 +4806,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 62.865) (xy 143.51 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82e1979d-ced8-4bd1-8b5d-983591376476")
+	)
+	(wire
+		(pts
 			(xy 78.74 55.245) (xy 78.74 57.15)
 		)
 		(stroke
@@ -4877,16 +4863,6 @@
 			(type default)
 		)
 		(uuid "8c58e0b3-0f2f-4cda-9dc5-c1b1b3a44772")
-	)
-	(wire
-		(pts
-			(xy 268.605 139.7) (xy 272.415 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cb3de07-6ba3-46ba-ba89-2fb61e741eb2")
 	)
 	(wire
 		(pts
@@ -5107,16 +5083,6 @@
 			(type default)
 		)
 		(uuid "a4efb399-8f08-4994-bab5-047e962da627")
-	)
-	(wire
-		(pts
-			(xy 29.21 116.84) (xy 29.21 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a59d6f47-ae60-4132-8c7d-52f86cbb828d")
 	)
 	(wire
 		(pts
@@ -5407,6 +5373,16 @@
 			(type default)
 		)
 		(uuid "ce705dde-e6a1-4455-b007-37e63843d90f")
+	)
+	(wire
+		(pts
+			(xy 137.16 62.865) (xy 137.16 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf24616f-1b48-4909-9c49-1d92a71b88a0")
 	)
 	(wire
 		(pts
@@ -6610,6 +6586,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 143.51 62.865 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09839976-a747-4ec0-a8d4-2799cb0bb772")
+		(property "Reference" "TP24"
+			(at 146.05 58.2929 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 146.05 60.8329 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.5x2.5mm_Drill1.2mm"
+			(at 148.59 62.865 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 62.865 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 143.51 62.865 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c381dec9-53bd-4b9b-bea3-781e5ce429d2")
+		)
+		(instances
+			(project "basschorus"
+				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393"
+					(reference "TP24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 78.74 41.91 0)
 		(unit 1)
@@ -6627,7 +6670,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 73.025 43.18 0)
 			(effects
 				(font
@@ -8994,6 +9037,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 143.51 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "67058745-3dc6-49b6-909f-f30ecb515a95")
+		(property "Reference" "#PWR077"
+			(at 143.51 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.51 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50f9f6c2-653b-4b4e-8a1b-d4789a78bc32")
+		)
+		(instances
+			(project "basschorus"
+				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393"
+					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:TL074")
 		(at 59.69 33.02 0)
 		(unit 5)
@@ -9161,6 +9270,72 @@
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393"
 					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 137.16 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a03c5f8-8842-436f-8e9e-6de5506adefd")
+		(property "Reference" "#PWR076"
+			(at 137.16 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 137.16 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 137.16 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2f775a66-9900-4e1d-b69b-b18c2bc12fc0")
+		)
+		(instances
+			(project "basschorus"
+				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393"
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -9364,6 +9539,73 @@
 			(project "basschorus"
 				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393"
 					(reference "TP17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 137.16 62.865 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "705d7b16-6c43-4ac7-b1a9-da4291a1f07e")
+		(property "Reference" "TP23"
+			(at 139.7 58.2929 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 60.8329 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_2.5x2.5mm_Drill1.2mm"
+			(at 142.24 62.865 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 62.865 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 137.16 62.865 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5514908c-b48b-4aa3-88ba-1e9c81d05093")
+		)
+		(instances
+			(project "basschorus"
+				(path "/7f3b4bac-3b2a-4af0-92ae-ccc3fcedc393"
+					(reference "TP23")
 					(unit 1)
 				)
 			)

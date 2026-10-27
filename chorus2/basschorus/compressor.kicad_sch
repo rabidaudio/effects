@@ -2590,7 +2590,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "COMP_IN"
+		(property "Value" "CIN"
 			(at 125.73 86.4869 0)
 			(effects
 				(font
@@ -3552,7 +3552,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "COMP_GAIN"
+		(property "Value" "CGAIN"
 			(at 100.33 74.1679 0)
 			(effects
 				(font
@@ -3619,7 +3619,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "COMP_OUT"
+		(property "Value" "COUT"
 			(at 199.39 104.2669 0)
 			(effects
 				(font
