@@ -5959,7 +5959,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "_effects_shared_footprints:Jack_6.35mm_Neutrik_NMJ6HCD3_Horizontal"
+		(property "Footprint" "_project:JackHeaders"
 			(at 277.495 147.32 0)
 			(effects
 				(font
@@ -6037,7 +6037,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_effects_shared_footprints:Stompbox Switch"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical"
 			(at 35.56 119.38 0)
 			(effects
 				(font
@@ -6125,7 +6125,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_effects_shared_footprints:Stompbox Switch"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical"
 			(at 260.985 142.24 0)
 			(effects
 				(font
@@ -7564,7 +7564,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "_effects_shared_footprints:Jack_6.35mm_Neutrik_NMJ6HCD3_Horizontal"
+		(property "Footprint" "_project:JackHeaders"
 			(at 20.32 124.46 0)
 			(effects
 				(font
@@ -9636,7 +9636,7 @@
 				)
 			)
 		)
-		(property "Footprint" "_effects_shared_footprints:Stompbox Switch"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical"
 			(at 78.74 28.575 0)
 			(effects
 				(font

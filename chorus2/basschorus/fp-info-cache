@@ -1,4 +1,4 @@
-26651539660805427
+26653332722636681
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -106273,3 +106273,10 @@ Stompbox Switch
 0
 9
 9
+_project
+JackHeaders
+Through hole straight pin header, 1x02, 2.54mm pitch, single row
+Through hole pin header THT 1x02 2.54mm single row
+0
+2
+2
